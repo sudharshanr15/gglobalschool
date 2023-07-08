@@ -1,6 +1,11 @@
+import { Hero, Team } from "../container/Home"
+
 const Home = () => {
   return (
-    <h1>Home</h1>   
+    <>
+      <Hero />
+      <Team />
+    </>
   )
 }
 
