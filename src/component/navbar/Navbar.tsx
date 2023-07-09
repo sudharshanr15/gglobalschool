@@ -2,20 +2,54 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 import { gglobal_logo, icon_close } from "@/assets/index"
 
 import styles from "./styles.module.css"
 
+import { gsap } from "gsap"
+
 function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isMenuHover, setIsMenuHover] = useState(false)
 
+    useEffect(() => {
+        let t1 = gsap.timeline()
+        t1.to(".menu-links", {
+            opacity: 1
+        })
+        t1.fromTo(".menu-links", {
+            xPercent: 200,
+        }, {
+            xPercent: 0,
+            duration: 0.75,
+            ease: "power4.out"
+        }, "<")
+    }, [isMenuOpen])
+
     function onMenuClick(){
-        setIsMenuOpen((e) => (
-            !e
-        ))
+        if(isMenuOpen){
+            let t1 = gsap.timeline()
+            t1.fromTo(".menu-links", {
+                xPercent: 0,
+            }, {
+                xPercent: 200,
+                duration: 0.75
+            })
+            t1.to(".menu-links", {
+                opacity: 0
+            })
+            setTimeout(()=>{
+                setIsMenuOpen((e) => (
+                    !e
+                ))    
+            }, 500)
+        }else{
+            setIsMenuOpen((e) => (
+                !e
+            ))
+        }
     }
 
     function onMenuHover(){
@@ -49,7 +83,7 @@ function Navbar(){
                 </div>
             </div>
             {isMenuOpen && (
-                <div className="w-full bg-primary-maroon-1 absolute top-0 left-0 p-10">
+                <div className="w-full bg-primary-maroon-1 absolute top-0 left-0 p-10 menu-links">
                     <div className="flex flex-row justify-between items-center">
                         <div className="inline-block px-7 pb-4 pt-2 bg-white rounded-3xl">
                             <Image className="max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
