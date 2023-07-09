@@ -1,0 +1,45 @@
+.menu_icon{
+    margin-right: 1.1rem;
+    max-width: 4rem;
+    width: 4rem;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.line{
+    border: 0.25rem solid #2A2A2A;
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    transition: width 0.25s;
+    transition-timing-function: ease-out;
+}
+
+.line.line_1{
+    width: 100%;
+}
+
+.line.line_2{
+    width: 75%;
+}
+
+.line.line_3{
+    width: 50%;
+}
+
+.open .line{
+    border-color: #ffffff;
+}
+
+.open > .menu_icon .line_1{
+    width: 50%;
+}
+
+.open > .menu_icon .line_2{
+    width: 75%;
+}
+
+.open > .menu_icon .line_3{
+    width: 100%;
+}
