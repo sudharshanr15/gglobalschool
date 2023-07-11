@@ -1,5 +1,5 @@
 import React from "react";
-import { WhatWeOffer, Vision, Programme } from "../../container/PYP";
+import { WhatWeOffer, Vision, Programme,OtherTopics } from "../../container/PYP";
 
 function page() {
     return (
@@ -7,6 +7,7 @@ function page() {
             <Vision />
             <WhatWeOffer />
             <Programme />
+            <OtherTopics/>
         </>
     );
 }
