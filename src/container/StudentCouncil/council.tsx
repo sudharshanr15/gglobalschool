@@ -3,8 +3,8 @@ import studentcouncil from '../../assets/student council.png'
 
 const Council = () => {
   return (
-    <div className="flex justify-between align-center mx-auto mb-20 mt-40">
-      <div className="w-1/2 m-20 mr-16 mt-0 flex-col justify-between">
+    <div className="md:flex lg:flex justify-between align-center mx-auto mb-10 lg:mb-20 mt-10 lg:mt-40">
+      <div className="w-3/4 md:w-1/2 lg:w-1/2 m-10 lg:mx-20 lg:mr-16 mt-0 flex-col justify-between">
         <div className="text-heading-4 text-primary-maroon">STUDENT COUNCIL</div><br/>
         <div>
           As a IB school we believe in student agency and given opportunities to
@@ -21,7 +21,7 @@ const Council = () => {
           younger ones around the school campus.
         </div>
       </div>
-        <Image src={studentcouncil} className="mr-20 h-96 w-auto" alt="studentcouncil"/>
+        <Image src={studentcouncil} className="mr-10 lg:mr-20 h-96 w-auto" alt="studentcouncil"/>
     </div>
   )
 }
