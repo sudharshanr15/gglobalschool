@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import eypLogo from "../../assets/eyp image 1.jpg";
 import eypLogo2 from "../../assets/Group 24.png"
+import OtherTopics from "../../container/eyp/OtherTopics"
 
 function page() {
   return (
@@ -56,13 +57,62 @@ function page() {
             Literacy and Numeracy curriculum are framed through a wide range of playful and inquiry- based explorations. Learner’s are provided with various symbolic and representational learning
             </p>
            
-          
           </div>
         </div>
         <div className="relative left-3 w-[100%]">
           <Image src={eypLogo2}  alt="logo"  />
         </div>
       </div>
+
+
+
+      {/* PROGRAMS STECTION */}
+       <div className="w-[80%] text-left pl-24  content-center">
+        <p className="text-primary-maroon-1 text-heading-3 w-[70%]  ">
+                   EARLY YEARS @G GLOBAL SCHOOL PROGRAMS  
+        </p>
+      
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5 w-[100%] mt-10 left-7  ">
+
+      <div className="bg-[#790000] text-white p-4 text-center ">
+        <p>PLAY GROUND</p>
+        <div className="bg-[#F9A51A] text-black text-center p-4 mx-4 my-4">
+          <p>2.5 years to 3 years</p>
+        </div>
+      </div>
+
+      <div className="bg-[#790000] text-white p-4 text-center">
+        <p>KINDER GARDER 1</p>
+        <div className="bg-[#F9A51A]  text-black text-center p-4 mx-4 my-4">
+          <p> 3 years</p>
+        </div>
+      </div>
+
+      <div className="bg-[#790000] text-white p-4 text-center">
+        <p>KINDER GARDEN 2</p>
+        <div className="bg-[#F9A51A]  text-black text-center p-4 mx-4 my-4">
+          <p>4 years</p>
+        </div>
+      </div>
+
+      <div className="bg-[#790000] text-white p-4 text-center">
+        <p>KINDER GARDERN 3</p>
+        <div className="bg-[#F9A51A]   text-black text-center p-4 mx-4 my-4">
+          <p>5 years</p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+      
+  
+
+        <OtherTopics/>
+     
+
+      
     </>
   );
 }
