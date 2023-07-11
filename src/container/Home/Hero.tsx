@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 const Hero = () => (
   <div className="bg-[#F05A22]">
-    <div className="div flex mt-28 md:mt-32 flex-wrap">
-      <div className="w-full md:w-1/2  md:mt-32  text-center">
-        <h1 className="text-2xl md:text-5xl font-bold sm:mr-10 text-[#333333]">
-          Enlightening
+    <div className="div flex mt-28 md:mt-32 p-10 flex-wrap">
+      <div className="w-full md:w-1/2  md:mt-32  ">
+        <h1 className="text-4xl md:text-5xl font-bold sm:mr-10 text-[#333333] text-center">
+          ENLIGHTENING
         </h1>
-        <h1 className="mt-1 sm:mt-3 text-2xl md:text-5xl font-bold sm:mr-44 text-white">
-          Future Minds
+        <h1 className="mt-1  sm:mt-3 text-4xl md:text-5xl font-bold sm:mr-10 text-white text-center">
+          FUTURE MINGS
         </h1>
-        <p className="sm:mr-28 mt-4 md:mt-9 text-white ">
+        <p className="sm:mr-28 mt-4 md:mt-9 md:ml-24 text-white ">
         G Global School the <span className='text-black'>first authorised IB world school</span> in Tiruchengode.
         </p>
        

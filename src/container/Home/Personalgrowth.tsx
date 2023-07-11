@@ -5,23 +5,22 @@ import Image from 'next/image';
 const Personalgrowth = () => (
    
     <div className="div flex  flex-wrap">
-      <div className="w-full md:w-1/2  md:mt-32  text-center">
+      <div className="w-full md:w-1/2 mt-10  p-10 ">
         <h1 className="text-2xl md:text-5xl font-bold sm:mr-10 text-[#000000]">
         WHY CHOOSE US
         </h1>
        
-        <p className="sm:mr-28 mt-4 md:mt-9">
-        At G Global School, we offer more than just education - we"
+        <p className="sm:mr-28 mt-4 md:mt-9 ">
+        At G Global School, we offer more than just education - we provide a gateway to a world of boundless possibilities and personal growth."
         </p>
-        <p className="sm:mr-44 mt-1">provide a gateway to a world of boundless possibilities and</p>
-        <p className="sm:mr-44 mt-1">personal growth.</p>
+        
 
         {/* <p className="sm:mr-28 mt-4 md:mt-9">
         At G Global School, we offer more than just education - we provide a gateway to a world of boundless possibilities and personal growth."
         </p> */}
 
-        <div className="flex space-x-4">
-          <button className="bg-[#F9A51A] w-[200px] rounded-full font-medium my-6 mx-auto py-3 text-black">
+        <div className="flex ">
+          <button className="bg-[#F9A51A] w-[200px] rounded-full font-medium my-6 md:mx-auto py-3 text-black">
             Know More
           </button>
         </div>
@@ -31,7 +30,7 @@ const Personalgrowth = () => (
         
    
 
-      <div className="mx-auto w-full md:w-1/4 mt-5 py-10">
+      <div className="mx-auto w-full md:w-1/4 mt-5 py-10 ">
       <div className="flex  space-x-4 ...">
       <div  className="hover:scale-105 duration-300 bg-cover" style={{ position: 'relative', width: '100%', height: '50vh'  }}>
             <Image

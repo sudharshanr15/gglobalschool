@@ -48,7 +48,7 @@ const Programmesoffers = () => (
           </div>
         </div>
 
-        <div className="w-full md:w-1/2  md:mt-5  text-center underline underline-offset-8 ... text-[#F05A22]">
+        <div className="w-full md:w-1/2  md:mt-5 p-5 text-center underline underline-offset-8 ... text-[#F05A22]">
           <h1 className="text-2xl md:text-xl font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
             To know more
           </h1>
@@ -78,7 +78,7 @@ const Programmesoffers = () => (
           </div>
         </div>
 
-        <div className="w-full md:w-1/2  md:mt-5  text-center underline underline-offset-8 ... text-[#F05A22]">
+        <div className="w-full md:w-1/2  md:mt-5 p-5 text-center underline underline-offset-8 ... text-[#F05A22]">
           <h1 className="text-2xl md:text-xl font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
             To know more
           </h1>
