@@ -1,4 +1,4 @@
-import {DescriptionBox,Council,Teamcard,Content,Benefits} from  "@/container/StudentCouncil"
+import {DescriptionBox,Council,Teamcard,Content,Benefits, Others} from  "@/container/StudentCouncil"
 
 const StudentCouncil = () => {
   return (
@@ -8,6 +8,7 @@ const StudentCouncil = () => {
       <Teamcard/>
       <Content/>
       <Benefits/>
+      <Others/>
     </div>
   )
 }
