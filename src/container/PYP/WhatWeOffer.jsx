@@ -7,7 +7,7 @@ import cardimg from "../../assets/Rectangle1.png"
 function WhatWeOffer() {
     return (
         <>
-            <div id="whatWeOffer" className="w-[90%] mx-auto mt-20 flex flex-col gap-8">
+            <div id="whatWeOffer" className="w-[90%] mx-auto mt-40 flex flex-col gap-8">
                 <p className="text-heading-3 text-primary-maroon-1 uppercase">
                     what we offer
                 </p>
@@ -21,7 +21,7 @@ function WhatWeOffer() {
                     every day teaching and learning.
                 </p>
             </div>
-            <div id="pypCards" className="w-[90%] mx-auto flex gap-16 my-20">
+            <div id="pypCards" className="w-[90%] mx-auto md:flex gap-16 my-20">
                 <Cards
                     cardImage={cardimg}
                     title={"Essence of PYP"}
@@ -49,7 +49,7 @@ function WhatWeOffer() {
             </div>
             <div
                 id="widePypCards"
-                className="w-[90%] mx-auto flex gap-10"
+                className="w-[90%] mx-auto md:flex md:gap-10"
             >
                 <Cards
                     cardImage={srcImage}

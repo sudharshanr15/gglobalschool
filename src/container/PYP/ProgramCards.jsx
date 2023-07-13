@@ -3,7 +3,7 @@ import React from 'react'
 function ProgramCards({year, duration}) {
   return (
       <>
-          <div className="bg-primary-maroon-1 py-10 px-8">
+          <div className="bg-primary-maroon-1 my-20 md:my-10 py-10 px-8">
               <p className="text-white  text-heading-4 text-center ">
                   YEAR {year}
               </p>
