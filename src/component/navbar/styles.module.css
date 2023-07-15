@@ -1,10 +1,8 @@
 .menu_icon{
-    margin-right: 1.1rem;
+    margin-right: 1rem;
     max-width: 4rem;
-    width: 4rem;
     display: inline-flex;
     flex-direction: column;
-    row-gap: 0.5rem;
 }
 
 .line{

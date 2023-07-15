@@ -60,23 +60,23 @@ function Navbar(){
 
     return (
         <nav className="bg-transparent relative">
-            <div className="ps-8 py-6 flex flex-row items-center">
+            <div className="ps-2 pt-7 md:ps-8 md:py-6 flex flex-row items-center">
                 <div className="flex-1">
-                    <div className="inline-block px-7 pb-4 pt-2 bg-white rounded-3xl">
-                        <Image className="max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                    <div className="inline-block px-5 pt-1 pb-3 md:px-7 md:pb-4 md:pt-2 bg-white rounded-3xl">
+                        <Image className="max-w-[8.5rem] md:max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
                     </div> 
                 </div>
                 <div className="inline-flex gap-x-16 items-center">
-                    <Link href="" className="text-subheading-regular text-white">Admissions</Link>
-                    <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-7 py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
+                    <Link href="" className="text-subheading-regular text-white hidden md:block">Admissions</Link>
+                    <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-5 py-3 md:px-7 md:py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
                         onClick={onMenuClick}
                         onMouseEnter={onMenuHover}
                         onMouseLeave={onMenuHover}
                     >
-                        <div className={styles.menu_icon}>
-                            <span className={`${styles.line} ${styles.line_1}`}></span>
-                            <span className={`${styles.line} ${styles.line_2}`}></span>
-                            <span className={`${styles.line} ${styles.line_3}`}></span>
+                        <div className={`w-[1.76rem] md:w-[4rem] ${styles.menu_icon} gap-y-1 md:gap-y-2`}>
+                            <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_1}`}></span>
+                            <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_2}`}></span>
+                            <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_3}`}></span>
                         </div>
                         <h6 className="text-heading-6">Menu</h6>
                     </button>
