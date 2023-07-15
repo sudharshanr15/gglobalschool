@@ -1,0 +1,6 @@
+export {default as DescriptionBox} from './descriptionBox'
+export {default as Council} from './council'
+export {default as Teamcard} from './teamcard'
+export {default as Content} from './content'
+export {default as Benefits} from './benefits'
+export {default as Others} from './others'
