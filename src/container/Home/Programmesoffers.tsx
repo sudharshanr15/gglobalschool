@@ -13,8 +13,8 @@ const Programmesoffers = () => (
       </div>
     </div>
 
-    <div className="div flex  flex-wrap">
-      <div className="mx-auto w-full md:w-1/4 mt-5 py-10">
+    <div className="div  grid  grid-cols-1 md:grid-cols-2">
+      <div className="mx-auto md w-full mt-5 py-10">
         <div
           className="hover:scale-105 duration-300 bg-cover"
           style={{ position: "relative", width: "100%", height: "80vh" }}
@@ -29,19 +29,19 @@ const Programmesoffers = () => (
         </div>
       </div>
 
-      <div className="w-full md:w-1/2  md:mt-12  text-center">
+      <div className="w-full md:ml-9  md:mt-14  text-center">
         <h1 className="text-2xl md:text-5xl font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
           Early Year Program
         </h1>
 
-        <div className="flex justify-left items-left ">
-          <button className="bg-[#F9A51A] w-[200px] rounded-full font-medium my-6   py-3 text-black">
+        <div className="flex justify-left   items-left ">
+          <button className="bg-[#F9A51A] w-[200px] rounded-full font-medium my-6 mx-auto md:item-left  py-3 text-black">
             2-5 Years
           </button>
         </div>
 
-        <div className=" bg-white rounded-lg max-w-[312px] items-center">
-          <div className="text-left font-medium text-[#2A2A2A]   ">
+        <div className=" bg-white mx-auto rounded-lg max-w-[312px] items-center">
+          <div className="text-left  font-medium text-[#2A2A2A]   ">
             <p className="p-8 md:text-4xl text-2xl mx-8 ">
               A child’s learning begins from early years
             </p>
@@ -58,19 +58,19 @@ const Programmesoffers = () => (
 
     {/* --- */}
 
-    <div className="div flex  flex-wrap">
-      <div className="w-full md:w-1/2 pl-10 md:mt-12  text-center">
+    <div className="div  grid  grid-cols-1 md:grid-cols-2">
+      <div className="w-full  text-center md:mt-12  mx-auto">
         <h1 className="text-2xl md:text-5xl font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
           Primary Year Program
         </h1>
 
         <div className="flex justify-left items-left ">
-          <button className="bg-[#F9A51A] w-[200px] rounded-full font-medium my-6   py-3 text-black">
+          <button className="bg-[#F9A51A] w-[200px] rounded-full font-medium my-6 mx-auto  py-3 text-black">
             6-10 Years
           </button>
         </div>
 
-        <div className=" bg-white rounded-lg max-w-[312px] items-center">
+        <div className=" bg-white mx-auto rounded-lg max-w-[312px] items-center">
           <div className="text-left font-medium text-[#2A2A2A]   ">
             <p className="p-8 md:text-4xl text-2xl mx-8 ">
               Curiosity is the fuel for discovery, inquiry and learning
@@ -85,7 +85,7 @@ const Programmesoffers = () => (
         </div>
       </div>
 
-      <div className="mx-auto w-full md:w-1/4 mt-5 py-10">
+      <div className="mx-auto w-full mt-5 py-10">
         <div
           className="hover:scale-105 duration-300 bg-cover"
           style={{ position: "relative", width: "100%", height: "80vh" }}
