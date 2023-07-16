@@ -8,9 +8,15 @@ function OtherTopics() {
               <p className="uppercase text-heading-3 text-primary-maroon-1">
                   Other Topics To explore
               </p>
-              <div className="md:flex justify-between mt-10">
-                  <TopicCard text={"EMOTIONAL & ETHICAL SUPPORT"} />
-                  <TopicCard text={"EMOTIONAL & ETHICAL SUPPORT"} />
+              <div className="md:flex md:gap-11 mt-10">
+                  <TopicCard
+                      text={"EMOTIONAL & ETHICAL SUPPORT"}
+                      overlayText={"EMOTIONAL & ETHICAL SUPPORT"}
+                  />
+                  <TopicCard
+                      text={"EMOTIONAL & ETHICAL SUPPORT"}
+                      overlayText={"life @ ggs"}
+                  />
               </div>
           </div>
       </>
