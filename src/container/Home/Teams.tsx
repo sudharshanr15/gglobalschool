@@ -6,18 +6,18 @@ const Teams = () => (
       <h3 className="text-4xl md:text-5xl  font-bold sm:mr-10 text-black">
         OUR TEAM
       </h3>
-      <h1 className="text-5xl md:text-8xl font-bold sm:mr-10 text-[#F9BDA7]">
+      <h1 className="text-5xl md:text-8xl font-bold sm:mr-10 lg:text-8xl text-[#F9BDA7]">
         TEAM
       </h1>
     </div>
 
-    <div className="w-full py-[1rem] px-4 bg-white">
-      <div className="max-w-[1050px] mx-auto grid md:grid-cols-3 gap-8">
-        <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg hover:scale-105 duration-300">
+    <div className="w-full py-[1rem] px-4  bg-white ">
+      <div className="w-full mx-auto grid md:grid-cols-3 gap-8 ">
+        <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
           <div className=" flex space-x-4  rounded-lg ">
             <div className="md:w-[420px] md:h-[220px]  w-[320px] h-[220px]">
               <div
-                className="hover:scale-105 duration-300 bg-cover"
+                className=" bg-cover"
                 style={{ position: "relative", width: "100%", height: "100%" }}
               >
                 <Image
@@ -32,17 +32,17 @@ const Teams = () => (
           </div>
 
           <div className="text-left font-medium bg-[#790000] text-[#737373]  ">
-            <p className="py-2  mx-8 mt-8 text-[#FAFAFA]">
+            <p className="py-4  mx-8 mt-8 text-[#FAFAFA]">
               Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
             </p>
             <p className="py-2  mx-8 ">CHAIRMAN DIRECTOR, G GLOBAL SCHOOL</p>
           </div>
         </div>
-        <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg hover:scale-105 duration-300">
+        <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
           <div className=" flex space-x-4  rounded-lg ">
             <div className="md:w-[420px] md:h-[220px] w-[320px] h-[220px]">
               <div
-                className="hover:scale-105 duration-300 bg-cover"
+                className=" bg-cover"
                 style={{ position: "relative", width: "100%", height: "100%" }}
               >
                 <Image
@@ -64,11 +64,11 @@ const Teams = () => (
           </div>
         </div>
 
-        <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg hover:scale-105 duration-300">
+        <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
           <div className=" flex space-x-4  rounded-lg ">
             <div className="md:w-[420px] md:h-[220px] w-[320px] h-[220px]">
               <div
-                className="hover:scale-105 duration-300 bg-cover"
+                className=" bg-cover"
                 style={{ position: "relative", width: "100%", height: "100%" }}
               >
                 <Image

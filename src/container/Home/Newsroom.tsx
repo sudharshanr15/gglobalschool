@@ -7,20 +7,20 @@ const Newsroom = () => (
         <h3 className="text-4xl md:text-4xl  font-bold sm:mr-10 text-black">
           NEWS & EVENTS
         </h3>
-        <h1 className="text-5xl md:text-7xl font-bold sm:mr-10 text-[#F9BDA7]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold sm:mr-10 text-[#F9BDA7]">
           NEWS ROOM
         </h1>
       </div>
     </div>
 
-    <div className="scroll-smooth hover:scroll-auto -scroll-ml-6 snap-start ...">
-      <div className="w-full py-[1rem] px-4 bg-white">
-        <div className="max-w-[1050px] mx-auto grid md:grid-cols-3 gap-8">
-          <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg hover:scale-105 duration-300">
+    <div className="scroll-smooth  hover:scroll-auto -scroll-ml-6 snap-start ...">
+      <div className="w-full py-[1rem] px-4 bg-white ">
+        <div className="w-auto mx-auto grid md:grid-cols-3 gap-8">
+          <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
             <div className=" flex space-x-4  rounded-lg ">
               <div className="md:w-[420px] md:h-[220px]  w-[320px] h-[220px]">
                 <div
-                  className="hover:scale-105 duration-300 bg-cover"
+                  className=" bg-cover"
                   style={{
                     position: "relative",
                     width: "100%",
@@ -45,11 +45,11 @@ const Newsroom = () => (
               <p className="py-2  mx-8 ">12/01/2023</p>
             </div>
           </div>
-          <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg hover:scale-105 duration-300">
+          <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
             <div className=" flex space-x-4  rounded-lg ">
               <div className="md:w-[420px] md:h-[220px] w-[320px] h-[220px]">
                 <div
-                  className="hover:scale-105 duration-300 bg-cover"
+                  className=" bg-cover"
                   style={{
                     position: "relative",
                     width: "100%",
@@ -75,11 +75,11 @@ const Newsroom = () => (
             </div>
           </div>
 
-          <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg hover:scale-105 duration-300">
+          <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
             <div className=" flex space-x-4  rounded-lg ">
               <div className="md:w-[420px] md:h-[220px] w-[320px] h-[220px]">
                 <div
-                  className="hover:scale-105 duration-300 bg-cover"
+                  className=" bg-cover"
                   style={{
                     position: "relative",
                     width: "100%",

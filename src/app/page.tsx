@@ -16,8 +16,9 @@ const Home = () => {
       <Personalgrowth />
       <Programmesoffers />
       <Teams />
-      <Newsroom />
-      <Team /></> 
+      <Newsroom /> 
+      <Team />
+      </> 
     
   )
 }
