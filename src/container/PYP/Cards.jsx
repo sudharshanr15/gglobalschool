@@ -15,6 +15,7 @@ function Cards({cardImage,title,desc,iswide}) {
               <Image
                   src={cardImage}
                   alt="image"
+                  unoptimized
                   className="w-full transition ease-in-out  duration-300 group-hover:scale-y-75 group-hover:origin-top "
               />
               <div className="group-hover:absolute bottom-0 group-hover:top-[20%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-300 py-10 px-5">
