@@ -15,19 +15,16 @@ const Teams = () => (
       <div className="w-full mx-auto grid md:grid-cols-3 gap-8 ">
         <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
           <div className=" flex space-x-4  rounded-lg ">
-            <div className="md:w-[420px] md:h-[220px]  w-[320px] h-[220px]">
-              <div
-                className=" bg-cover"
-                style={{ position: "relative", width: "100%", height: "100%" }}
-              >
-                <Image
-                  src="/image/person3.jpg"
-                  alt="Background"
-                  layout="fill"
-                  objectFit="cover"
-                />
-                {/* Rest of your content */}
-              </div>
+            <div className="w-full ">
+              <Image
+                src="/image/person3.jpg"
+                alt="Background"
+                className="w-full h-auto"
+                width={500}
+                height={500}
+              />
+
+              {/* Rest of your content */}
             </div>
           </div>
 
@@ -40,19 +37,15 @@ const Teams = () => (
         </div>
         <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
           <div className=" flex space-x-4  rounded-lg ">
-            <div className="md:w-[420px] md:h-[220px] w-[320px] h-[220px]">
-              <div
-                className=" bg-cover"
-                style={{ position: "relative", width: "100%", height: "100%" }}
-              >
-                <Image
-                  src="/image/person4.jpg"
-                  alt="Background"
-                  layout="fill"
-                  objectFit="cover"
-                />
-                {/* Rest of your content */}
-              </div>
+            <div className="w-full">
+              <Image
+                src="/image/person4.jpg"
+                alt="Background"
+                className="w-full h-auto"
+                width={500}
+                height={500}
+              />
+              {/* Rest of your content */}
             </div>
           </div>
 
@@ -66,19 +59,15 @@ const Teams = () => (
 
         <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
           <div className=" flex space-x-4  rounded-lg ">
-            <div className="md:w-[420px] md:h-[220px] w-[320px] h-[220px]">
-              <div
-                className=" bg-cover"
-                style={{ position: "relative", width: "100%", height: "100%" }}
-              >
-                <Image
-                  src="/image/person5.jpg"
-                  alt="Background"
-                  layout="fill"
-                  objectFit="cover"
-                />
-                {/* Rest of your content */}
-              </div>
+            <div className="w-full">
+              <Image
+                src="/image/person5.jpg"
+                alt="Background"
+                className="w-full h-auto"
+                width={500}
+                height={500}
+              />
+              {/* Rest of your content */}
             </div>
           </div>
 
