@@ -10,16 +10,13 @@ function Vision() {
           </p>
           <div className="md:w-[90%] md:flex  justify-center items-center mx-auto my-20">
               <div>
-                  <Image
-                      src={pypLogo}
-                      alt="logo"
-                  />
+                  <Image src={pypLogo} alt="logo" unoptimized />
               </div>
               <div className="md:w-[50%] flex flex-col gap-y-8 p-20">
                   <p className="text-primary-maroon-1 text-heading-3">
                       PRIMARY YEAR PROGRAMME
                   </p>
-                  <p >
+                  <p>
                       The PYP curriculum framework is designed for learners aged
                       6 - 12.
                   </p>

@@ -9,7 +9,7 @@ function Programme() {
                   PRIMARY YEARS @ G GLOBAL SCHOOL PROGRAMMES
               </p>
           </div>
-          <div id="programCards" className="md:flex md:justify-between mx-auto w-[90%] ">
+          <div id="programCards" className="md:flex md:gap-6 mx-auto w-[90%] ">
               <ProgramCard year={1} duration={6} />
               <ProgramCard year={1} duration={6} />
               <ProgramCard year={1} duration={6} />
