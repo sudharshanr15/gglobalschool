@@ -5,14 +5,14 @@ import pypLogo from "../../assets/pyp image big.png";
 function Vision() {
   return (
       <>
-          <p className="text-heading-4 uppercase mx-auto md:w-[80%]">
+          <p className="text-heading-4 uppercase mx-auto md:w-[80%] p-5">
               Curiosity is the fuel for discovery, inquiry and learning
           </p>
           <div className="md:w-[90%] md:flex  justify-center items-center mx-auto my-20">
               <div>
                   <Image src={pypLogo} alt="logo" unoptimized />
               </div>
-              <div className="md:w-[50%] flex flex-col gap-y-8 p-20">
+              <div className="md:w-[50%] flex flex-col gap-y-8 md:p-20 p-5">
                   <p className="text-primary-maroon-1 text-heading-3">
                       PRIMARY YEAR PROGRAMME
                   </p>
