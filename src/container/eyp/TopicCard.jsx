@@ -2,7 +2,7 @@ import React from 'react'
 import img from "../../assets/Rectangle 78.png"
 import Image from 'next/image'
 
-function TopicCard({text}) {
+function TopicCard({text,text1}) {
   return (
     <>
       <div className='content-center px-10 w-full md:w-[80%] h-[40%]  ' >
@@ -11,6 +11,9 @@ function TopicCard({text}) {
           <p className="text-white uppercase text-heading-5">{ text }</p>
         </div>
       </div>
+      {/* <div className=' bg-primary-maroon-1 hover:visible hidden'>
+             <p>{text1}</p>
+      </div> */}
     </>
 
   )

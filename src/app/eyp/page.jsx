@@ -44,13 +44,13 @@ function page() {
 
       {/* feature */}
 
-      <div className="w-full md:w-[85%] flex flex-col md:flex-row justify-center items-center mx-auto p-5 md:p-10 gap-5 md:gap-[117px]">
-        <div className="w-full md:w-[60%]">
+      <div className="w-full md:w-[85%] flex flex-col md:flex-row  items-center mx-auto p-5  gap-5 md:gap-[117px]">
+        <div className="w-full md:w-[60%] ">
           <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[50%]">
             FEATURES
           </p>
           <div className="text-base font-normal leading-7 tracking-normal text-left">
-            <p className="pt-4">
+            <p className="pt-2">
               Learning spaces at GGS are designed to support active
               participation of children through play.
             </p>
@@ -67,7 +67,7 @@ function page() {
           </div>
         </div>
         <div className="relative left-0 md:left-3 w-full md:w-[100%]">
-          <Image src={eypLogo2} alt="logo" className="w-full h-[80%]" />
+          <Image src={eypLogo2} alt="logo" className="w-full h-[80%] " />
         </div>
       </div>
 
@@ -77,31 +77,31 @@ function page() {
           early years @ g global school programmes
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  mx-auto p-5 xl:grid-cols-2 gap-5 w-[70%] mt-10 left-7  ">
-          <div className="bg-[#790000] text-white p-4 text-center ">
-            <p>PLAY GROUND</p>
-            <div className="bg-[#F9A51A] text-black text-center p-4 mx-4 my-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  mx-auto  xl:grid-cols-2 gap-3 w-[80%] md:w-[70%] mt-10 left-7  ">
+          <div className="bg-[#790000] text-white p-4  text-center ">
+            <p className="text-heading-6">PLAY GROUND</p>
+            <div className="bg-[#F9A51A] text-black text-center p-4  text-heading-6 mx-4 my-5">
               <p>2.5 years to 3 years</p>
             </div>
           </div>
 
           <div className="bg-[#790000] text-white p-4 text-center">
-            <p>KINDER GARDER 1</p>
-            <div className="bg-[#F9A51A]  text-black text-center p-4 mx-4 my-4">
+            <p className="text-heading-6">KINDER GARDER 1</p>
+            <div className="bg-[#F9A51A]  text-black text-center text-heading-6 p-4  mx-4 my-5">
               <p> 3 years</p>
             </div>
           </div>
 
-          <div className="bg-[#790000] text-white p-4 text-center">
-            <p>KINDER GARDEN 2</p>
-            <div className="bg-[#F9A51A]  text-black text-center p-4 mx-4 my-4">
+          <div className="bg-[#790000] text-white p-4  text-center">
+            <p className="text-heading-6">KINDER GARDEN 2</p>
+            <div className="bg-[#F9A51A]  text-black text-center text-heading-6 p-4 mx-4 my-5">
               <p>4 years</p>
             </div>
           </div>
 
           <div className="bg-[#790000] text-white p-4 text-center">
-            <p>KINDER GARDERN 3</p>
-            <div className="bg-[#F9A51A]   text-black text-center p-4 mx-4 my-4">
+            <p className="text-heading-6">KINDER GARDERN 3</p>
+            <div className="bg-[#F9A51A]   text-black text-center text-heading-6 p-4 mx-4 my-5">
               <p>5 years</p>
             </div>
           </div>
@@ -116,9 +116,9 @@ function page() {
         </p>
       </div>
       
-      <div className="w-full md:w-[85%] flex flex-col md:flex-row justify-center items-center mx-auto top-3 p-5 md:p-10 gap-5 md:gap-[117px]">
-        <TopicCard text={"life @ ggc"} />
-        <TopicCard text={"student council"} />
+      <div className="w-full md:w-[85%] flex flex-col md:flex-row justify-center items-center mx-auto top-3 p-5 md:p-10 gap-5 md:gap-[30px]">
+        <TopicCard text={"life @ ggc"} text1={"LIFE @ GCC"} />
+        <TopicCard text={"student council"} text1={"STUDENT COUNCIL"} />
       </div>
     </>
   );
