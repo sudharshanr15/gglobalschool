@@ -1,5 +1,5 @@
 import Image from "next/image"
-import studentcouncil from '../../assets/student council.png'
+import studentcouncil from '../../assets/council.jpg'
 
 const Council = () => {
   return (
@@ -21,7 +21,7 @@ const Council = () => {
           younger ones around the school campus.
         </div>
       </div>
-        <Image src={studentcouncil} quality={100} className="md:mr-10 p-5 md:p-0 mx-auto lg:p-0 lg:mr-20 h-96 w-auto lg:w-2/3 lg:h-full" alt="studentcouncil"/>
+        <Image src={studentcouncil} unoptimized className="md:mr-10 p-5 md:p-0 mx-auto lg:p-0 lg:mr-20 h-96 w-auto lg:w-1/2 lg:h-full" alt="studentcouncil"/>
     </div>
   )
 }
