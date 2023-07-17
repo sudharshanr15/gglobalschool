@@ -1,13 +1,19 @@
 import React from "react";
 import Cards from "./Cards";
-import srcImage from "../../assets/cardwide.png";
-import cardimg from "../../assets/Rectangle1.png"
+import offer1 from "../../assets/offer1.png"
+import offer2 from "../../assets/offer2.png";
+import offer3 from "../../assets/offer3.png";
+import offer4 from "../../assets/offer4.png";
+import offer5 from "../../assets/offer5.png";
 
 
 function WhatWeOffer() {
     return (
         <>
-            <div id="whatWeOffer" className="w-[90%] mx-auto mt-40 flex flex-col gap-8">
+            <div
+                id="whatWeOffer"
+                className="w-[90%] mx-auto mt-40 flex flex-col gap-8"
+            >
                 <p className="text-heading-3 text-primary-maroon-1 uppercase">
                     what we offer
                 </p>
@@ -23,26 +29,29 @@ function WhatWeOffer() {
             </div>
             <div id="pypCards" className="w-[90%] mx-auto md:flex gap-16 my-20">
                 <Cards
-                    cardImage={cardimg}
+                    cardImage={offer1}
                     title={"Essence of PYP"}
+                    desc={[
+                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. ",
+                        <br></br>,
+                        <br></br>,
+                        "In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration.",
+                    ]}
+                    iswide={false}
+                />
+                <Cards
+                    cardImage={offer2}
+                    title={"Encouraging students to develop skills"}
                     desc={
-                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
+                        "We offer a comprehensive, concept driven, student - centric and inquiry-based approach to teaching and learning that fosters the development of thinking, communication, self management, social and research skills."
                     }
                     iswide={false}
                 />
                 <Cards
-                    cardImage={cardimg}
-                    title={"Essence of PYP"}
+                    cardImage={offer3}
+                    title={"Hands on experience"}
                     desc={
-                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
-                    }
-                    iswide={false}
-                />
-                <Cards
-                    cardImage={cardimg}
-                    title={"Essence of PYP"}
-                    desc={
-                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
+                        "The learners are engaged in challenging, relevant, critical and creative thinking activities. We also ensure student - centric learning engagements."
                     }
                     iswide={false}
                 />
@@ -52,15 +61,14 @@ function WhatWeOffer() {
                 className="w-[90%] mx-auto md:flex md:gap-10"
             >
                 <Cards
-                    cardImage={srcImage}
-                    title={"Essence of PYP"}
+                    cardImage={offer4}
+                    title={"Caring and responsible citizens"}
                     desc={
-                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
-                    }
+                       "The units of inquiry are designed to help foster their imaginations and meet new challenges and opportunities to help build a peaceful world"   }
                     iswide={true}
                 />
                 <Cards
-                    cardImage={srcImage}
+                    cardImage={offer5}
                     title={"Essence of PYP"}
                     desc={
                         "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
