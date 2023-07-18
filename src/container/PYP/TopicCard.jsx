@@ -17,7 +17,7 @@ function TopicCard({ text, overlayText }) {
                         {text}
                     </p>
                 </div>
-                <div class="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-primary-maroon-1 opacity-0 transition duration-700 ease-in-out hover:opacity-100">
+                <div class="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-primary-maroon-1 opacity-0 transition duration-700 ease-in-out hover:opacity-100 text-center">
                     <p className="text-white text-heading-5 uppercase p-5">
                         {overlayText}
                     </p>

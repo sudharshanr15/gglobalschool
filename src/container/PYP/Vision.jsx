@@ -36,14 +36,16 @@ function Vision() {
 
           <div
               id="goalContainer"
-              className="bg-primary-maroon-2 w-[90%] mx-auto rounded-3xl"
+              className="bg-primary-maroon-2 w-[90%] mx-auto rounded-3xl p-20 uppercase"
           >
-              <p className="text-white p-14 text-heading-5 text-center">
+              <p className="text-white text-heading-5 text-center">
                   Our goal is to promote{" "}
                   <span className="text-primary-yellow-1 text-heading-5">
                       “International mindedness”
                   </span>
-                  , manifesting a sense of morality to all the human beings in
+                  ,
+                  <br />
+                   manifesting a sense of morality to all the human beings in
                   the global society.
               </p>
           </div>
