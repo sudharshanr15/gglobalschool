@@ -13,69 +13,68 @@ const Newsroom = () => (
       </div>
     </div>
 
-    <div className="scroll-smooth  hover:scroll-auto -scroll-ml-6 snap-start ...">
+    <div className="scroll-smooth   -scroll-ml-6 snap-start ...">
       <div className="w-full py-[1rem] px-4 bg-white ">
         <div className="w-auto mx-auto grid md:grid-cols-3 gap-8">
           <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
             <div className=" flex space-x-4  rounded-lg ">
-              <div className="w-full">
-                <Image
-                  src="/image/event1.jpg"
-                  alt="Background"
-                  className="w-full h-auto"
-                  width={100}
-                  height={100}
-                />
-                {/* Rest of your content */}
+              <div
+                className="relative bg-cover bg-center h-80 w-full object-cover"
+                style={{
+                  backgroundImage: `linear-gradient(360deg, #2A2A2A -34.99%, rgba(42, 42, 42, 0) 184.82%), url(/image/event1.jpg)`,
+                }}
+              >
+        
+
+                {/* Text Elements */}
+                <p className="py-2 mx-8 mt-52  text-white font-bold text-xl">
+                  ANNUAL DAY CELEBRATION
+                </p>
+                <p className="py-2 mx-8 text-white">12/01/2023</p>
               </div>
             </div>
 
-            <div className="text-left font-medium bg-[#790000] text-[#737373]  ">
+            {/* <div className="text-left font-medium bg-[#790000] text-[#737373]  ">
               <p className="py-2  mx-8 mt-8 text-[#FAFAFA]">
                 ANNUAL DAY CELEBRATION
               </p>
               <p className="py-2  mx-8 ">12/01/2023</p>
-            </div>
+            </div> */}
           </div>
           <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
             <div className=" flex space-x-4  rounded-lg ">
-              <div className="w-full">
-                <Image
-                  src="/image/event2.jpg"
-                  alt="Background"
-                  className="w-full h-auto"
-                  width={100}
-                  height={100}
-                />
-                {/* Rest of your content */}
-              </div>
-            </div>
+              <div
+                className="relative bg-cover bg-center h-80 w-full object-cover"
+                style={{
+                  backgroundImage: `linear-gradient(360deg, #2A2A2A -34.99%, rgba(42, 42, 42, 0) 184.82%), url(/image/event2.jpg)`,
+                }}
+              >
+               
 
-            <div className="text-left font-medium  bg-[#790000]  text-[#737373]  ">
-              <p className="py-2  mx-8 mt-8  text-[#FAFAFA]">
-                MUSIC COMPETITION
-              </p>
-              <p className="py-2  mx-8">15/03/20233</p>
+                {/* Text Elements */}
+                <p className="py-2 mx-8 mt-52  text-white font-bold text-xl">
+                  MUSIC COMPETITION
+                </p>
+                <p className="py-2 mx-8 text-white">15/03/20233</p>
+              </div>
             </div>
           </div>
 
           <div className="w-full shadow-xl flex flex-col  my-4 rounded-lg ">
             <div className=" flex space-x-4  rounded-lg ">
-              <div className="w-full">
-                <Image
-                  src="/image/event3.jpg"
-                  alt="Background"
-                  className="w-full h-68"
-                  width={100}
-                  height={100}
-                />
-                {/* Rest of your content */}
+              <div
+                className="relative bg-cover bg-center h-80 w-full object-cover"
+                style={{
+                  backgroundImage: `linear-gradient(360deg, #2A2A2A -34.99%, rgba(42, 42, 42, 0) 184.82%), url(/image/event3.jpg)`,
+                }}
+              >
+               
+                {/* Text Elements */}
+                <p className="py-2 mx-8 mt-52 text-white font-bold text-xl">
+                  SPORTS DAY
+                </p>
+                <p className="py-2 mx-8 text-white">25/03/2023</p>
               </div>
-            </div>
-
-            <div className="text-left font-medium  bg-[#790000] text-[#737373]  ">
-              <p className="py-2  mx-8 mt-8 text-[#FAFAFA]">SPORTS DAY</p>
-              <p className="py-2  mx-8  ">25/03/2023</p>
             </div>
           </div>
         </div>
