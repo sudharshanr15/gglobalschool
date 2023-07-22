@@ -5,21 +5,18 @@ import pypLogo from "../../assets/pyp image big.png";
 function Vision() {
   return (
       <>
-          <p className="text-heading-4 uppercase mx-auto md:w-[80%]">
+          <p className="text-heading-4 uppercase mx-auto md:w-[80%] p-5">
               Curiosity is the fuel for discovery, inquiry and learning
           </p>
           <div className="md:w-[90%] md:flex  justify-center items-center mx-auto my-20">
               <div>
-                  <Image
-                      src={pypLogo}
-                      alt="logo"
-                  />
+                  <Image src={pypLogo} alt="logo" unoptimized />
               </div>
-              <div className="md:w-[50%] flex flex-col gap-y-8 p-20">
+              <div className="md:w-[50%] flex flex-col gap-y-8 md:p-20 p-5">
                   <p className="text-primary-maroon-1 text-heading-3">
                       PRIMARY YEAR PROGRAMME
                   </p>
-                  <p >
+                  <p>
                       The PYP curriculum framework is designed for learners aged
                       6 - 12.
                   </p>
@@ -39,15 +36,17 @@ function Vision() {
 
           <div
               id="goalContainer"
-              className="bg-primary-maroon-2 w-[90%] mx-auto rounded-3xl"
+              className="bg-primary-maroon-2 w-[90%] mx-auto rounded-3xl md:p-20 p-10 md:uppercase"
           >
-              <p className="text-white p-14 text-heading-5 text-center">
+              <p className="text-white text-heading-5 text-center  leading-10">
                   Our goal is to promote{" "}
                   <span className="text-primary-yellow-1 text-heading-5">
                       “International mindedness”
                   </span>
-                  , manifesting a sense of morality to all the human beings in
-                  the global society.
+                  ,
+                  <br />
+                  manifesting a sense of morality to all the human beings in the
+                  global society.
               </p>
           </div>
       </>

@@ -8,15 +8,22 @@ function Cards({cardImage,title,desc,iswide}) {
           <div
               className={
                   iswide
-                      ? "md:w-[50%] my-20 sm:mt-0"
-                      : "md:w-[30%] my-20 sm:mt-0"
+                      ? "md:w-[50%] my-20 sm:mt-0 group hover:relative hover:bg-primary-maroon-1"
+                      : "md:w-[30%] my-20 sm:mt-0 group hover:relative  hover:bg-primary-maroon-1"
               }
           >
-              <Image src={cardImage} alt="image" />
-              <p className="text-primary-orange-1 font-bold text-heading-5 my-5">
-                  {title}
-              </p>
-              <p>{desc}</p>
+              <Image
+                  src={cardImage}
+                  alt="image"
+                  unoptimized
+                  className="w-full transition ease-in-out duration-300 group-hover:scale-y-75 group-hover:origin-top max-h-[430px]"
+              />
+              <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[20%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-700 py-10 px-5">
+                  <p className="text-primary-orange-1 font-bold text-heading-5 mb-5 ">
+                      {title}
+                  </p>
+                  <p className="group-hover:text-white text-body">{desc}</p>
+              </div>
           </div>
       </>
   );
