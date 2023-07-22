@@ -2,15 +2,32 @@ import React from 'react'
 import img from "../../assets/Rectangle 78.png"
 import Image from 'next/image'
 
-function TopicCard({text}) {
+function TopicCard({text,text1}) {
   return (
     <>
-      <div className='content-center px-10 w-full md:w-[80%] h-[40%]  ' >
-        <Image src={img} alt="checked" className=" md:left-3 w-full md:w-full md:w-auto" />
-        <div className="bg-primary-maroon-1 w-full text-center py-4">
-          <p className="text-white uppercase text-heading-5">{ text }</p>
-        </div>
-      </div>
+      <div className=" relative mt-20 md:mt-0 md:w-[50%] text-center">
+                <Image
+                    src={img}
+                    alt="checked"
+                    className="w-[100%]"
+                    unoptimized
+                />
+                <div className="bg-primary-maroon-1">
+                    <p className="text-white uppercase text-heading-5 p-5">
+                        {text}
+                    </p>
+                </div>
+                <div class="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-primary-maroon-1 opacity-0 transition duration-700 ease-in-out hover:opacity-100">
+                    <p className="text-white text-heading-5 uppercase p-5">
+                        {text1}
+                    </p>
+                    <button className="bg-white rounded-full text-heading-6 py-4 px-20 ">
+                        View
+                    </button>
+                </div>
+            </div>
+     
+     
     </>
 
   )
