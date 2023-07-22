@@ -31,7 +31,7 @@ const Benefits = () => {
           ceremony.
           </div>
         </div>
-        <Image src={benefitImage} className="lg:ml-16 lg:mr-20 p-5 lg:p-0 md:w-2/3 lg:w-1/3 md:h-full" alt="studentcouncil"/>
+        <Image src={benefitImage} className="lg:ml-16 lg:mr-20 p-5 lg:p-0 md:w-2/3 lg:w-1/3 md:h-full lg:w-2/3" alt="studentcouncil"/>
     </div>
   )
 }

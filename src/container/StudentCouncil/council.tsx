@@ -1,9 +1,9 @@
 import Image from "next/image"
-import studentcouncil from '../../assets/student council.png'
+import studentcouncil from '../../assets/council.jpg'
 
 const Council = () => {
   return (
-    <div className="md:flex lg:flex justify-between align-center mx-auto mb-10 lg:mb-20 mt-10 lg:mt-40">
+    <div className="md:flex lg:flex justify-between align-center mx-auto mb-0 lg:mb-20 mt-10 lg:mt-40">
       <div className="w-full md:w-2/3 lg:w-1/2 p-5 lg:p-0 md:p-0 md:px-10 lg:mx-20 lg:mr-16 mt-0 mb-5 md:mb-0 flex-col justify-between">
         <div className="text-heading-4 text-primary-maroon">STUDENT COUNCIL</div><br/>
         <div>
@@ -21,7 +21,7 @@ const Council = () => {
           younger ones around the school campus.
         </div>
       </div>
-        <Image src={studentcouncil} className="md:mr-10 p-5 md:p-0 mx-auto lg:p-0 lg:mr-20 h-96 w-auto" alt="studentcouncil"/>
+        <Image src={studentcouncil} unoptimized className="md:mr-10 p-5 md:p-0 mx-auto lg:p-0 lg:mr-20 h-96 w-auto lg:w-1/2 lg:h-full" alt="studentcouncil"/>
     </div>
   )
 }
