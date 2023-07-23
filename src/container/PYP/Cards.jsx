@@ -18,7 +18,7 @@ function Cards({cardImage,title,desc,iswide}) {
                   unoptimized
                   className="w-full transition ease-in-out duration-300 group-hover:scale-y-75 group-hover:origin-top max-h-[430px]"
               />
-              <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[20%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-300 py-10 px-5">
+              <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[20%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-700 py-10 px-5">
                   <p className="text-primary-orange-1 font-bold text-heading-5 mb-5 ">
                       {title}
                   </p>
