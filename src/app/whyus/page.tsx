@@ -1,5 +1,4 @@
-import {Cards, Description} from "@/container/whyus"
-import { Others } from "@/container/StudentCouncil"
+import {Cards, Description,Others} from "@/container/whyus"
 
 const Whyus = () => {
   return (
