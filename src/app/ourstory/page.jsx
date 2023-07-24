@@ -16,7 +16,6 @@ function page() {
         <p className="md:pl-24 px-4 text-heading-6">
           G Global School nurtures
           <span className="text-primary-maroon ">
-            {" "}
             sparkling imaginations, fertile minds, and willingness
           </span>
           <span> to take on risks with students’ agency.</span>
@@ -51,7 +50,6 @@ function page() {
                 We proudly introduced our new venture, the G Global School, a
                 fresh breath of experience to
                 <span className="font-bold">
-                  {" "}
                   present IB education, in the year 2017
                 </span>
                 <span> in our very own town</span>
@@ -103,14 +101,14 @@ function page() {
               </p>
             </div>
           </div>
-          <div className="relative  left-0 md:left-3 w-[340px] h-[403px] md:w-[600px] md:h-[380px] rounded-md ">
+          <div className="relative  left-0 md:left-3 w-[340px] h-[403px] md:w-[600px] md:h-[450px] rounded-md ">
             <Image
               src={Logo2}
               alt="logo"
               className="w-full h-full rounded-[48px] "
               unoptimized
             />
-            <div class="absolute flex flex-col p-2  rounded-[48px] bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full  ">
+            <div className="absolute flex flex-col p-2  rounded-[48px] bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full  ">
               <p className="text-white text-subheading-regular  uppercase pt-10 p-2">
                 Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
               </p>
@@ -124,7 +122,7 @@ function page() {
         {/* Managing director */}
         <div className="w-full md:w-[90%] md:h-120 flex flex-col md:flex-row-reverse md:pt-16  p-5 mx-auto  gap-5 md:gap-[66px]">
           <div className="w-full md:w-[50%]   ">
-            <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto md:pt-16">
+            <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto md:pt-8">
               MANAGING DIRECTOR
             </p>
             <div className="text-body font-normal leading-7 tracking-normal text-left">
@@ -264,7 +262,7 @@ function page() {
           </p>
         </div>
 
-        <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10  md:gap-[30px]">
+        <div className="w-[90%] md:w-[90%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10  md:gap-[30px]">
           <TopicCard
             img={logo7}
             text={"Mission and vision"}

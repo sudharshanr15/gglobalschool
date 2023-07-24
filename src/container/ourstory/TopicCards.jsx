@@ -4,7 +4,7 @@ import Image from "next/image";
 function TopicCard({img, text, text1 }) {
   return (
     <>
-      <div className=" relative mt-20 md:mt-0 md:w-[50%]  text-center">
+      <div className=" relative mt-20 md:mt-0 md:w-[48%]  text-center">
         <Image src={img} alt="checked" className="w-[623px] h-[350px]" unoptimized />
         <div className="bg-primary-maroon-1">
           <p className="text-white uppercase text-heading-5 p-5">{text}</p>
