@@ -149,7 +149,7 @@ function page() {
               className="w-full h-full "
               unoptimized
             />
-            <div class="absolute flex flex-col  md:rounded-[48px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full  ">
+            <div className="absolute flex flex-col  md:rounded-[48px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full  ">
               <p className="text-white text-subheading-regular uppercase pt-12">
                 DR. G. VETRICHELVAN
               </p>
