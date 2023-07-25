@@ -13,7 +13,7 @@ function Profile() {
         };
   return (
       <>
-          <div className="flex w-[90%] mx-auto ">
+          <div className="md:flex w-[90%] mx-auto ">
               <div>
                   <p className="text-heading-3 text-primary-maroon-1">
                       IB LEARNER PROFILE
@@ -34,7 +34,7 @@ function Profile() {
           </div>
           <div
               id="ProfileCardsSection"
-              className="flex gap-10 overflow-x-auto relative scroll-smooth "
+              className="flex gap-10 overflow-x-auto relative scroll-smooth scrollbar-hide"
               ref={ref}
           >
               <Image

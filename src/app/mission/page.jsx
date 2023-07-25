@@ -1,11 +1,12 @@
 import React from "react";
-import { Header,Profile } from "../../container/MissionVision";
+import { Header, Profile, OtherTopics } from "../../container/MissionVision";
 
 function page() {
     return (
         <>
-        <Header />
-        <Profile/>
+            <Header />
+            <Profile />
+            <OtherTopics />
         </>
     );
 }

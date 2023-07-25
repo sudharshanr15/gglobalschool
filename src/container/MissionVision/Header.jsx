@@ -5,8 +5,8 @@ function Header() {
   return (
       <>
           <div className="w-[80%] mx-auto">
-              <div className="flex gap-5">
-                  <div className="w-[50%]">
+              <div className="md:flex gap-5">
+                  <div className="md:w-[50%]">
                       <p className="text-heading-3 text-primary-maroon-2">
                           OUR VISION
                       </p>
@@ -18,7 +18,7 @@ function Header() {
                           for all, at all times.”
                       </p>
                   </div>
-                  <div className="w-[50%]">
+                  <div className="md:w-[50%]">
                       <p className="text-heading-3 text-primary-maroon-2">
                           OUR VISION
                       </p>

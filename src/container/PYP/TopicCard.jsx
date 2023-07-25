@@ -13,7 +13,7 @@ function TopicCard({ text, overlayText }) {
                     unoptimized
                 />
                 <div className="bg-primary-maroon-1">
-                    <p className="text-white uppercase text-heading-5 p-5">
+                    <p className="text-white uppercase text-heading-5 p-5 text-center">
                         {text}
                     </p>
                 </div>

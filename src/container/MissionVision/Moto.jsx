@@ -7,7 +7,7 @@ function Moto() {
               <p className="text-heading-3 uppercase">OUR MOTTO</p>
               <p className="text-heading-2 uppercase">
                   <span className="text-primary-yellow-1">
-                      “Enlightening Minds”{" "}
+                      “Enlightening Minds”
                   </span>
                   is the motto of G Global School.
               </p>
@@ -20,7 +20,7 @@ function Moto() {
               <p>
                   <span className="font-bold">
                       Enlightenment through Education
-                  </span>{" "}
+                  </span>
                   is G Global’s motto.Enlightening Minds is what we strive for.
                   ”
               </p>
