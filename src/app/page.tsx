@@ -1,26 +1,24 @@
+import Agency from "@/container/StudentAgency/Agency"
+import Cards from "@/container/StudentAgency/Cards"
+import Description from "@/container/StudentAgency/Description"
+import Others from "@/container/StudentAgency/others"
 
 
-import Personalgrowth from "@/container/Home/Personalgrowth"
-import { Hero,Team } from "../container/Home"
-import Programmesoffers from "@/container/Home/Programmesoffers"
-import Teams from "@/container/Home/Teams"
-import Newsroom from "@/container/Home/Newsroom"
 
-const Home = () => {
+const StudentAgency = () => {
   return (
 
      
     
       <>
-      <Hero />
-      <Personalgrowth />
-      <Programmesoffers />
-      <Teams />
-      <Newsroom /> 
-      <Team />
+      <Description/>
+      <Agency/>
+      <Cards/>
+      <Others/>
+    
       </> 
     
   )
 }
 
-export default Home
+export default StudentAgency
