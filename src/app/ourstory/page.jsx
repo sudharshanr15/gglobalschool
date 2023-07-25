@@ -25,7 +25,7 @@ function page() {
       {/* about GGS */}
 
       <div className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto top-3 p-5 md:mt-6 gap-5 md:gap-[42px]">
-        <div className="w-[328px]  h-[392.908px] md:h-[280px] md:w-[610px]">
+        <div className="w-[345px]  h-[380px] md:h-[280px] md:w-[610px]">
           <Image
             src={logo1}
             className="w-full h-full  "
