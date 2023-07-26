@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .section-container{
+        @apply p-md py-xl lg:p-3xl;
+    }
+}
