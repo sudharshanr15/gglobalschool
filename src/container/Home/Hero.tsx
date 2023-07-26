@@ -4,7 +4,7 @@ const Hero = () => (
   <div className="bg-[url('/image/herobg.jpg')]">
     <div className="grid  grid-cols-1 md:grid-cols-2 ">
       <div className="w-full   md:mt-48 p-10 ">
-        <h1 className="text-4xl md:text-7xl  font-bold  text-[#333333] ">
+        <h1 className="text-4xl md:text-7xl font-bold  text-[#333333] ">
           ENLIGHTENING
           <br></br>
           <span className="text-white">FUTURE MINGS</span>

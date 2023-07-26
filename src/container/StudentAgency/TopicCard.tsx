@@ -1,5 +1,5 @@
 import React from "react";
-import img from '@/assets/Rectangle 75.png'
+import img from '../assets/Rectangle 75.png';
 import Image from "next/image";
 
 function TopicCard({ text, overlayText }) {
