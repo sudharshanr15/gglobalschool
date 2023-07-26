@@ -16,11 +16,11 @@ function page() {
       {/* early year program */}
 
       <div className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto top-3 p-5 md:mt-6 gap-5 md:gap-[117px]">
-        <div className="w-full md:w-auto">
-          <Image src={eypLogo} className="w-full h-full" alt="logo" />
+        <div className="w-full md:w-[550.281px] md:h-[420.876px]">
+          <Image src={eypLogo} className="w-full h-full" alt="logo"  unoptimized/>
         </div>
-        <div className="w-full md:w-[60%]">
-          <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[50%]">
+        <div className="w-full md:w-[70%]">
+          <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[60%]">
             EARLY YEAR PROGRAMME
           </p>
           <div className="text-base font-normal leading-7 tracking-normal text-left md:w-[78%]">
