@@ -83,7 +83,7 @@ function Navbar(){
                 </div>
             </div>
             {isMenuOpen && (
-                <div className="w-full bg-primary-maroon-1 absolute top-0 left-0 p-10 menu-links">
+                <div className="w-full bg-primary-maroon-1 absolute top-0 left-0 p-10 menu-links z-[100]">
                     <div className="flex flex-row justify-between items-center">
                         <div className="inline-block px-7 pb-4 pt-2 bg-white rounded-3xl">
                             <Image className="max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />

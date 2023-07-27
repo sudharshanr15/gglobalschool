@@ -10,3 +10,8 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+@layer utilities{
+    .section-container{
+        @apply p-md py-xl lg:p-3xl;
+    }
+}
