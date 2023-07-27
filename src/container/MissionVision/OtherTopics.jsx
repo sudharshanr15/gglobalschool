@@ -4,7 +4,7 @@ import TopicCard from "../PYP/TopicCard";
 function OtherTopics() {
     return (
         <>
-            <div className="w-[90%] mx-auto mt-40 md:mt-20">
+            <div className="w-[90%] mx-auto">
                 <p className="uppercase text-heading-3 text-primary-maroon-1">
                     Other Topics To explore
                 </p>
