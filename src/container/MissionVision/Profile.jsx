@@ -18,11 +18,11 @@ function Profile() {
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
     };
-    const [off,setoff]=useState(10)
+    const [off, setoff] = useState(1000);
     return (
         <>
             <div className="md:flex w-[90%] mx-auto my-16 md:gap-4  ">
-                <div>
+                <div className="mb-10">
                     <p className="text-heading-3 text-primary-maroon-1 py-3">
                         IB LEARNER PROFILE
                     </p>
@@ -39,101 +39,102 @@ function Profile() {
                         positively to the world around them.
                     </p>
                 </div>
-                <Image src={missionImage} alt="mission" unoptimized className="my-10"/>
+                <Image src={missionImage} alt="mission" unoptimized />
             </div>
-            <div
-                id="ProfileCardsSection"
-                className="flex gap-10 overflow-x-auto relative scroll-smooth scrollbar-hide pl-16"
-                ref={ref}
-            >
+
+            <div className=" relative ">
                 <Image
                     src={scrollImg}
                     onClick={() => {
-                        scroll(2000);
-                        setoff(off=>off+200);
+                        scroll(700);
                     }}
-                    className={` absolute top-44 right-${off}`}
+                    className={` absolute top-80 right-10`}
                 />
                 <Image
                     src={scrollImg}
                     onClick={() => {
-                        scroll(-2000);
-                        setoff((off) => off - 10);
+                        scroll(-700);
                     }}
-                    className={` absolute left-${off} top-44  rotate-180`}
+                    className={` absolute left-10 top-80  rotate-180`}
                 />
-                <MissionCards
-                    cardImage={profile1}
-                    title={"THINKER"}
-                    desc={
-                        "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile2}
-                    title={"KNOWLEDABLE"}
-                    desc={
-                        "We strive to develop a deep understanding of a wide range of subjects and explore the connections between them. We embrace both local and global perspectives and are knowledgeable about issues of significance"
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile3}
-                    title={"COMMUNICATORS"}
-                    desc={
-                        "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile4}
-                    title={"INQUIRER"}
-                    desc={
-                        "We nurture a love for learning and develop the skills to acquire knowledge independently. We are curious, ask questions, and actively engage in the learning process."
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile5}
-                    title={"PRINCIPLED"}
-                    desc={
-                        "We act with integrity and honesty, upholding ethical principles and respecting the rights and dignity of others. We take responsibility for our actions and contribute to a just and harmonious community."
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile6}
-                    title={"OPEN MINDED"}
-                    desc={
-                        "We embrace and appreciate our own culture and the diversity of other cultures, perspectives, and ideas. We seek to understand different viewpoints and are willing to consider new possibilities."
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile7}
-                    title={"RISK TAKERS"}
-                    desc={
-                        "We approach challenges with confidence and enthusiasm. We are willing to try new things, explore unfamiliar territories, and take calculated risks to extend our learning and personal growth."
-                    }
-                    iswide={false}
-                />
-                <MissionCards
-                    cardImage={profile8}
-                    title={"BALANCED"}
-                    desc={
-                        "We strive to achieve a balance between our intellectual, physical, and emotional well-being. We recognize the importance of maintaining a healthy lifestyle and fostering positive relationships."
-                    }
-                    iswide={false}
-                />{" "}
-                <MissionCards
-                    cardImage={profile9}
-                    title={"REFLECTIVE"}
-                    desc={
-                        "We thoughtfully consider our own strengths and weaknesses, set goals for personal growth, and evaluate our progress. We learn from our experiences and use them to shape our future actions."
-                    }
-                    iswide={false}
-                />{" "}
+
+                <div
+                    ref={ref}
+                    className="flex gap-10 overflow-x-auto scroll-smooth scrollbar-hide md:pl-16 pl-4"
+                >
+                    <MissionCards
+                        cardImage={profile1}
+                        title={"THINKER"}
+                        desc={
+                            "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile2}
+                        title={"KNOWLEDABLE"}
+                        desc={
+                            "We strive to develop a deep understanding of a wide range of subjects and explore the connections between them. We embrace both local and global perspectives and are knowledgeable about issues of significance"
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile3}
+                        title={"COMMUNICATORS"}
+                        desc={
+                            "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile4}
+                        title={"INQUIRER"}
+                        desc={
+                            "We nurture a love for learning and develop the skills to acquire knowledge independently. We are curious, ask questions, and actively engage in the learning process."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile5}
+                        title={"PRINCIPLED"}
+                        desc={
+                            "We act with integrity and honesty, upholding ethical principles and respecting the rights and dignity of others. We take responsibility for our actions and contribute to a just and harmonious community."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile6}
+                        title={"OPEN MINDED"}
+                        desc={
+                            "We embrace and appreciate our own culture and the diversity of other cultures, perspectives, and ideas. We seek to understand different viewpoints and are willing to consider new possibilities."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile7}
+                        title={"RISK TAKERS"}
+                        desc={
+                            "We approach challenges with confidence and enthusiasm. We are willing to try new things, explore unfamiliar territories, and take calculated risks to extend our learning and personal growth."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={profile8}
+                        title={"BALANCED"}
+                        desc={
+                            "We strive to achieve a balance between our intellectual, physical, and emotional well-being. We recognize the importance of maintaining a healthy lifestyle and fostering positive relationships."
+                        }
+                        iswide={false}
+                    />{" "}
+                    <MissionCards
+                        cardImage={profile9}
+                        title={"REFLECTIVE"}
+                        desc={
+                            "We thoughtfully consider our own strengths and weaknesses, set goals for personal growth, and evaluate our progress. We learn from our experiences and use them to shape our future actions."
+                        }
+                        iswide={false}
+                    />
+                </div>
             </div>
         </>
     );

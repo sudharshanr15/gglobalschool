@@ -1,13 +1,19 @@
 import React from 'react'
 import Moto from "./Moto"
-
+import quote from "../../assets/quote.png"
+import Image from 'next/image';
 function Header() {
   return (
       <>
           <div className="w-[80%] mx-auto ">
-              <div className="md:flex gap-5 ">
-                  <div className="md:w-[50%] my-10">
-                      <p className="text-heading-3 text-primary-maroon-2">
+              <div className="md:flex gap-5 relative ">
+                  <div className="md:w-[50%] my-10 ">
+                      <Image
+                          src={quote}
+                          unoptimized
+                          className="absolute md:-top-5 top-5 h-20 w-20 md:h-[120px] md:w-[150px]"
+                      />
+                      <p className="text-heading-3 text-primary-maroon-2 mb-5">
                           OUR VISION
                       </p>
                       <p className="text-body">
@@ -18,8 +24,13 @@ function Header() {
                           for all, at all times.”
                       </p>
                   </div>
-                  <div className="md:w-[50%] my-10">
-                      <p className="text-heading-3 text-primary-maroon-2">
+                  <div className="md:w-[50%] my-10 relative">
+                      <Image
+                          src={quote}
+                          unoptimized
+                          className="absolute md:-top-16 top-5 h-20 w-20 md:h-[120px] md:w-[150px]"
+                      />
+                      <p className="text-heading-3 text-primary-maroon-2 mb-5">
                           OUR MISSION
                       </p>
                       <p className="text-body">
