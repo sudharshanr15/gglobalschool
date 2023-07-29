@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const Agency = () => (
   <div className="div  grid  grid-cols-1 md:grid-cols-2">
-    <div className="  mt-10  md:ml-5   p-10 ">
-      <h1 className="text-5xl md:text-5xl text-heading-4  font-bold  text-[#790000]">
+    <div className="  mt-10  md:ml-5  p-large ">
+      <h1 className="md:text-heading-4 text-heading-4  font-bold  text-[#790000]">
         POWER OF AGENCY
       </h1>
 
-      <p className="sm:mr-28 mt-4  md:mt-10 md:text-xl text-body">
+      <p className="sm:mr-28 mt-4  md:mt-10 md:text-xl body">
         Agency is the power to take meaningful international action and{" "}
         <span className="text-black font-bold">
           supports voice, choice and ownership for students, teachers and the
