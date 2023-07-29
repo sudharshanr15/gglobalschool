@@ -18,12 +18,11 @@ function Profile() {
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
     };
-    const [off, setoff] = useState(1000);
     return (
-        <>
-            <div className="md:flex w-[90%] mx-auto my-16 md:gap-4  ">
-                <div className="mb-10">
-                    <p className="text-heading-3 text-primary-maroon-1 py-3">
+        <section>
+            <section className="md:flex w-[90%] mx-auto my-3xl md:gap-4  ">
+                <div className="mb-large">
+                    <p className="text-heading-3 text-primary-maroon-1 mb-md">
                         IB LEARNER PROFILE
                     </p>
                     <p className="text-body">
@@ -40,27 +39,27 @@ function Profile() {
                     </p>
                 </div>
                 <Image src={missionImage} alt="mission" unoptimized />
-            </div>
+            </section>
 
-            <div className=" relative ">
+            <section className=" relative mt-3xl">
                 <Image
                     src={scrollImg}
                     onClick={() => {
-                        scroll(700);
+                        scroll(440);
                     }}
-                    className={` absolute top-80 right-10`}
+                    className={` absolute md:top-80 top-96 right-md`}
                 />
                 <Image
                     src={scrollImg}
                     onClick={() => {
-                        scroll(-700);
+                        scroll(-440);
                     }}
-                    className={` absolute left-10 top-80  rotate-180`}
+                    className={` absolute left-md md:top-80 top-96  rotate-180`}
                 />
 
                 <div
                     ref={ref}
-                    className="flex gap-10 overflow-x-auto scroll-smooth scrollbar-hide md:pl-16 pl-4"
+                    className="flex gap-xl overflow-x-auto scroll-smooth scrollbar-hide md:pl-2xl pl-md"
                 >
                     <MissionCards
                         cardImage={profile1}
@@ -125,7 +124,7 @@ function Profile() {
                             "We strive to achieve a balance between our intellectual, physical, and emotional well-being. We recognize the importance of maintaining a healthy lifestyle and fostering positive relationships."
                         }
                         iswide={false}
-                    />{" "}
+                    />
                     <MissionCards
                         cardImage={profile9}
                         title={"REFLECTIVE"}
@@ -135,8 +134,8 @@ function Profile() {
                         iswide={false}
                     />
                 </div>
-            </div>
-        </>
+            </section>
+        </section>
     );
 }
 

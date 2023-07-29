@@ -5,15 +5,15 @@ import Image from 'next/image';
 function Header() {
   return (
       <>
-          <div className="w-[80%] mx-auto ">
-              <div className="md:flex gap-5 relative ">
-                  <div className="md:w-[50%] my-10 ">
+          <section className="w-[80%] mx-auto ">
+              <div className="md:flex gap-3xl relative ">
+                  <div className="md:w-[50%] my-xl ">
                       <Image
                           src={quote}
                           unoptimized
-                          className="absolute md:-top-5 top-5 h-20 w-20 md:h-[120px] md:w-[150px]"
+                          className="absolute md:-top-md top-md h-20 w-20 md:h-[120px] md:w-[150px]"
                       />
-                      <p className="text-heading-3 text-primary-maroon-2 mb-5">
+                      <p className="text-heading-3 text-primary-maroon-2 mb-md">
                           OUR VISION
                       </p>
                       <p className="text-body">
@@ -24,13 +24,13 @@ function Header() {
                           for all, at all times.”
                       </p>
                   </div>
-                  <div className="md:w-[50%] my-10 relative">
+                  <div className="md:w-[50%] my-xl relative">
                       <Image
                           src={quote}
                           unoptimized
-                          className="absolute md:-top-16 top-5 h-20 w-20 md:h-[120px] md:w-[150px]"
+                          className="absolute md:-top-2xl top-md h-20 w-20 md:h-[120px] md:w-[150px]"
                       />
-                      <p className="text-heading-3 text-primary-maroon-2 mb-5">
+                      <p className="text-heading-3 text-primary-maroon-2 mb-md">
                           OUR MISSION
                       </p>
                       <p className="text-body">
@@ -45,7 +45,7 @@ function Header() {
                       </p>
                   </div>
               </div>
-          </div>
+          </section>
           <Moto />
       </>
   );
