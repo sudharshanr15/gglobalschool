@@ -17,8 +17,8 @@ function StudioCards({ img, text1, text2, text3, isReversed }) {
           </p>
         </div>
       </div>
-      <div className="relative left-0 md:left-3 w-full md:w-[50%]">
-        <Image src={img} alt="logo"  className=" w-[100%] " />
+      <div className="relative left-0 md:left-3 w-full md:w-[50%] ">
+        <Image src={img} alt="logo"  className=" w-[100%] h-[90%]" />
       </div>
     </div>
   )

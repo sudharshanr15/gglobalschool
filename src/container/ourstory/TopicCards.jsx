@@ -5,7 +5,7 @@ function TopicCard({img, text, text1 }) {
   return (
     <>
       <div className=" relative mt-20 md:mt-0 md:w-[48%]  text-center">
-        <Image src={img} alt="checked" className="w-[623px] h-[350px]" unoptimized />
+        <Image src={img} alt="checked" className="w-[640px] h-[350px]" unoptimized />
         <div className="bg-primary-maroon-1">
           <p className="text-white uppercase text-heading-5 p-5">{text}</p>
         </div>

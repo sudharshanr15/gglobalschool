@@ -7,16 +7,16 @@ import TopicCard from "../../container/eyp/TopicCard";
 function page() {
   return (
     <>
-      <div className="w-[85%] ">
+      <section className="w-[85%] " >
         <p className="text-heading-4 uppercase md:pl-24 px-4">
           SHAPING YOUNG MINDS : A CHILD'S LEARNING BEGINS FROM EARLY YEARS
         </p>
-      </div>
+      </section>
 
       {/* early year program */}
 
-      <div className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto top-3 p-5 md:mt-6 gap-5 md:gap-[117px]">
-        <div className="w-full md:w-[550.281px] md:h-[420.876px]">
+      <section className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto top-3 p-5 md:mt-6 gap-5 md:gap-[117px]">
+        <div className="w-full md:w-[55%] md:h-[420.876px]">
           <Image src={eypLogo} className="w-full h-full" alt="logo"  unoptimized/>
         </div>
         <div className="w-full md:w-[70%]">
@@ -40,11 +40,11 @@ function page() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* feature */}
 
-      <div className="w-full md:w-[90%] flex flex-col md:flex-row md:mt-7  mx-auto p-5  gap-5 md:gap-[117px]">
+      <section className="w-full md:w-[90%] flex flex-col md:flex-row md:mt-7  mx-auto p-5  gap-5 md:gap-[117px]">
         <div className="w-full md:w-[50%]  ">
           <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[50%]">
             FEATURES
@@ -69,10 +69,10 @@ function page() {
         <div className="relative left-0 md:left-3 w-full md:w-[80%]">
           <Image src={eypLogo2} alt="logo" className="w-[95%] h-[80%] " />
         </div>
-      </div>
+      </section>
 
       {/* PROGRAMS STECTION */}
-      <div className="w-auto text-left  content-center">
+      <section className="w-auto text-left  content-center">
       <p className="text-heading-4 uppercase mx-auto w-[90%]  text-primary-maroon-1">
           early years @ g global school programmes
         </p>
@@ -106,20 +106,20 @@ function page() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* other topics to explore */}
 
-      <div>
+      <section>
         <p className="text-heading-4 uppercase mx-auto w-[90%] mt-10 text-primary-maroon-1">
           other topics to explore
         </p>
-      </div>
+      </section>
       
-      <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10 gap-5 md:gap-[30px]">
+      <section className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10 gap-5 md:gap-[30px]">
         <TopicCard text={"life @ ggc"} text1={"LIFE @ GCC"} />
         <TopicCard text={"student council"} text1={"STUDENT COUNCIL"} />
-      </div>
+      </section>
     </>
   );
 }

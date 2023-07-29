@@ -7,12 +7,12 @@ import logo4 from "../../assets/orustory4.png";
 import logo5 from "../../assets/orustory5.png";
 import logo6 from "../../assets/ourstory6.png";
 import logo7 from "../../assets/ourstory7.png";
-import TopicCard from "../../container/ourstory/TopicCards";
+import TopicCards from "../../container/ourstory/TopicCards";
 
 function page() {
   return (
     <>
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-[100%] md:w-[95%] top-5 ">
           <p className="md:pl-24 px-4 text-heading-6">
             G Global School nurtures
@@ -23,7 +23,7 @@ function page() {
         </div>
       </section>
       {/* about GGS */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto top-3 p-5 md:mt-6 gap-5 md:gap-[42px]">
           <div className="w-[345px]  h-[380px] md:h-[280px] md:w-[610px]">
             <Image
@@ -65,7 +65,7 @@ function page() {
         </div>
       </section>
       {/* MANAGEMENT SECTION */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div>
           <p className="pt-12 text-heading-4 uppercase md:pl-24 px-4 text-primary-maroon">
             MANAGEMENT
@@ -73,7 +73,7 @@ function page() {
         </div>
       </section>
       {/* chairman director */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-full md:w-[90%] flex flex-col md:flex-row md:mt-7  mx-auto p-5  gap-5 md:gap-[42px]">
           <div className="w-full md:w-[626px]  ">
             <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto">
@@ -121,7 +121,7 @@ function page() {
         </div>
       </section>
       {/* Managing director */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-full md:w-[90%] md:h-120 flex flex-col md:flex-row-reverse md:pt-16  p-5 mx-auto  gap-5 md:gap-[66px]">
           <div className="w-full md:w-[50%]   ">
             <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto md:pt-8">
@@ -163,7 +163,7 @@ function page() {
         </div>
       </section>
       {/* head of school */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto p-5 md:pt-16  gap-5 md:gap-[42px]">
           <div className="w-full md:w-[60%]  ">
             <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto">
@@ -206,14 +206,14 @@ function page() {
         </div>
       </section>
       {/* PEDAGOGICAL LEADERSHIP TEAM */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="pt-12">
           <p className=" text-heading-4 uppercase md:pl-24 px-4 text-primary-maroon">
             PEDAGOGICAL LEADERSHIP TEAM{" "}
           </p>
         </div>
       </section>
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <p className=" pt-6 md:pl-24 px-4 text-body">
           Our PLT includes our head of school, deputy head of school Ms.
           Sathyavarthini and our coordinator Ms. Suguna. Our PLT takes the
@@ -222,7 +222,7 @@ function page() {
           balanced, conceptual and connected.
         </p>
       </section>
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3 pt-12 md:p-10 gap-5 md:gap-[30px]">
           <div className=" p-3 ">
             <Image
@@ -260,21 +260,21 @@ function page() {
         </div>
       </section>
       {/* other topics */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div>
           <p className="text-heading-4 uppercase mx-auto w-[90%] mt-10 text-primary-maroon-1">
             other topics to explore
           </p>
         </div>
       </section>{" "}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-[90%] md:w-[90%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10  md:gap-[30px]">
-          <TopicCard
+          <TopicCards
             img={logo7}
             text={"Mission and vision"}
             text1={"Mission and vision"}
           />
-          <TopicCard img={logo6} text={"why us"} text1={"why us"} />
+          <TopicCards img={logo6} text={"why us"} text1={"why us"} />
         </div>
       </section>
     </>

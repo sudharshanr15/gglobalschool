@@ -1,32 +1,31 @@
 import React from "react";
-import TopicCard from "../../container/life@GGS/TopicCards";
+import TopicCard from "../../container/life@GGS/TopicCard";
 import StudioCards from "../../container/life@GGS/StudioCards";
+import Slide from "../../container/life@GGS/Slide";
 import img1 from "../../assets/life@ggs1.png";
 import img2 from "../../assets/life@ggs2.png";
 import img3 from "../../assets/life@ggs3.png";
 import img4 from "../../assets/life@ggs4.png";
 import img5 from "../../assets/life@ggs5.png";
 import img6 from "../../assets/life@ggs6.png";
-import img7 from "../../assets/life@ggs7.png";
 
 // md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl
 function page() {
   return (
     <>
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section >
         <div className="w-[100%] md:w-[95%]  ">
-          <p className="md:pl-24 px-4 text-heading-6">
+          <p className="md:pl-24 px-4 text-heading-4 uppercase ">
             Teach your child the art of learning through
-            <span className="text-primary-maroon ">
-              creativity and curiosity.
+            <span className="text-primary-maroon "> creativity and curiosity.
             </span>
           </p>
         </div>
       </section>
 
       {/* our facility */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
-        <div className="w-[100%] md:w-[95%]  ">
+      <section >
+        <div className="w-[100%] md:w-[95%] pt-3xl ">
           <p className="md:pl-24  px-4 text-primary-maroon text-heading-6">
             OUR FACILITIES
           </p>
@@ -39,7 +38,7 @@ function page() {
       </section>
 
       {/* studio section  */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
+      <section>
         <StudioCards
           img={img1}
           text1={"SPORTS"}
@@ -107,28 +106,40 @@ function page() {
       </section>
 
       {/* FIELD TRIPS */}
-      <section className="md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl">
-        <div className="w-[100%] md:w-[95%]   ">
-          <p className="md:pl-24 px-4 text-primary-maroon text-heading-6">
-            FIELD TRIPS
-          </p>
-          <p className="md:pl-24 px-4  text-body">
-            Field trips provide opportunities for learner’s to understand the
-            real life challenges and it’s solutions. It helps them to reflect
-            their conceptual understandings and broaden their thinking.
-          </p>
-          <p className="md:pl-24 px-4  text-body">
-            It provides hands-on experiential learning opportunity in a real
-            world context. Field trips develop empathy, tolerance, critical
-            thinking skills and perceiving things in different ways.
-          </p>
-          <p className="md:pl-24 px-4  text-body">
-            They are able to engage with content in a variety of ways. Each
-            experience solidifies the learning and support important academic
-            concepts.
-          </p>
-        </div>
-      </section>
+      <div>
+  <div className="w-[100%] md:w-[95%]">
+    <p className="md:pl-24 px-4 py-2 text-primary-maroon text-heading-6">
+      FIELD TRIPS
+    </p>
+    <p className="md:pl-24 px-4 py-2 text-body">
+      Field trips provide opportunities for learner’s to understand the real life challenges and it’s solutions. It helps them to reflect their conceptual understandings and broaden their thinking.
+    </p>
+    <p className="md:pl-24 px-4 py-2 text-body">
+      It provides hands-on experiential learning opportunity in a real world context. Field trips develop empathy, tolerance, critical thinking skills and perceiving things in different ways.
+    </p>
+    <p className="md:pl-24 px-4 py-2 text-body">
+      They are able to engage with content in a variety of ways. Each experience solidifies the learning and support important academic concepts.
+    </p>
+  </div>
+</div>
+
+      {/* slider */}
+<section className="pt-12">
+
+      <Slide />
+</section>
+
+      {/* other topics */}
+      <div>
+        <p className="text-heading-4 uppercase mx-auto w-[90%] mt-10 text-primary-maroon-1">
+          other topics to explore
+        </p>
+      </div>
+
+      <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10 gap-5 md:gap-[30px]">
+        <TopicCard text={"STUDENT AGENCY"} text1={"STUDENT AGENCY"} />
+        <TopicCard text={"WHY US"} text1={"WHY US"} />
+      </div>
     </>
   );
 }
