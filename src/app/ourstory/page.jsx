@@ -14,7 +14,7 @@ function page() {
     <>
       <section >
         <div className="w-[100%] md:w-[95%] top-5 ">
-          <p className="md:pl-24 px-4 text-heading-6">
+          <p className="md:pl-24 px-md text-heading-6">
             G Global School nurtures
             <span className="text-primary-maroon "> sparkling imaginations, fertile minds, and willingness
             </span>
@@ -24,7 +24,7 @@ function page() {
       </section>
       {/* about GGS */}
       <section >
-        <div className="w-full md:w-[90%] flex flex-col md:flex-row   mx-auto top-3 p-5 md:mt-6 gap-5 md:gap-[42px]">
+        <div className="w-full md:w-[90%] pt-2xl flex flex-col md:flex-row   mx-auto top-3 p-md md:mt-6 gap-5 md:gap-xl">
           <div className="w-[345px]  h-[380px] md:h-[280px] md:w-[610px]">
             <Image
               src={logo1}
@@ -67,42 +67,40 @@ function page() {
       {/* MANAGEMENT SECTION */}
       <section >
         <div>
-          <p className="pt-12 text-heading-4 uppercase md:pl-24 px-4 text-primary-maroon">
+          <p className="pt-3xl text-heading-4 uppercase md:pl-3xl p-md text-primary-maroon">
             MANAGEMENT
           </p>
         </div>
       </section>
       {/* chairman director */}
       <section >
-        <div className="w-full md:w-[90%] flex flex-col md:flex-row md:mt-7  mx-auto p-5  gap-5 md:gap-[42px]">
+        <div className="w-full md:w-[90%] flex flex-col md:flex-row md:mt-large  mx-auto p-md  gap-md md:gap-[42px]">
           <div className="w-full md:w-[626px]  ">
             <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto">
               CHAIRMAN DIRECTOR
             </p>
             <div className="text-body font-normal leading-7 tracking-normal text-left md:w-full">
-              <p className="pt-6">
+              <p className="pt-large">
                 A noble laureate who pursued his professional life in
                 educational field. He began his career as a teacher in
                 government school and with his consistent perseverance he became
                 the Principal.
               </p>
-              <p className="pt-6">
+              <p className="pt-large">
                 Later he served as the Head of Department in various govern
                 schools. His knowledge and commitment towards educating young
                 minds made him the Secretary and
-                <span className="font-bold">
-                  {" "}
-                  Managing Trustee of Vidyaa Vikas Educational institution and
+                <span className="font-bold"> Managing Trustee of Vidyaa Vikas Educational institution and
                   the Founder of Vetri Vikaas Educational institution .
                 </span>
               </p>
-              <p className="pt-6">
+              <p className="pt-large">
                 His dream of providing International Education in his hometown
                 was fulfilled by establishing G Global School.
               </p>
             </div>
           </div>
-          <div className="relative  left-0 md:left-3 w-[340px] h-[403px] md:w-[600px] md:h-[450px] rounded-md ">
+          <div className="relative  left-0 md:left-3 w-[340px] h-[403px] md:w-[600px] md:h-[450px] rounded-large ">
             <Image
               src={Logo2}
               alt="logo"
@@ -113,7 +111,7 @@ function page() {
               <p className="text-white text-subheading-regular  uppercase pt-10 p-2">
                 Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
               </p>
-              <p className="text-white text-body pt-6">
+              <p className="text-white text-body pt-large">
                 CHAIRMAN DIRECTOR,G GLOBAL SCHOOL
               </p>
             </div>
@@ -122,17 +120,17 @@ function page() {
       </section>
       {/* Managing director */}
       <section >
-        <div className="w-full md:w-[90%] md:h-120 flex flex-col md:flex-row-reverse md:pt-16  p-5 mx-auto  gap-5 md:gap-[66px]">
+        <div className="w-full md:w-[90%] md:h-120 flex flex-col md:flex-row-reverse md:pt-16  p-5 mx-auto  gap-md md:gap-[66px]">
           <div className="w-full md:w-[50%]   ">
-            <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto md:pt-8">
+            <p className="text-primary-orange-1 text-heading-6 w-full md:w-auto md:pt-large">
               MANAGING DIRECTOR
             </p>
             <div className="text-body font-normal leading-7 tracking-normal text-left">
-              <p className="pt-6">
+              <p className="pt-large">
                 A versatile administrator with a deep knowledge in technology,
                 implements the same in his educational profession.
               </p>
-              <p className="pt-6">
+              <p className="pt-large">
                 He is the
                 <span className="font-bold">
                   Chairman of Vetri Vikaas Educational institutions - Rasipuram
@@ -151,7 +149,7 @@ function page() {
               className="w-full h-full "
               unoptimized
             />
-            <div className="absolute flex flex-col  md:rounded-[48px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full  ">
+            <div className="absolute flex flex-col  md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full  ">
               <p className="text-white text-subheading-regular uppercase pt-12">
                 DR. G. VETRICHELVAN
               </p>
@@ -170,15 +168,15 @@ function page() {
               EXECUTIVE DIRECTOR/ HEAD OF SCHOOL
             </p>
             <div className="text-body  font-normal leading-7 tracking-normal text-left">
-              <p className="pt-2">
+              <p className="pt-md">
                 A compassionate and empowered lady who handles every situation
                 with sheer positivity.
               </p>
-              <p className="pt-4">
+              <p className="pt-md">
                 She started her educational career as a Primary Years academic
                 Consultant in Vetri Vikaas Public School, Rasipuram.
               </p>
-              <p className="pt-4">
+              <p className="pt-md">
                 She designed and created books for kindergarten imbibing her
                 Montessori learning. Her curiosity provoked her to gather
                 extensive knowledge about IB PYP which lands her as the Head of
@@ -194,11 +192,11 @@ function page() {
               className="w-full h-full "
               unoptimized
             />
-            <div className="absolute flex flex-col   md:rounded-[48px] rounded-[40px]  bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full  ">
-              <p className="text-white text-subheading-regular uppercase pt-8 p-2">
+            <div className="absolute flex flex-col   md:rounded-[40px] rounded-[20px]  bg-gradient-to-t from-zinc-900 to-transparent justify-center items-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full  ">
+              <p className="text-white text-subheading-regular uppercase pt-large p-md  ">
                 DR. S. ROSHNI VETRICHELVAN
               </p>
-              <p className="text-white text-body pt-2 p-4 ">
+              <p className="text-white text-body pt-md p-md ">
                 EXECUTIVE DIRECTOR / HEAD OF SCHOOL,G GLOBAL SCHOOL
               </p>
             </div>
@@ -208,13 +206,13 @@ function page() {
       {/* PEDAGOGICAL LEADERSHIP TEAM */}
       <section >
         <div className="pt-12">
-          <p className=" text-heading-4 uppercase md:pl-24 px-4 text-primary-maroon">
+          <p className=" text-heading-4 uppercase md:pl-3xl px-md text-primary-maroon">
             PEDAGOGICAL LEADERSHIP TEAM{" "}
           </p>
         </div>
       </section>
       <section >
-        <p className=" pt-6 md:pl-24 px-4 text-body">
+        <p className=" pt-large md:pl-3xl px-md text-body">
           Our PLT includes our head of school, deputy head of school Ms.
           Sathyavarthini and our coordinator Ms. Suguna. Our PLT takes the
           responsibility of framing our curriculum and ensures the
@@ -223,17 +221,17 @@ function page() {
         </p>
       </section>
       <section >
-        <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3 pt-12 md:p-10 gap-5 md:gap-[30px]">
-          <div className=" p-3 ">
+        <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3 pt-xl md:p-xl gap-md md:gap-[30px]">
+          <div className=" p-md ">
             <Image
               src={logo5}
               alt="logo"
               className="w-full md:h-[440px] h-[337px]  "
               unoptimized
             />
-            <p className="text-heading-6 pt-4">Ms. SUGUNA </p>
-            <p className=" pt-6 text-subheading-regular ">PYP COORDINATOR</p>
-            <p className=" pt-2 ">
+            <p className="text-heading-6 pt-md">Ms. SUGUNA </p>
+            <p className=" pt-large text-subheading-regular ">PYP COORDINATOR</p>
+            <p className=" pt-md ">
               A passionate leader, who drives the team with sheer positivity and
               enthusiasm. Her journey at GGS began in the year 2018. Her
               positive mindset guides the GGS team both academically and
@@ -241,16 +239,16 @@ function page() {
             </p>
           </div>
 
-          <div className="p-3">
+          <div className=" p-md ">
             <Image
               src={logo5}
               alt="logo"
-              className="w-full md:h-[440px] h-[337px] "
+              className="w-full md:h-[440px] h-[337px]  "
               unoptimized
             />
-            <p className="text-heading-6 pt-4">Ms. SUGUNA </p>
-            <p className=" pt-6 text-subheading-regular">PYP COORDINATOR</p>
-            <p className=" pt-2 ">
+            <p className="text-heading-6 pt-md">Ms. SUGUNA </p>
+            <p className=" pt-large text-subheading-regular ">PYP COORDINATOR</p>
+            <p className=" pt-md ">
               A passionate leader, who drives the team with sheer positivity and
               enthusiasm. Her journey at GGS began in the year 2018. Her
               positive mindset guides the GGS team both academically and
@@ -261,14 +259,14 @@ function page() {
       </section>
       {/* other topics */}
       <section >
-        <div>
-          <p className="text-heading-4 uppercase mx-auto w-[90%] mt-10 text-primary-maroon-1">
-            other topics to explore
-          </p>
+      <div className="pt-12">
+          <p className=" text-heading-4 uppercase md:pl-3xl px-md text-primary-maroon">
+          OTHER TOPICS TO EXPLORE
+           </p>
         </div>
-      </section>{" "}
+      </section>
       <section >
-        <div className="w-[90%] md:w-[90%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10  md:gap-[30px]">
+        <div className="w-[90%] md:w-[95%] flex flex-col md:flex-row justify-center  mx-auto top-3  md:p-10  md:gap-[30px]">
           <TopicCards
             img={logo7}
             text={"Mission and vision"}
