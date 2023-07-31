@@ -10,7 +10,7 @@ const Hero = () => (
           <span className="text-white">FUTURE MINGS</span>
         </h1>
 
-        <p className=" mt-4 md:mt-9 text-heading-6 font-bold 2xl:mt-20  md:text-heading-4  text-white ">
+        <p className=" text-heading-6  md:text-heading-4 font-bold 2xl:mt-20  mt-4 md:mt-9  text-white ">
           G Global School the{" "}
           <span className="text-black">first authorised IB world school</span>{" "}
           in Tiruchengode.
