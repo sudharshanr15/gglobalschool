@@ -1,33 +1,36 @@
 import React from "react";
 import Cards from "./Cards";
-import offer1 from "../../assets/offer1.png"
-import offer2 from "../../assets/offer2.png";
-import offer3 from "../../assets/offer3.png";
-import offer4 from "../../assets/offer4.png";
-import offer5 from "../../assets/offer5.png";
+import offer1 from "../../assets/offer1.jpg"
+import offer2 from "../../assets/offer2.jpg";
+import offer3 from "../../assets/offer3.jpg";
+import offer4 from "../../assets/offer4.jpg";
+import offer5 from "../../assets/offer5.jpg";
 
 
 function WhatWeOffer() {
     return (
-        <>
+        <section>
             <div
                 id="whatWeOffer"
-                className="w-[90%] mx-auto mt-40 flex flex-col gap-8"
+                className="w-[90%] mx-auto mt-3xl flex flex-col gap-large"
             >
-                <p className="text-heading-3 text-primary-maroon-1 uppercase">
+                <p className="text-heading-3 text-primary-maroon-1 uppercase mt-2xl">
                     what we offer
                 </p>
-                <p>
+                <p className="text-body">
                     Learning spaces at GGS are designed to support active
                     participation of the children through play.
                 </p>
-                <p>
+                <p className="text-body">
                     Learning engagements and classroom activities are designed
                     by teachers to develop their fine and gross motor skills in
                     every day teaching and learning.
                 </p>
             </div>
-            <div id="pypCards" className="w-[90%] mx-auto md:flex gap-16 my-20">
+            <div
+                id="pypCards"
+                className="w-[90%] mx-auto md:flex gap-2xl my-3xl"
+            >
                 <Cards
                     cardImage={offer1}
                     title={"Essence of PYP"}
@@ -58,13 +61,14 @@ function WhatWeOffer() {
             </div>
             <div
                 id="widePypCards"
-                className="w-[90%] mx-auto md:flex md:gap-10"
+                className="w-[90%] mx-auto md:flex md:gap-3xl mb-3xl"
             >
                 <Cards
                     cardImage={offer4}
                     title={"Caring and responsible citizens"}
                     desc={
-                       "The units of inquiry are designed to help foster their imaginations and meet new challenges and opportunities to help build a peaceful world"   }
+                        "The units of inquiry are designed to help foster their imaginations and meet new challenges and opportunities to help build a peaceful world"
+                    }
                     iswide={true}
                 />
                 <Cards
@@ -76,7 +80,7 @@ function WhatWeOffer() {
                     iswide={true}
                 />
             </div>
-        </>
+        </section>
     );
 }
 
