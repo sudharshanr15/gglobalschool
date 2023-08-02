@@ -10,22 +10,28 @@ function CardSection() {
                     desc={"managing emotions and behavior to achieve ones goal"}
                 />{" "}
                 <Cards
-                    text={"Self Management"}
-                    desc={"managing emotions and behavior to achieve ones goal"}
+                    text={"Social Awareness"}
+                    desc={"Showing understanding and Empathy for others"}
                 />
                 <Cards
-                    text={"Self Management"}
-                    desc={"managing emotions and behavior to achieve ones goal"}
+                    text={"Self Awareness"}
+                    desc={
+                        "Recognizing ones emotions, values  strengths and challenges"
+                    }
                 />
             </section>
             <section className="w-[90%] mx-auto mb-3xl md:flex flex-col md:flex-row justify-center items-center md:gap-3xl gap-3xl">
                 <Cards
-                    text={"Self Management"}
-                    desc={"managing emotions and behavior to achieve ones goal"}
+                    text={"Relationship skills"}
+                    desc={
+                        "Farming positive relationships, working in teams, dealing effectively with conflicts"
+                    }
                 />{" "}
                 <Cards
-                    text={"Self Management"}
-                    desc={"managing emotions and behavior to achieve ones goal"}
+                    text={"Responsible Decision making"}
+                    desc={
+                        "Making ethical, constructive checks about personal and social behaviour"
+                    }
                 />
             </section>
         </section>

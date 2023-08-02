@@ -8,7 +8,7 @@ function Header({ title, content, img, rev }) {
                 rev ? "md:flex-row-reverse" : "md:flex-row"
             }`}
         >
-            <div className="mb-large md:w-[60%]">
+            <div className="mb-large md:w-[55%]">
                 <p className="text-heading-3 text-primary-maroon-1 mb-md">
                     {title}
                 </p>
@@ -19,7 +19,7 @@ function Header({ title, content, img, rev }) {
                 src={img}
                 alt="mission"
                 unoptimized
-                className="md:max-w-[580px]"
+                className="md:max-w-[580px] w-full"
             />
         </section>
     );
