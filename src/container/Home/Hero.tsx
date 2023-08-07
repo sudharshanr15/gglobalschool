@@ -4,13 +4,13 @@ const Hero = () => (
   <div className="bg-[url('/image/herobg.jpg')]">
     <div className="grid  grid-cols-1 md:grid-cols-2 ">
       <div className="w-full   md:mt-48 p-10 ">
-        <h1 className="text-4xl md:text-7xl  font-bold  text-[#333333] ">
+        <h1 className=" md:text-heading-1 text-heading-4   text-[#333333] ">
           ENLIGHTENING
           <br></br>
           <span className="text-white">FUTURE MINGS</span>
         </h1>
 
-        <p className=" mt-4 md:mt-9 text-xl font-bold 2xl:mt-20  md:text-4xl  text-white ">
+        <p className=" text-heading-6  md:text-heading-4 font-bold 2xl:mt-20  mt-4 md:mt-9  text-white ">
           G Global School the{" "}
           <span className="text-black">first authorised IB world school</span>{" "}
           in Tiruchengode.

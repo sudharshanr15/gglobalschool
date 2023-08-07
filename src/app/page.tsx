@@ -1,26 +1,29 @@
+import Creativity from "@/container/AwakeningCreativity/Creativity"
+import DietPlan from "@/container/AwakeningCreativity/DietPlan"
+
+import Health_Well from "@/container/AwakeningCreativity/Health_Well"
+import Others from "@/container/AwakeningCreativity/Others"
 
 
-import Personalgrowth from "@/container/Home/Personalgrowth"
-import { Hero,Team } from "../container/Home"
-import Programmesoffers from "@/container/Home/Programmesoffers"
-import Teams from "@/container/Home/Teams"
-import Newsroom from "@/container/Home/Newsroom"
-
-const Home = () => {
+const AwakeningCreativity = () => {
   return (
 
      
     
       <>
-      <Hero />
-      <Personalgrowth />
-      <Programmesoffers />
-      <Teams />
-      <Newsroom /> 
-      <Team />
+     
+     <Creativity/>
+     <Health_Well/>
+    
+     <DietPlan/>
+
+     
+     <Others/>
+     
+    
       </> 
     
   )
 }
 
-export default Home
+export default AwakeningCreativity
