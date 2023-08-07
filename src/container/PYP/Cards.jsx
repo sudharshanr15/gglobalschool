@@ -4,28 +4,29 @@ import Image from 'next/image'
 
 function Cards({cardImage,title,desc,iswide}) {
   return (
-      <>
-          <div
-              className={
-                  iswide
-                      ? "md:w-[50%] my-20 sm:mt-0 group hover:relative hover:bg-primary-maroon-1"
-                      : "md:w-[30%] my-20 sm:mt-0 group hover:relative  hover:bg-primary-maroon-1"
-              }
-          >
+      <section
+          className={
+              iswide
+                  ? "md:w-[50%]  sm:mt-0 group hover:relative hover:bg-primary-maroon-1 "
+                  : "md:w-[600px]  sm:mt-0 group hover:relative  hover:bg-primary-maroon-1 "
+          }
+      >
+          <div className=" ">
               <Image
                   src={cardImage}
                   alt="image"
                   unoptimized
-                  className="w-full transition ease-in-out duration-300 group-hover:scale-y-75 group-hover:origin-top max-h-[430px]"
+                  className=" transition ease-in-out duration-300  group-hover:origin-top scale-110  group-hover:scale-100  h-[480px]  object-cover"
               />
-              <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[20%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-700 py-10 px-5">
-                  <p className="text-primary-orange-1 font-bold text-heading-5 mb-5 ">
-                      {title}
-                  </p>
-                  <p className="group-hover:text-white text-body">{desc}</p>
-              </div>
           </div>
-      </>
+
+          <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[40%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-700 py-xl px-md">
+              <p className="text-primary-orange-1 font-bold text-heading-5 mb-md ">
+                  {title}
+              </p>
+              <p className="group-hover:text-white text-body">{desc}</p>
+          </div>
+      </section>
   );
 }
 
