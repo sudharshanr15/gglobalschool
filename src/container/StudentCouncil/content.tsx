@@ -4,12 +4,12 @@ import benefitImage from '@/assets/student council benefits.png'
 
 const Content = () => {
   return (
-    <section className="w-full md:mt-3xl lg:mt-3xl">
-      <div className="mx-md md:mx-xl lg:mx-3xl">
+    <section className="section-container w-full">
+      <div className="pb-md">
       <Image className="w-full hidden md:block lg:block" src={contentimage} alt="council image"/>
       <Image src={benefitImage} className="md:hidden lg:hidden lg:ml-2xl lg:mr-3xl h-full" alt="studentcouncil"/>
       </div>
-      <div className="m-md md:m-xl lg:m-3xl"><p>
+      <div><p>
       G Global nurtures leadership qualities from the most earliest of stages with
 every growing, curious mind. Placing these responsibilities with potential
 individuals not only makes them quick problem solvers but also foster values
