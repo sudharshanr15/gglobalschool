@@ -1,27 +1,38 @@
 const Threetofive = () => {
   return (
-    <section className="px-md md:px-xl lg:px-3xl py-md md:py-xl lg:py-3xl md:flex lg:flex md:gap-xl lg:gap-3xl">
+    <section className="section-container md:flex lg:flex md:gap-xl lg:gap-3xl">
     
     <div>
-      <h1 className="text-heading-5 text-primary-maroon pt-md pb-xl">3. INSPIRE ENGAGEMENT</h1>
+      <div className="flex gap-2">
+        <div className="text-heading-5 text-primary-maroon">3.</div>
+        <div className="text-heading-5 text-primary-maroon">INSPIRE ENGAGEMENT</div>
+      </div>
+      <div className="py-large lg:py-0 lg:pt-xl">
       <p>Inspire engagement using meaningful learning activities. To establish
 the above quote we encourage students to be part of various organisations
 that plant tress and work for the well being of people. 
 </p><br/><p>
 One of which is
 done by our grade 3 students where they become of a part of an
-organisation and planted tress in our town.</p>  
+organisation and planted tress in our town.</p></div>  
     </div>
     <div>
-      <h1 className="text-heading-5 text-primary-maroon pt-md pb-xl">4. ENCOURAGES STUDENT</h1>
-      <p>We also encourages students to raise funds through their creativity
+      <div className="flex gap-2">
+        <div className="text-heading-5 text-primary-maroon">4.</div>
+        <div className="text-heading-5 text-primary-maroon">ENCOURAGES STUDENT</div>
+      </div>
+      <h1 className="text-heading-5 text-primary-maroon"></h1>
+      <p className="py-large lg:py-0 lg:pt-xl">We also encourages students to raise funds through their creativity
 Which they can donate to orphanages. One best example is the <span className="font-bold">“GGS
 SANGAMAM”</span> event where they laid stalls and sold products created by
 them and donated it for a good cause.</p> 
     </div>
     <div>
-      <h1 className="text-heading-5 text-primary-maroon pt-md pb-xl">5. SPORTS EVENTS</h1>
-      <p>Sports has always been an integral part of GGS where we conduct
+      <div className="flex gap-2">
+        <div className="text-heading-5 text-primary-maroon">5.</div>
+        <div className="text-heading-5 text-primary-maroon">SPORTS EVENTS</div>
+      </div>
+      <p className="py-large lg:py-0 lg:pt-xl">Sports has always been an integral part of GGS where we conduct
 sports events like <span className="font-bold">KIDDATHON</span> in collaboration with various communities
 that support our society.</p> 
     </div>
