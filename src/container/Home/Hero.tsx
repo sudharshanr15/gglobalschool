@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 const Hero = () => (
-  <div className="bg-[url('/image/herobg.jpg')]">
+  <section className="section-container">
+     <div className="bg-[url('/image/herobg.jpg')]">
     <div className="grid  grid-cols-1 md:grid-cols-2 ">
       <div className="w-full   md:mt-48 p-10 ">
         <h1 className=" md:text-heading-1 text-heading-4   text-[#333333] ">
@@ -35,6 +36,9 @@ const Hero = () => (
       </div>
     </div>
   </div>
+
+  </section>
+ 
 );
 
 export default Hero;

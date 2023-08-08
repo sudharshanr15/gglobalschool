@@ -1,7 +1,9 @@
 import Image from "next/image";
 
 const Health_Well = () => (
-  <div className="div  grid grid-cols-1 md:grid-cols-2">
+
+  <section className="section-container">
+      <div className="div  grid grid-cols-1 md:grid-cols-2">
     <div className="mx-auto w-full order-last md:order-1 ">
       <Image
         src="/image/health_wellbeing.png"
@@ -13,7 +15,7 @@ const Health_Well = () => (
       {/* Rest of your content */}
     </div>
     <div className="  mt-10  md:ml-5  order-1  p-large ">
-      <h1 className="md:text-heading-4 text-heading-4  font-bold  text-[#790000]">
+      <h1 className="md:text-heading-4 text-heading-4  font-bold  text-primary-maroon">
         HEALTH & WELL BEING
       </h1>
 
@@ -36,6 +38,8 @@ const Health_Well = () => (
       </p>
     </div>
   </div>
+  </section>
+
 );
 
 export default Health_Well;

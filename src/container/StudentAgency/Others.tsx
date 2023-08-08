@@ -4,7 +4,8 @@ import TopicCard from "./topicCards";
 function Others() {
   return (
     <>
-      <div className="w-[90%] mx-auto my-20 md:mt-20">
+    <section className="section-container w-[90%] mx-auto my-20 md:mt-20">
+    
         <p className="uppercase text-heading-4 text-primary-maroon-1">
           Other Topics To explore
         </p>
@@ -12,7 +13,10 @@ function Others() {
           <TopicCard text={"OUR STORY"} overlayText={"OUR STORY"} />
           <TopicCard text={"WHY US"} overlayText={"WHY US"} />
         </div>
-      </div>
+      
+
+    </section>
+      
     </>
   );
 }

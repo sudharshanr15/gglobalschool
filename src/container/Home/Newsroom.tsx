@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Newsroom = () => (
-  <div>
+  <section className="section-container">
     <div className="div flex  flex-wrap">
       <div className="w-full md:w-1/2 pl-xl md:mt-12  mt-10 text-left">
         <h3 className="text-heading-4  md:text-heading-3  font-bold sm:mr-10 text-black">
@@ -80,7 +80,7 @@ const Newsroom = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Newsroom;

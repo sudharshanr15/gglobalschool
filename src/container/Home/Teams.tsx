@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 const Teams = () => (
-  <div className="div flex  flex-wrap">
+  <section className="section-container div flex  flex-wrap">
+    
     <div className="w-full md:w-1/2 pl-10 md:mt-12  mt-10 text-left">
       <h3 className="text-heading-4 md:text-heading-3  font-bold sm:mr-10 text-black">
         OUR TEAM
@@ -28,7 +29,7 @@ const Teams = () => (
             </div>
           </div>
 
-          <div className="text-left font-medium bg-[#790000] text-[#737373]  ">
+          <div className="text-left font-medium text-primary-maroon   ">
             <p className="py-4 text-heading-6 mx-8 mt-8 text-[#FAFAFA]">
               Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
             </p>
@@ -49,7 +50,7 @@ const Teams = () => (
             </div>
           </div>
 
-          <div className="text-left font-medium py-3  bg-[#790000] text-[#737373]  ">
+          <div className="text-left font-medium py-3  text-primary-maroon   ">
             <p className="py-2 text-heading-6 mx-8 mt-8 text-[#FAFAFA]">
               DR. G. VETRICHELVAN
             </p>
@@ -71,7 +72,7 @@ const Teams = () => (
             </div>
           </div>
 
-          <div className="text-left font-medium py-3 bg-[#790000] text-[#737373]  ">
+          <div className="text-left font-medium py-3 text-primary-maroon  ">
             <p className="py-2 text-heading-6 mx-8 mt-8 text-[#FAFAFA]">
               DR. S. ROSHNI VETRICHELVAN
             </p>
@@ -82,7 +83,8 @@ const Teams = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
 );
 
 export default Teams;
