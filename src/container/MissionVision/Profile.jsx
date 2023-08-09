@@ -20,7 +20,7 @@ function Profile() {
     };
     return (
         <section>
-            <section className=" section-container md:flex w-[90%] mx-auto md:gap-large   ">
+            <section className=" section-container md:flex  md:gap-large   ">
                 <div className="mb-large">
                     <p className="text-heading-3 text-primary-maroon-1 mb-md">
                         IB LEARNER PROFILE
