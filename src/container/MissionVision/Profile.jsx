@@ -59,7 +59,7 @@ function Profile() {
 
                 <div
                     ref={ref}
-                    className="flex gap-xl overflow-x-auto scroll-smooth scrollbar-hide md:pl-2xl pl-md"
+                    className="flex gap-xl overflow-x-auto scroll-smooth scrollbar-hide"
                 >
                     <MissionCards
                         cardImage={profile1}

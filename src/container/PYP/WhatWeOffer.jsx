@@ -26,7 +26,7 @@ function WhatWeOffer() {
             </div>
             <section
                 id="pypCards"
-                className=" section-container  md:flex gap-2xl my-3xl"
+                className=" md:flex gap-2xl my-3xl "
             >
                 <Cards
                     cardImage={offer1}
@@ -58,7 +58,7 @@ function WhatWeOffer() {
             </section>
             <div
                 id="widePypCards"
-                className="w-[90%] mx-auto md:flex md:gap-3xl mb-3xl"
+                className="w-[90%] mx-auto md:flex md:gap-3xl "
             >
                 <Cards
                     cardImage={offer4}

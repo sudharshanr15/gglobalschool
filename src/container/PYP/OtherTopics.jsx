@@ -3,7 +3,7 @@ import TopicCard from "./TopicCard"
 
 function OtherTopics() {
   return (
-      <section className=" section-container  mt-40 md:mt-3xl">
+      <section className=" section-container">
           <p className="uppercase text-heading-3 text-primary-maroon-1">
               Other Topics To explore
           </p>

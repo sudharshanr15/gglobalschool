@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProgramCards({year, duration}) {
   return (
-          <section className="bg-primary-maroon-1 my-xl md:my-xl py-xl px-8 rounded-3xl">
+          <section className="bg-primary-maroon-1  py-xl px-8 rounded-3xl">
               <p className="text-white  text-heading-4 text-center ">
                   YEAR {year}
               </p>
