@@ -12,7 +12,7 @@ function Vision() {
               <div>
                   <Image src={pypLogo} alt="logo" unoptimized />
               </div>
-              <div className=" w-[50%] flex flex-col gap-y-xl md:p-3xl p-md">
+              <div className=" md:w-[50%] flex flex-col gap-y-xl md:p-3xl p-md">
                   <p className="text-primary-maroon-1 text-heading-3">
                       PRIMARY YEAR PROGRAMME
                   </p>
