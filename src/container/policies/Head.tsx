@@ -2,7 +2,7 @@ import React from "react";
 
 function Head() {
   return (
-    <div className="mx-auto p-5 md:p-16 lg:p-16 relative">
+    <section className="mx-auto p-5 md:p-16 lg:p-16 relative section-container">
       <p className="absolute font-bold font-serif text-primary-orange opacity-20 text-9xl">
         "
       </p>
@@ -10,7 +10,7 @@ function Head() {
         G Global School nurtures sparkling imaginations, fertile minds, and
         willingness to take on risks with students’ agency.
       </p>
-    </div>
+    </section>
   );
 }
 

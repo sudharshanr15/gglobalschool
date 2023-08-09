@@ -14,7 +14,7 @@ function page() {
     <>
       <Head />
       <Description />
-      <div className="p-5 md:px-16 lg:px-16">
+      <section className="p-5 md:px-16 lg:px-16 section-container">
         <h1 className="text-heading-3 text-primary-maroon">LIST OF POLICIES</h1>
         <p className="text-body py-4">
           Every year, these policies will be reviewed along with the members of
@@ -22,7 +22,7 @@ function page() {
         </p>
         <PoliciesFlex headings={Headings} links={Links} />
 
-      </div>
+      </section>
       <OtherTopics />
     </>
   );

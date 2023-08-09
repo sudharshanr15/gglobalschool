@@ -2,7 +2,7 @@ import React from "react";
 
 function PoliciesFlex({ headings, links }) {
   return (
-    <div className="flex justify-between w-11/12 my-[5%] mx-auto flex-wrap p-1">
+    <section className="flex justify-between w-full  mx-auto flex-wrap  section-container">
       {headings.map((heading, index) => (
         <div className=" h-[250px] lg:h-[300px] w-[295px] lg:w-[394px] bg-primary-maroon-1 m-2 border rounded-3xl" key={index}>
           <h1 className="text-white text-center text-heading-6 my-6 lg:my-14">{heading}</h1>
@@ -13,7 +13,7 @@ function PoliciesFlex({ headings, links }) {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 
