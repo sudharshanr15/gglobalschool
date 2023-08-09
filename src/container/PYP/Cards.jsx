@@ -16,7 +16,7 @@ function Cards({cardImage,title,desc,iswide}) {
                   src={cardImage}
                   alt="image"
                   unoptimized
-                  className=" transition ease-in-out duration-300  group-hover:origin-top scale-110  group-hover:scale-100  h-[480px]  object-cover"
+                  className=" transition ease-in-out duration-300  group-hover:origin-top   h-[480px]  object-cover"
               />
           </div>
 

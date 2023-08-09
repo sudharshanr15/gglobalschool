@@ -4,15 +4,15 @@ import pypLogo from "../../assets/pyp image big.png";
 
 function Vision() {
   return (
-      <section>
-          <p className="text-heading-4 uppercase mx-auto md:w-[90%] p-md">
+      <section className="section-container ">
+          <p className="text-heading-4 uppercase p-md">
               Curiosity is the fuel for discovery, inquiry and learning
           </p>
-          <div className="md:w-[90%] md:flex  justify-center items-center mx-auto my-3xl">
+          <section className=" w-full section-containe md:flex my-2xl justify-center items-center">
               <div>
                   <Image src={pypLogo} alt="logo" unoptimized />
               </div>
-              <div className="md:w-[50%] flex flex-col gap-y-xl md:p-3xl p-md">
+              <div className=" w-[50%] flex flex-col gap-y-xl md:p-3xl p-md">
                   <p className="text-primary-maroon-1 text-heading-3">
                       PRIMARY YEAR PROGRAMME
                   </p>
@@ -32,11 +32,11 @@ function Vision() {
                       enthusiastic environment.
                   </p>
               </div>
-          </div>
+          </section>
 
-          <div
+          <section
               id="goalContainer"
-              className="bg-primary-maroon-1 w-[90%] mx-auto rounded-3xl md:p-3xl p-xl md:uppercase mb-3xl"
+              className=" section-container  bg-primary-maroon-1  rounded-3xl  md:uppercase "
           >
               <p className="text-white text-heading-5 text-center  leading-10 ">
                   Our goal is to promote{" "}
@@ -48,7 +48,7 @@ function Vision() {
                   manifesting a sense of morality to all the human beings in the
                   global society.
               </p>
-          </div>
+          </section>
       </section>
   );
 }

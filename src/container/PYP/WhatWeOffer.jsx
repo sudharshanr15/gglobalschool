@@ -9,12 +9,9 @@ import offer5 from "../../assets/offer5.jpg";
 
 function WhatWeOffer() {
     return (
-        <section>
-            <div
-                id="whatWeOffer"
-                className="w-[90%] mx-auto mt-3xl flex flex-col gap-large"
-            >
-                <p className="text-heading-3 text-primary-maroon-1 uppercase mt-2xl">
+        <section className="section-container">
+            <div id="whatWeOffer" className=" flex flex-col gap-large">
+                <p className="text-heading-3 text-primary-maroon-1 uppercase ">
                     what we offer
                 </p>
                 <p className="text-body">
@@ -27,9 +24,9 @@ function WhatWeOffer() {
                     every day teaching and learning.
                 </p>
             </div>
-            <div
+            <section
                 id="pypCards"
-                className="w-[90%] mx-auto md:flex gap-2xl my-3xl"
+                className=" section-container  md:flex gap-2xl my-3xl"
             >
                 <Cards
                     cardImage={offer1}
@@ -58,7 +55,7 @@ function WhatWeOffer() {
                     }
                     iswide={false}
                 />
-            </div>
+            </section>
             <div
                 id="widePypCards"
                 className="w-[90%] mx-auto md:flex md:gap-3xl mb-3xl"
