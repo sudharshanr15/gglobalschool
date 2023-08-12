@@ -5,6 +5,8 @@ import Description from "../../container/policies/Description";
 import PoliciesFlex from "../../container/policies/PoliciesFlex"
 import OtherTopics from "../../container/policies/OtherTopics"
 
+import Enquire from "../../component/Enquire/Enquire"
+
 function page() {
 
   const Headings = ["Admission Policy","Language Policy","Virtual Learning Policy","Assessment Policy","Inclusive Education Policy","Library and resource centre policy " ,"Academic Integrity Policy"]
@@ -24,6 +26,7 @@ function page() {
 
       </section>
       <OtherTopics />
+      <Enquire />
     </>
   );
 }
