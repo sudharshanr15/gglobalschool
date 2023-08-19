@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 const Creativity = () => (
-  <div className="div  grid  grid-cols-1 md:grid-cols-2">
+  <section className="section-container div  grid  grid-cols-1 md:grid-cols-2">
+   
     <div className="  mt-10  md:ml-5  p-large ">
-      <h1 className="md:text-heading-4 text-heading-4  font-bold  text-[#790000]">
+      <h1 className="md:text-heading-4 text-heading-4  font-bold   text-primary-maroon">
         AWAKENING CREATIVITY
       </h1>
 
@@ -31,7 +32,11 @@ const Creativity = () => (
       />
       {/* Rest of your content */}
     </div>
-  </div>
+
+
+  </section>
+  
+  
 );
 
 export default Creativity;

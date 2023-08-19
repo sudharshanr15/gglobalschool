@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 const Programmesoffers = () => (
-  <div className="bg-[#790000]">
+  <section className="section-container">
+      <div className="text-primary-maroon">
     <div className="div grid  grid-cols-1 md:grid-cols-2">
       <div className="w-full  pl-10 md:mt-12   mt-10 text-left">
         <h3 className="text-heading-5 md:text-heading-3 font-bold  sm:mr-10 text-[#FAFAFA]">
@@ -93,6 +94,9 @@ const Programmesoffers = () => (
       </div>
     </div>
   </div>
+
+  </section>
+
 );
 
 export default Programmesoffers;

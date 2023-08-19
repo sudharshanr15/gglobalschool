@@ -2,7 +2,8 @@ import image1 from "../../assets/image1.jpg";
 import Image from "next/image";
 
 const Personalgrowth = () => (
-  <div className="div  grid  grid-cols-1 md:grid-cols-2">
+  <section className="section-container">
+     <div className="div  grid  grid-cols-1 md:grid-cols-2">
     <div className="  mt-10    p-xl ">
       <h1 className="text-heading-5 md:text-heading-3  font-bold  text-[#000000]">
         WHY CHOOSE US
@@ -56,6 +57,9 @@ const Personalgrowth = () => (
       </div>
     </div>
   </div>
+
+  </section>
+ 
 );
 
 export default Personalgrowth;
