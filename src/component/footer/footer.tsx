@@ -1,7 +1,7 @@
 'use client'
 import { gglobal_logo } from "@/assets/index"
 import Image from "next/image"
-import { useRouter } from 'next/navigation'
+import Link from "next/link" 
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -10,7 +10,6 @@ import DirectionsBusOutlinedIcon from '@mui/icons-material/DirectionsBusOutlined
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 
 const Footer = () => {
-  const router=useRouter()
   return (
     <section className="section-container bg-primary-maroon grid gap-y-large">
 
@@ -45,47 +44,47 @@ const Footer = () => {
       <div className="grid gap-y-md md:flex justify-between">
         <div className="md:w-1/2 grid gap-y-3">
         <p className="text-heading-6 text-white">G Global Universe</p>
-        <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Our Story</p>
-        <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Vision and Mission</p>
-        <p onClick={()=>router.push('/whyus')} className="cursor-pointer text-white">Why us</p>
-        <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Student Agency</p>
-        <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Policies</p>
+        <Link href='/ourstory' className="text-white cursor-pointer">Our Story</Link>
+        <Link href='/mission' className="text-white cursor-pointer">Vision and Mission</Link>
+        <Link href='/whyus' className="cursor-pointer text-white">Why us</Link>
+        <Link href='/studentagency' className="text-white cursor-pointer">Student Agency</Link>
+        <Link href='/policies' className="text-white cursor-pointer">Policies</Link>
         </div>
 
         <div className="md:w-1/2 grid gap-y-3">
         <p className="text-heading-6 text-white">Curriculum</p>
-        <p onClick={()=>router.push('/eyp')} className="text-white cursor-pointer">Early year Programme</p>
-        <p onClick={()=>router.push('/pyp')} className="text-white cursor-pointer">Primary Year Programme</p>
-        <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Life @ GGS</p>
-        <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Emotion & Ethical Support</p>
+        <Link href='/eyp' className="text-white cursor-pointer">Early year Programme</Link>
+        <Link href='/pyp' className="text-white cursor-pointer">Primary Year Programme</Link>
+        <Link href='/life@GGS' className="text-white cursor-pointer">Life @ GGS</Link>
+        <Link href='/emotional' className="text-white cursor-pointer">Emotion & Ethical Support</Link>
         </div>
       </div>
 
       <div className="grid gap-y-md md:flex justify-between">
         <div className="md:w-1/2 grid gap-y-3">
           <p className="text-heading-6 text-white">Become One of US</p>
-          <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Admissions</p>
-          <p onClick={()=>router.push('/workwithus')} className="text-white cursor-pointer">Work with us</p>
+          <Link href='/#' className="text-white cursor-pointer">Admissions</Link>
+          <Link href='/workwithus' className="text-white cursor-pointer">Work with us</Link>
         </div>
 
         <div className="md:w-1/2 grid gap-y-3">
           <p className="text-heading-6 text-white">Discovery Outside the Wall</p>
-          <p onClick={()=>router.push('/council')} className="text-white cursor-pointer">Student Council</p>
-          <p onClick={()=>router.push('/#')} className="text-white cursor-pointer">Awakening Creativity & Health</p>
+          <Link href='/council' className="text-white cursor-pointer">Student Council</Link>
+          <Link href='/awakeningcreativity' className="text-white cursor-pointer">Awakening Creativity & Health</Link>
         </div>
       </div>
 
       <div className="grid gap-y-md md:flex justify-between">
-        <p onClick={()=>router.push('/community')} className="md:w-1/2 text-heading-6 text-white cursor-pointer">Community Wellness</p>
-        <p onClick={()=>router.push('/#')} className="md:w-1/2 text-heading-6 text-white cursor-pointer">Days and Events</p>
+        <Link href='/community' className="md:w-1/2 text-heading-6 text-white cursor-pointer">Community Wellness</Link>
+        <Link href='/#' className="md:w-1/2 text-heading-6 text-white cursor-pointer">Days and Events</Link>
       </div>
     </div>
 
       </div>
     <hr/>
     <div className="flex gap-large text-white text-large">
-      <p className="cursor-pointer">Terms</p>
-      <p className="cursor-pointer">Privacy Policy</p>
+      <Link href='/terms' className="cursor-pointer">Terms</Link>
+      <Link href='/privacy' className="cursor-pointer">Privacy Policy</Link>
     </div>
 
     </section>
