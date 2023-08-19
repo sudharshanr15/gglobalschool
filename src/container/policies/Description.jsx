@@ -2,7 +2,7 @@ import React from "react";
 
 function Description() {
   return (
-    <div className="p-5 md:px-16 lg:px-16">
+    <div className="p-5 md:px-16 lg:px-16 section-container">
       <h1 className="text-primary-maroon text-heading-3">POLICIES</h1>
 
       <p className="text-body leading-8 py-4">

@@ -5,6 +5,8 @@ import Description from "../../container/policies/Description";
 import PoliciesFlex from "../../container/policies/PoliciesFlex"
 import OtherTopics from "../../container/policies/OtherTopics"
 
+import Enquire from "../../component/Enquire/Enquire"
+
 function page() {
 
   const Headings = ["Admission Policy","Language Policy","Virtual Learning Policy","Assessment Policy","Inclusive Education Policy","Library and resource centre policy " ,"Academic Integrity Policy"]
@@ -14,7 +16,7 @@ function page() {
     <>
       <Head />
       <Description />
-      <div className="p-5 md:px-16 lg:px-16">
+      <section className="p-5 md:px-16 lg:px-16 section-container">
         <h1 className="text-heading-3 text-primary-maroon">LIST OF POLICIES</h1>
         <p className="text-body py-4">
           Every year, these policies will be reviewed along with the members of
@@ -22,8 +24,9 @@ function page() {
         </p>
         <PoliciesFlex headings={Headings} links={Links} />
 
-      </div>
+      </section>
       <OtherTopics />
+      <Enquire />
     </>
   );
 }

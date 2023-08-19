@@ -5,7 +5,7 @@ import Image from "next/image";
 function TopicCards({ text, overlayText }) {
     return (
         <>
-            <div className=" relative mt-20 md:mt-0 md:w-[50%]">
+            <section className=" relative mt-20 md:mt-0 md:w-[50%] section-container">
                 <Image
                     src={img}
                     alt="checked"
@@ -25,7 +25,7 @@ function TopicCards({ text, overlayText }) {
                         View
                     </button>
                 </div>
-            </div>
+            </section>
         </>
     );
 }
