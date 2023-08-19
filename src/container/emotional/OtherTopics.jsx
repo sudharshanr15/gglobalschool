@@ -3,7 +3,7 @@ import TopicCard from "../PYP/TopicCard";
 
 function OtherTopics() {
     return (
-        <section className="w-[90%] mx-auto">
+        <section className="section-container">
             <p className="uppercase text-heading-3 text-primary-maroon-1">
                 Other Topics To explore
             </p>

@@ -7,8 +7,8 @@ function Cards({cardImage,title,desc,iswide}) {
       <section
           className={
               iswide
-                  ? "md:w-[50%]  sm:mt-0 group hover:relative hover:bg-primary-maroon-1 "
-                  : "md:w-[600px]  sm:mt-0 group hover:relative  hover:bg-primary-maroon-1 "
+                  ? "md:w-[50%]  sm:mt-0 group hover:relative hover:bg-primary-maroon-1"
+                  : "md:w-[600px]  sm:mt-0 group hover:relative  hover:bg-primary-maroon-1  "
           }
       >
           <div className=" ">
@@ -16,12 +16,12 @@ function Cards({cardImage,title,desc,iswide}) {
                   src={cardImage}
                   alt="image"
                   unoptimized
-                  className=" transition ease-in-out duration-300  group-hover:origin-top scale-110  group-hover:scale-100  h-[480px]  object-cover"
+                  className=" transition ease-in-out duration-300  group-hover:origin-top   h-[480px]  object-cover"
               />
           </div>
 
-          <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[40%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-700 py-xl px-md">
-              <p className="text-primary-orange-1 font-bold text-heading-5 mb-md ">
+          <div className="md:group-hover:absolute bottom-0 md:group-hover:top-[40%]  group-hover:bg-primary-maroon-1  transition ease-in-out  duration-700 py-xl px-md ">
+              <p className="text-primary-orange-1 font-bold text-heading-5 ">
                   {title}
               </p>
               <p className="group-hover:text-white text-body">{desc}</p>

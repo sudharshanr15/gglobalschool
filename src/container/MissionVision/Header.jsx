@@ -5,7 +5,7 @@ import Image from 'next/image';
 function Header() {
   return (
       <>
-          <section className="w-[80%] mx-auto ">
+          <section className=" section-container ">
               <div className="md:flex gap-3xl relative ">
                   <div className="md:w-[50%] my-xl ">
                       <Image
