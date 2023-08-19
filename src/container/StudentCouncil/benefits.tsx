@@ -3,8 +3,8 @@ import benefitImage from '@/assets/student council benefits.png'
 
 const Benefits = () => {
   return (
-    <section className="md:flex lg:flex align-center justify-between mx-auto mb-3xl md:mt-3xl lg:mt-3xl">
-      <div className="w-full md:w-2/3 lg:w-1/2 p-md lg:p-0 md:p-0 md:px-xl lg:mx-3xl lg:mr-2xl mt-0 flex-col justify-between">
+    <section className="section-container md:flex lg:flex gap-3xl align-center justify-between mx-auto">
+      <div className="w-full pb-md md:w-2/3 lg:w-1/2 flex-col justify-between">
         <div className="text-heading-4 text-primary-maroon">BENEFITS</div><br/>
         <div>
                   At GGS, the Student Council and the leadership programme helps develop
@@ -31,7 +31,7 @@ const Benefits = () => {
           ceremony.
           </div>
         </div>
-        <Image src={benefitImage} className="lg:ml-2xl lg:mr-3xl p-md lg:p-0 md:w-2/3 lg:w-1/3 md:h-full lg:w-2/3" alt="studentcouncil"/>
+        <Image src={benefitImage} alt="studentcouncil"/>
     </section>
   )
 }

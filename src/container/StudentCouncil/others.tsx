@@ -3,8 +3,8 @@ import TopicCard from "./topicCards"
 
 function Others() {
   return (
-      <section>
-          <div className="w-[90%] mx-auto my-3xl md:mt-3xl">
+      <section className='section-container'>
+          <div className="mx-auto">
               <p className="uppercase text-heading-4 text-primary-maroon-1">
                   Other Topics To explore
               </p>

@@ -13,7 +13,7 @@ import last from '@/assets/last.png'
 const Cards = () => {
     
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl mx-md md:mx-3xl lg:mx-3xl">
+    <section className="section-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
 
     <div className="w-[100%] ease-in duration-500 hover:bg-primary-maroon grid md:grid-rows-3 md:hover:grid-rows-5 lg:grid-rows-3 hover:lg:grid-rows-5 hover:text-gray-100 mx-5 mx-auto">
         <div className="image-container w-[100%] h-72 md:h-full row-span-2 lg:h-full overflow-hidden">

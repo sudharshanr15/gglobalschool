@@ -1,6 +1,6 @@
 import {Onetwo, Threetofive, Wellness} from "@/container/community"
 import {Others} from "@/container/workwithus"
-
+import {Footer} from "@/component"
 
 const Community = () => {
   return (
@@ -9,6 +9,7 @@ const Community = () => {
       <Onetwo/>
       <Threetofive/>
       <Others/>
+      <Footer/>
     </div>
   )
 }

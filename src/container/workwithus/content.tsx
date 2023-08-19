@@ -4,11 +4,11 @@ import benefitImage from '@/assets/student council benefits.png'
 
 const Content = () => {
   return (
-    <section className="w-full md:mt-3xl lg:mt-3xl">
-      <div className="mx-md md:mx-xl lg:mx-3xl">
+    <section className="section-container w-full">
+      <div>
       <Image className="w-full" src={contentimage} alt="why us image"/>
       </div>
-      <div className="m-md md:m-xl lg:m-3xl"><p>
+      <div className="mt-large lg:mt-xl "><p>
       At GGS, we seek persons who have the love for learning, willing to
 explore and be a part of the dynamic and vibrant team.
 </p><br/><p>
