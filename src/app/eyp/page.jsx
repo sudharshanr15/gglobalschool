@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import eypLogo from "../../assets/eyp image 1.jpg";
 import eypLogo2 from "../../assets/Group 24.png";
-import TopicCard from "../../container/eyp/TopicCard";
+import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
 
 function page() {
@@ -18,8 +18,8 @@ function page() {
 
             {/* early year program */}
 
-            <section className="section-container w-full  flex flex-col md:flex-row   top-3 p-5 md:mt-6 gap-5 md:gap-[117px]">
-                <div className="w-full md:w-[550.281px] md:h-[420.876px]">
+            <section className="section-container w-full flex flex-col md:flex-row gap-5 md:gap-28">
+                <div className="w-full md:w-1/2">
                     <Image
                         src={eypLogo}
                         className="w-full h-full"
@@ -27,22 +27,22 @@ function page() {
                         unoptimized
                     />
                 </div>
-                <div className="w-full md:w-[70%]">
-                    <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[60%]">
+                <div className="w-full md:w-1/2">
+                    <p className="text-primary-maroon-1 text-heading-3 mb-xl">
                         EARLY YEAR PROGRAMME
                     </p>
-                    <div className="text-base font-normal leading-7 tracking-normal text-left md:w-[78%]">
-                        <p className="pt-4">
+                    <div className="flex flex-col gap-large text-subheading-regular">
+                        <p>
                             Children are natural inquirers from birth; they have
                             the capacity to learn about, interact with, and
                             interpret the world around them.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             From birth, children possess all kinds of mental
                             abilities uniquely suited to these early phases of
                             learning and development.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             They are curious and capable learners with a sense
                             of agency, rich in potential, bringing valid skills,
                             preferences, and understanding to the educational
@@ -54,86 +54,92 @@ function page() {
 
             {/* feature */}
 
-            <section className=" section-container  flex flex-col md:flex-row md:mt-7 gap-5 md:gap-[117px]">
-                <div className="w-full md:w-[50%]  ">
-                    <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[50%]">
+            <section className="section-container flex flex-col md:flex-row gap-5 md:gap-28">
+                <div className="w-full md:w-1/2">
+                    <p className="text-primary-maroon-1 text-heading-3 mb-xl">
                         FEATURES
                     </p>
-                    <div className="text-base font-normal leading-7 tracking-normal text-left">
-                        <p className="pt-2">
+                    <div className="flex flex-col gap-large text-subheading-regular">
+                        <p>
                             Learning spaces at GGS are designed to support
                             active participation of children through play.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             Learning engagements and classroom activities are
                             designed by teachers to develop their fine and gross
                             motor skills in everyday teaching and learning.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             Literacy and Numeracy curriculum are framed through
                             a wide range of playful and inquiry-based
                             explorations. Learners are provided with various
                             symbolic and representational learning.
                         </p>
+                        <p>
+                            Learner’s are provided with various symbolic and representational learning.
+                        </p>
                     </div>
                 </div>
-                <div className="relative left-0 md:left-3 w-full md:w-[80%]">
+                <div className="w-full md:w-1/2">
                     <Image
                         src={eypLogo2}
                         alt="logo"
-                        className="w-[95%] h-[80%] "
+                        className="w-full h-auto"
+                        unoptimized
                     />
                 </div>
             </section>
 
             {/* PROGRAMS STECTION */}
-            <section className="section-container w-auto text-left  content-center">
-                <p className="text-heading-4 uppercase mx-auto w-[90%]  text-primary-maroon-1">
+            <section className="section-container">
+                <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
                     early years @ g global school programmes
-                </p>
+                </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  mx-auto  xl:grid-cols-2 gap-3 w-[90%] md:w-[75%] mt-10 left-7  ">
-                    <div className="bg-[#790000] text-white rounded-3xl p-4  text-center ">
-                        <p className="text-heading-6">PLAY GROUND</p>
-                        <div className="bg-[#F9A51A] text-black text-center rounded-3xl p-2  text-heading-6 mx-4 my-5">
-                            <p>2.5 years to 3 years</p>
-                        </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
+                    <div className="bg-[#790000] text-white rounded-3xl p-xl">
+                        <h3 className="text-heading-4 mb-xl uppercase">PLAY GROUND</h3>
+                        <p className="text-primary-yellow text-heading-6 uppercase">
+                            2.5 to 3 years
+                        </p>
                     </div>
-
-                    <div className="bg-[#790000] text-white rounded-3xl p-4 text-center">
-                        <p className="text-heading-6">KINDER GARDER 1</p>
-                        <div className="bg-[#F9A51A]  text-black text-center rounded-3xl text-heading-6 p-2  mx-4 my-5">
-                            <p> 3 years</p>
-                        </div>
+                    <div className="bg-[#790000] text-white rounded-3xl p-xl">
+                        <h3 className="text-heading-4 mb-xl uppercase">KINDER GARDEN 1</h3>
+                        <p className="text-primary-yellow text-heading-6 uppercase">
+                            3 years
+                        </p>
                     </div>
-
-                    <div className="bg-[#790000] text-white rounded-3xl p-4  text-center">
-                        <p className="text-heading-6">KINDER GARDEN 2</p>
-                        <div className="bg-[#F9A51A]  text-black text-center rounded-3xl text-heading-6 p-2 mx-4 my-5">
-                            <p>4 years</p>
-                        </div>
+                    <div className="bg-[#790000] text-white rounded-3xl p-xl">
+                        <h3 className="text-heading-4 mb-xl uppercase">KINDER GARDEN 2</h3>
+                        <p className="text-primary-yellow text-heading-6 uppercase">
+                            4 years
+                        </p>
                     </div>
-
-                    <div className="bg-[#790000] text-white rounded-3xl p-4 text-center">
-                        <p className="text-heading-6">KINDER GARDERN 3</p>
-                        <div className="bg-[#F9A51A]   text-black text-center rounded-3xl text-heading-6 p-2 mx-4 my-5">
-                            <p>5 years</p>
-                        </div>
+                    <div className="bg-[#790000] text-white rounded-3xl p-xl">
+                        <h3 className="text-heading-4 mb-xl uppercase">KINDER GARDEN 3</h3>
+                        <p className="text-primary-yellow text-heading-6 uppercase">
+                            5 years
+                        </p>
                     </div>
                 </div>
             </section>
 
             {/* other topics to explore */}
 
-            <div>
-                <p className="text-heading-4 uppercase mx-auto w-[90%] mt-10 text-primary-maroon-1">
-                    other topics to explore
-                </p>
-            </div>
-
-            <section className="section-container md:w-[95%] flex flex-col md:flex-row justify-center   top-3  md:p-10 gap-5 md:gap-[30px]">
-                <TopicCard text={"life @ ggc"} text1={"LIFE @ GCC"} />
-                <TopicCard text={"student council"} text1={"STUDENT COUNCIL"} />
+            <section className="section-container">
+                <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+                    OTHER TOPICS TO EXPLORE
+                </h2>
+                <div className="flex flex-col md:flex-row gap-xl">
+                    <TopicCard
+                      text={"STUDENT COUNCIL"}
+                      link={""}
+                    />                
+                    <TopicCard
+                      text={"STUDENT COUNCIL"}
+                      link={""}
+                    />                
+                </div>
             </section>
         </>
     );

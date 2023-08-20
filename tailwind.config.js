@@ -67,6 +67,10 @@ module.exports = {
           fontWeight: 400,
           lineHeight: "120%"
         }],
+        "subheading": ["1.25rem", {
+          fontWeight: 700,
+          lineHeight: "120%"
+        }],
         "body": ["1.25rem", {
           fontWeight: 400,
           lineHeight: "150%"
