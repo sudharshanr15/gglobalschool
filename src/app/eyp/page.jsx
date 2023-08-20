@@ -4,17 +4,21 @@ import eypLogo from "../../assets/eyp image 1.jpg";
 import eypLogo2 from "../../assets/Group 24.png";
 import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 function page() {
     return (
         <>
             <Hero title={"Early Year Programme"} />
-            <div className=" section-container bg-primary-maroon-1 ">
-                <p className="text-heading-4 uppercase text-white">
+            <section className="relative section-container bg-primary-maroon-1 ">
+                <div className="absolute top-0 left-0 z-0">
+                    <FormatQuoteIcon sx={{ fontSize: 150, opacity: 0.2, color: "#F05A22"}} />
+                </div>
+                <p className="text-heading-4 uppercase text-white z-10">
                     SHAPING YOUNG MINDS : A CHILD'S LEARNING BEGINS FROM EARLY
                     YEARS
                 </p>
-            </div>
+            </section>
 
             {/* early year program */}
 
@@ -134,11 +138,11 @@ function page() {
                     <TopicCard
                       text={"STUDENT COUNCIL"}
                       link={""}
-                    />                
+                    />
                     <TopicCard
                       text={"STUDENT COUNCIL"}
                       link={""}
-                    />                
+                    />
                 </div>
             </section>
         </>
