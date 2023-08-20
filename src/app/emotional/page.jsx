@@ -3,10 +3,12 @@ import { Header, CardSection,OtherTopics } from "../../container/emotional";
 import learning from "../../assets/learning.png";
 import emo1 from "../../assets/emo1.jpg";
 import emo2 from "../../assets/emo2.jpg";
+import Hero from "../../component/hero/Hero";
 
 function page() {
     return (
         <div>
+            <Hero title={"emotional and ethical  support"} />
             <Header
                 title={"EMOTIONAL & ETHICAL SUPPORT"}
                 content={[
@@ -22,7 +24,6 @@ function page() {
             />
             <CardSection />
             <Header
-               
                 title={"THROUGH STUDENT AGENCY"}
                 content={[
                     "Learners take initiative, express interest and wonderings, make choices and are aware of their learning goals. They are active, engaged, monitor and adjust their learning as needed. They offer feedback to others and consult on decisions that affect them.",
@@ -55,8 +56,7 @@ function page() {
                 ]}
                 img={emo2}
             />
-            <OtherTopics/>
-            
+            <OtherTopics />
         </div>
     );
 }
