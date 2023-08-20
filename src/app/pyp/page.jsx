@@ -5,11 +5,11 @@ import Hero from "../../component/hero/Hero"
 function page() {
     return (
         <>
-            <Hero title={"emorional and ethical  support"}/>
+            <Hero title={"Primary Year Programme"} />
             <Vision />
             <WhatWeOffer />
             <Programme />
-            <OtherTopics/>
+            <OtherTopics />
         </>
     );
 }

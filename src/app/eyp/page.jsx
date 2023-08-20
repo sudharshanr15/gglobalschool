@@ -3,12 +3,14 @@ import Image from "next/image";
 import eypLogo from "../../assets/eyp image 1.jpg";
 import eypLogo2 from "../../assets/Group 24.png";
 import TopicCard from "../../container/eyp/TopicCard";
+import Hero from "../../component/hero/Hero";
 
 function page() {
     return (
         <>
-            <div className="w-[85%] ">
-                <p className="text-heading-4 uppercase md:pl-24 px-4">
+            <Hero title={"Early Year Programme"} />
+            <div className=" section-container bg-primary-maroon-1 ">
+                <p className="text-heading-4 uppercase text-white">
                     SHAPING YOUNG MINDS : A CHILD'S LEARNING BEGINS FROM EARLY
                     YEARS
                 </p>
