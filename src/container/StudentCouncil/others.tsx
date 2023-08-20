@@ -1,25 +1,23 @@
 import React from 'react'
-import TopicCard from "./topicCards"
+import TopicCard from "@/component/topicsCard/TopicCard"
 
 function Others() {
   return (
-      <section className='section-container'>
-          <div className="mx-auto">
-              <p className="uppercase text-heading-4 text-primary-maroon-1">
-                  Other Topics To explore
-              </p>
-              <div className="md:flex md:gap-2xl mt-xl">
-                  <TopicCard
-                      text={"AWEKENING CREATIVITY"}
-                      overlayText={"AWEKENING CREATIVITY"}
-                  />
-                  <TopicCard
-                      text={"STUDENT COUNCIL"}
-                      overlayText={"STUDENT COUNCIL"}
-                  />
-              </div>
-          </div>
-      </section>
+    <section className="section-container">
+        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+            OTHER TOPICS TO EXPLORE
+        </h2>
+        <div className="flex flex-col md:flex-row gap-xl">
+            <TopicCard
+            text={"STUDENT COUNCIL"}
+            link={""}
+            />                
+            <TopicCard
+            text={"STUDENT COUNCIL"}
+            link={""}
+            />                
+        </div>
+    </section>
   );
 }
 
