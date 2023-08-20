@@ -43,7 +43,7 @@ function Navbar(){
             setTimeout(()=>{
                 setIsMenuOpen((e) => (
                     !e
-                ))    
+                ))
             }, 500)
         }else{
             setIsMenuOpen((e) => (
@@ -59,12 +59,12 @@ function Navbar(){
     }
 
     return (
-        <nav className="bg-transparent relative">
+        <nav className="bg-transparent absolute top-0 left-0 w-full z-50">
             <div className="ps-2 pt-7 md:ps-8 md:py-6 flex flex-row items-center">
                 <div className="flex-1">
                     <div className="inline-block px-5 pt-1 pb-3 md:px-7 md:pb-4 md:pt-2 bg-white rounded-3xl">
                         <Image className="max-w-[8.5rem] md:max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
-                    </div> 
+                    </div>
                 </div>
                 <div className="inline-flex gap-x-16 items-center">
                     <Link href="" className="text-subheading-regular text-white hidden md:block">Admissions</Link>
