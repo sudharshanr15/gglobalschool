@@ -6,6 +6,7 @@ import PoliciesFlex from "../../container/policies/PoliciesFlex"
 import OtherTopics from "../../container/policies/OtherTopics"
 
 import Enquire from "../../component/Enquire/Enquire"
+import Hero from "../../component/hero/Hero"
 
 function page() {
 
@@ -14,6 +15,7 @@ function page() {
 
   return (
     <>
+      <Hero title={"Policies"}/>
       <Head />
       <Description />
       <section className="p-5 md:px-16 lg:px-16 section-container">
