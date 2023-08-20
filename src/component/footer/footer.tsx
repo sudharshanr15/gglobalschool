@@ -63,7 +63,7 @@ const Footer = () => {
       <div className="grid gap-y-md md:flex justify-between">
         <div className="md:w-1/2 grid gap-y-3">
           <p className="text-heading-6 text-white">Become One of US</p>
-          <Link href='/#' className="text-white cursor-pointer">Admissions</Link>
+          <Link href='/admission' className="text-white cursor-pointer">Admissions</Link>
           <Link href='/workwithus' className="text-white cursor-pointer">Work with us</Link>
         </div>
 

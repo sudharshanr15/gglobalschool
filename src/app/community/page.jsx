@@ -1,6 +1,5 @@
 import {Onetwo, Threetofive, Wellness} from "@/container/community"
 import {Others} from "@/container/workwithus"
-import {Footer} from "@/component"
 import Hero from "../../component/hero/Hero";
 
 const Community = () => {
@@ -11,7 +10,6 @@ const Community = () => {
           <Onetwo />
           <Threetofive />
           <Others />
-          <Footer />
       </div>
   );
 }
