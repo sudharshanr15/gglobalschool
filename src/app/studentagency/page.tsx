@@ -7,20 +7,13 @@ import Hero from "../../component/hero/Hero"
 
 const StudentAgency = () => {
   return (
-
-   
-
-     
-    
     <>
-       <Hero title={"Student Agency"}/>
-      <Description/>
-      <Agency/>
-      <Cards/>
-      <Others/>
-    
-      </> 
-    
+      <Hero title={"Student Agency"} />
+      <Description />
+      <Agency />
+      <Cards />
+      <Others />
+    </>
   )
 }
 
