@@ -11,7 +11,6 @@ const Community = () => {
           <Onetwo />
           <Threetofive />
           <Others />
-          <Footer />
       </div>
   );
 }
