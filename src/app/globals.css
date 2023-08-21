@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
+@layer components{
     .section-container{
         @apply p-md py-xl lg:p-3xl;
     }
@@ -14,4 +14,10 @@
 .scrollbar-hide {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+}
+
+.hero-section{
+    background-image: url("/image/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

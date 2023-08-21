@@ -18,7 +18,7 @@ function page() {
       <Hero title={"Policies"}/>
       <Head />
       <Description />
-      <section className="p-5 md:px-16 lg:px-16 section-container">
+      <section className="section-container">
         <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
           list of policies
         </h2>

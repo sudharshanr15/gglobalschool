@@ -1,44 +1,70 @@
+'use client';
+
+import { hero1, hero2, hero3 } from "@/assets"
+import Link from "next/link"
 import Image from "next/image";
 
-const Hero = () => (
-  <section className="section-container">
-     <div className="bg-[url('/image/herobg.jpg')]">
-    <div className="grid  grid-cols-1 md:grid-cols-2 ">
-      <div className="w-full   md:mt-48 p-10 ">
-        <h1 className=" md:text-heading-1 text-heading-4   text-[#333333] ">
-          ENLIGHTENING
-          <br></br>
-          <span className="text-white">FUTURE MINGS</span>
-        </h1>
+import {Swiper, SwiperSlide} from "swiper/react"
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
-        <p className=" text-heading-6  md:text-heading-4 font-bold 2xl:mt-20  mt-4 md:mt-9  text-white ">
-          G Global School the{" "}
-          <span className="text-black">first authorised IB world school</span>{" "}
-          in Tiruchengode.
-        </p>
+import {Autoplay, EffectFade} from "swiper/modules";
 
-        <div className="flex justify-start">
-          <button className="bg-[#F9A51A]   w-[200px] rounded-full font-bold my-6   py-4 text-lg text-black">
-            Enquire Now
-          </button>
+function Hero(){
+  const hero_images = [
+    {
+      image: hero1
+    },
+    {
+      image: hero2
+    },
+    {
+      image: hero3
+    }
+  ]
+
+  return (
+    <section className="hero-section section-container pb-0 bg-primary-orange-1">
+      <div className="flex flex-col md:flex-row gap-md mt-[100px] text-white">
+        <div className="w-full md:w-1/2">
+          <div className="flex flex-col gap-large md:gap-xl">
+            <h1 className="text-heading-4 md:text-heading-1 uppercase">
+              <span className="text-primary-maroon-1">ENLIGHTENING</span>
+              <br />
+              MINDS
+            </h1>
+            <h2 className="text-[0.8rem] font-bold md:text-heading-5 uppercase">
+              G GLOBAL SCHOOL THE <span className="text-primary-maroon-1">FIRST AUTHORISED IB WORLD SCHOOL</span> IN TIRUCHENGODE.
+            </h2>
+            <Link href={""} className="text-heading-6 md:text-heading-5 bg-primary-yellow-1 text-gray-900 px-8 py-md rounded-full w-fit">
+              Enquire Now
+            </Link>
+          </div>
+        </div>
+        <div className="w-full md:w-1/2">
+          <Swiper
+            modules={[Autoplay, EffectFade]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            effect={"fade"}
+          >
+            {hero_images.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="w-full max-w-[40rem] mx-auto bg-primary-orange-1">
+                  <Image
+                    src={item['image']}
+                    alt="Hero image"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
+    </section>
+  )
+}
 
-      <div className="mx-auto w-full ">
-        <Image
-          src="/image/hero_image.png"
-          alt="Background"
-          className="w-full h-full mt-38"
-          width={500}
-          height={500}
-        />
-        {/* Rest of your content */}
-      </div>
-    </div>
-  </div>
-
-  </section>
- 
-);
-
-export default Hero;
+export default Hero
