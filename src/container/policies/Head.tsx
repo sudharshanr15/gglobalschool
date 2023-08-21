@@ -1,16 +1,16 @@
 import React from "react";
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 function Head() {
   return (
-    <section className="mx-auto p-5 md:p-16 lg:p-16 relative section-container">
-      <p className="absolute font-bold font-serif text-primary-orange opacity-20 text-9xl">
-        "
+    <section className="relative section-container bg-primary-maroon-1 ">
+      <div className="absolute top-0 left-0 z-0">
+          <FormatQuoteIcon sx={{ fontSize: 150, opacity: 0.2, color: "#F05A22"}} />
+      </div>
+      <p className="text-heading-6 uppercase text-white z-10">
+        G Global School nurtures sparkling imaginations, fertile minds, and willingness to take on risks with student's agency.
       </p>
-      <p className="text-heading-5  font-bold">
-        G Global School nurtures sparkling imaginations, fertile minds, and
-        willingness to take on risks with students’ agency.
-      </p>
-    </section>
+  </section>
   );
 }
 

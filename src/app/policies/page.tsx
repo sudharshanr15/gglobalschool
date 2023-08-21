@@ -10,8 +10,8 @@ import Hero from "../../component/hero/Hero"
 
 function page() {
 
-  const Headings = ["Admission Policy","Language Policy","Virtual Learning Policy","Assessment Policy","Inclusive Education Policy","Library and resource centre policy " ,"Academic Integrity Policy"]
-  const Links = ["link1","link2","link3","link4","link5","link6","link7"]
+  const Headings = ["Admission Policy","Language Policy", "Assessment Policy","Inclusive Education Policy","Library and resource centre policy " ,"Academic Integrity Policy"]
+  const Links = ["link1","link2","link4","link5","link6","link7"]
 
   return (
     <>
@@ -19,8 +19,10 @@ function page() {
       <Head />
       <Description />
       <section className="p-5 md:px-16 lg:px-16 section-container">
-        <h1 className="text-heading-3 text-primary-maroon">LIST OF POLICIES</h1>
-        <p className="text-body py-4">
+        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+          list of policies
+        </h2>
+        <p className="text-body mb-xl">
           Every year, these policies will be reviewed along with the members of
           the school community to enhance for betterment.
         </p>
