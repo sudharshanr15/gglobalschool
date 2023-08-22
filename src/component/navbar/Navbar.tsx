@@ -223,7 +223,7 @@ function Navbar(){
                             <ul className="list-none flex flex-col items-start">
                                {
                                     Object.values(links).map((item, index) => (
-                                        <li className="text-heading-6 text-white mb-4" key={index}>
+                                        <li className="text-subheading md:text-heading-6 text-white mb-2" key={index}>
                                             {
                                                 (item.sub_menu.length > 0) ? (<button className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" data-name={item.name} onClick={onNavLinkClick}>{item.name}</button>) : (<Link className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" href={item.href || ""} onClick={onLink}>{item.name}</Link>)
                                             }
@@ -231,18 +231,18 @@ function Navbar(){
                                     ))
                                 }
                             </ul>
-                            <button className="mt-8 px-11 py-5 rounded-full bg-primary-yellow-1 text-heading-6 text-gray-900">Contact us</button>
+                            <button className="mt-8 px-11 py-5 rounded-full bg-primary-yellow-1 text-subheading md:text-heading-6 text-gray-900">Contact us</button>
                         </div>
                         {isSubMenuOpen && (
                             <div className="absolute flex justify-center items-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
                                 <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu">
-                                    <button onClick={onSubMenuClose} className="uppercase text-heading-5 text-white mb-8 block">
+                                    <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
                                         <WestIcon fontSize="large" className="me-4" />
                                         BACK
                                     </button>
                                     <ul className="list-none">
                                         {links[activeSubmenu].sub_menu.map((item, index) => (
-                                            <li className="text-heading-6 text-white mb-8" key={index}>
+                                            <li className="text-subheading md:text-heading-6 text-white mb-8" key={index}>
                                                 <Link href={item.href} onClick={onLink}>G {item.name}</Link>
                                             </li>
                                         ))}

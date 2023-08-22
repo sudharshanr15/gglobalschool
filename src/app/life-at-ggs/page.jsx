@@ -72,7 +72,7 @@ function page() {
 
       {/* our facility */}
       <section className="section-container">
-        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-md">
           OUR FACILITIES
         </h2>
         <p className="text-body">
@@ -101,7 +101,7 @@ function page() {
 
       {/* FIELD TRIPS */}
       <section className="section-container">
-        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-md">
             FIELD TRIPS
         </h2>
         <p className="py-2 text-body">
