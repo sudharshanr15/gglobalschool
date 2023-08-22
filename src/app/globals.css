@@ -21,3 +21,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.nav-submenu{
+    background-image: url("/image/hero-bg.png");
+    background-size: contain;
+}
