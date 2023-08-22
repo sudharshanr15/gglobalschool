@@ -1,5 +1,5 @@
 import React from "react";
-import TopicCard from "./topicCards";
+import TopicCard from "@/component/topicsCard/TopicCard";
 
 function Others() {
   return (
@@ -11,11 +11,11 @@ function Others() {
           <TopicCard
             text={"STUDENT COUNCIL"}
             link={""}
-          />                
+          />
           <TopicCard
             text={"STUDENT COUNCIL"}
             link={""}
-          />                
+          />
       </div>
     </section>
   );

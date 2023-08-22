@@ -10,16 +10,27 @@ import styles from "./styles.module.css"
 
 import { gsap } from "gsap"
 
+type NavbarLinkType = {
+    [k: string]: {
+        name: string,
+        href: string,
+        sub_menu: {
+            name: string,
+            href: string
+        }[]
+    }
+}
+
 function Navbar(){
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
     const [isMenuHover, setIsMenuHover] = useState(false)
     const [activeSubmenu, setActiveSubmenu] = useState("")
 
-    const links = {
+    const links: NavbarLinkType = {
         "Our G Global Universe": {
             name: "Our G Global Universe",
-            href: false,
+            href: "",
             sub_menu: [
                 {
                     name: "GGS Story",
@@ -45,7 +56,7 @@ function Navbar(){
         },
         "Life @ GGS": {
             name: "Life @ GGS",
-            href: false,
+            href: "",
             sub_menu: [
                 {
                     name: "Studios @ GGS",
@@ -63,7 +74,7 @@ function Navbar(){
         },
         "Curriculum & Learning": {
             name: "Curriculum & Learning",
-            href: false,
+            href: "",
             sub_menu: [
                 {
                     name: "Curriculam",
@@ -92,7 +103,7 @@ function Navbar(){
         },
         "Become one of us": {
             name: "Become one of us",
-            href: false,
+            href: "",
             sub_menu: [
                 {
                     name: "Admissions",
@@ -156,7 +167,7 @@ function Navbar(){
         ))
     }
 
-    function onNavLinkClick(e){
+    function onNavLinkClick(e: any){
         e.preventDefault()
         setActiveSubmenu(e.target.dataset.name)
         setIsSubMenuOpen(true)
