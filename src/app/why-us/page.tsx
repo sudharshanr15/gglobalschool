@@ -1,4 +1,4 @@
-import {Cards, Description,Others} from "@/container/whyus"
+import {Cards, Description,Others} from "@/container/why-us"
 import Hero from "../../component/hero/Hero"
 
 const Whyus = () => {

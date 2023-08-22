@@ -1,5 +1,5 @@
 import React from 'react'
-import TopicCard from "../StudentCouncil/topicCards"
+import TopicCard from "../student-council/topicCards"
 
 function Others() {
   return (

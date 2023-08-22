@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pyp/page.jsx", "src/container/PYP/Cards.jsx", "src/container/whyus/card.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pyp/page.jsx", "src/container/PYP/Cards.jsx", "src/container/why-us/card.jsx"],
   "exclude": ["node_modules"]
 }

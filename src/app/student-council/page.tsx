@@ -1,4 +1,4 @@
-import {DescriptionBox,Council,Teamcard,Content,Benefits, Others} from  "@/container/StudentCouncil"
+import {DescriptionBox,Council,Teamcard,Content,Benefits, Others} from  "@/container/student-council"
 import Hero from "../../component/hero/Hero"
 
 const StudentCouncil = () => {

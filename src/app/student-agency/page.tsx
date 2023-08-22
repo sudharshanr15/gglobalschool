@@ -1,7 +1,7 @@
-import Agency from "@/container/StudentAgency/Agency"
-import Cards from "@/container/StudentAgency/Cards"
-import Description from "@/container/StudentAgency/Description"
-import Others from "@/container/StudentAgency/Others"
+import Agency from "@/container/student-agency/Agency"
+import Cards from "@/container/student-agency/Cards"
+import Description from "@/container/student-agency/Description"
+import Others from "@/container/student-agency/Others"
 import Hero from "../../component/hero/Hero"
 
 
