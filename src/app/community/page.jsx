@@ -1,5 +1,5 @@
 import {Onetwo, Threetofive, Wellness} from "@/container/community"
-import {Others} from "@/container/workwithus"
+import {Others} from "@/container/work-with-us"
 import {Footer} from "@/component"
 import Hero from "../../component/hero/Hero";
 

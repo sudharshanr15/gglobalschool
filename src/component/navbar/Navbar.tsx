@@ -23,23 +23,23 @@ function Navbar(){
             sub_menu: [
                 {
                     name: "GGS Story",
-                    href: "",
+                    href: "/our-story",
                 },
                 {
                     name: "Mission & Values",
-                    href: "",
+                    href: "/mission",
                 },
                 {
                     name: "Why Us",
-                    href: "",
+                    href: "/why-us",
                 },
                 {
                     name: "Student Agency",
-                    href: "",
+                    href: "/student-agency",
                 },
                 {
                     name: "Pillars by which we abide",
-                    href: "",
+                    href: "/policies",
                 }
             ]
         },
@@ -49,15 +49,15 @@ function Navbar(){
             sub_menu: [
                 {
                     name: "Studios @ GGS",
-                    href: "",
+                    href: "/life-at-ggs",
                 },
                 {
                     name: "Student Leadership",
-                    href: "",
+                    href: "/student-council",
                 },
                 {
                     name: "Health & Well being",
-                    href: ""
+                    href: "/awakening-creativity"
                 }
             ]
         },
@@ -67,17 +67,17 @@ function Navbar(){
             sub_menu: [
                 {
                     name: "Curriculam",
-                    href: "",
+                    href: "/eyp",
                 },
                 {
                     name: "Emotional & Ethical Support",
-                    href: "",
+                    href: "/emotional",
                 },
             ]
         },
         "Community Wellness": {
             name: "Community Wellness",
-            href: "",
+            href: "/community",
             sub_menu: [],
         },
         "Discovery outside the wall": {
@@ -100,7 +100,7 @@ function Navbar(){
                 },
                 {
                     name: "Work with Us",
-                    href: ""
+                    href: "/work-with-us"
                 }
             ]
         }
@@ -142,6 +142,7 @@ function Navbar(){
                     !e
                 ))
             }, 500)
+            onSubMenuClose()
         }else{
             setIsMenuOpen((e) => (
                 !e
