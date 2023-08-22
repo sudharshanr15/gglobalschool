@@ -175,11 +175,11 @@ function Navbar(){
             <div className="ps-2 pt-7 md:ps-8 md:py-6 flex flex-row items-center">
                 <div className="flex-1">
                     <div className="inline-block px-5 pt-1 pb-3 md:px-7 md:pb-4 md:pt-2 bg-white rounded-3xl">
-                        <Image className="max-w-[8.5rem] md:max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                        <Image className="max-w-[12rem] md:max-w-[17rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
                     </div>
                 </div>
                 <div className="inline-flex gap-x-16 items-center">
-                    <Link href="" className="text-subheading-regular text-white hidden md:block">Admissions</Link>
+                    <Link href="" className="text-subheading text-white hidden md:block">Admissions</Link>
                     <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-5 py-3 md:px-7 md:py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
                         onClick={onMenuClick}
                         onMouseEnter={onMenuHover}
@@ -190,24 +190,24 @@ function Navbar(){
                             <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_2}`}></span>
                             <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_3}`}></span>
                         </div>
-                        <h6 className="text-heading-6">Menu</h6>
+                        <h6 className="text-heading-6 hidden md:block">Menu</h6>
                     </button>
                 </div>
             </div>
             {isMenuOpen && (
                 <div className="w-full bg-primary-maroon-1 fixed h-full overflow-auto top-0 left-0 menu-links z-[100]">
                     <div className="relative">
-                        <div className="p-10 flex flex-row justify-between items-center">
+                        <div className="p-5 flex flex-row justify-between items-center">
                             <div className="inline-block px-7 pb-4 pt-2 bg-white rounded-3xl">
-                                <Image className="max-w-[12rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                                <Image className="max-w-[10rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
                             </div>
-                            <button className="inline-flex items-center justify-center bg-primary-orange-1 w-20 aspect-square rounded-full"
+                            <button className="inline-flex items-center justify-center bg-primary-orange-1 w-14 aspect-square rounded-full"
                                 onClick={onMenuClick}
                             >
                                 <Image src={icon_close} unoptimized alt="Close Icon" />
                             </button>
                         </div>
-                        <div className="p-10">
+                        <div className="p-5">
                             <ul className="list-none flex flex-col items-start">
                                {
                                     Object.values(links).map((item, index) => (
@@ -222,7 +222,7 @@ function Navbar(){
                             <button className="mt-8 px-11 py-5 rounded-full bg-primary-yellow-1 text-heading-6 text-gray-900">Contact us</button>
                         </div>
                         {isSubMenuOpen && (
-                            <div className="absolute flex justify-center items-center p-10 top-0 w-full h-full bg-gray-900 bg-opacity-40">
+                            <div className="absolute flex justify-center items-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
                                 <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu">
                                     <button onClick={onSubMenuClose} className="uppercase text-heading-5 text-white mb-8 block">
                                         <WestIcon fontSize="large" className="me-4" />
