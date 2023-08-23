@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pyp/page.jsx", "src/container/PYP/Cards.jsx", "src/container/whyus/card.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pyp/page.jsx", "src/container/PYP/Cards.jsx", "src/container/whyus/card.jsx", "src/container/discovery/eventcard.jsx", "src/container/discovery/EventList.jsx"],
   "exclude": ["node_modules"]
 }
