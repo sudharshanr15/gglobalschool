@@ -32,3 +32,7 @@ export {default as ib7} from "./icons/why_ib/ib_7.svg"
 export {default as ib8} from "./icons/why_ib/ib_8.svg"
 export {default as ib9} from "./icons/why_ib/ib_9.svg"
 export {default as ib10} from "./icons/why_ib/ib_10.svg"
+
+export {default as choose_us_1} from "./choose_us/choose_us-1.png"
+export {default as choose_us_2} from "./choose_us/choose_us-2.png"
+export {default as choose_us_3} from "./choose_us/choose_us-3.png"
