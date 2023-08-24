@@ -5,7 +5,7 @@ import Image from "next/image";
 function TopicCard({ text, overlayText }) {
     return (
         <>
-            <div className=" relative mt-20 md:mt-0 md:w-[50%]">
+            <div className=" relative mt-3xl md:mt-0 md:w-[50%]">
                 <Image
                     src={img}
                     alt="checked"
@@ -13,7 +13,7 @@ function TopicCard({ text, overlayText }) {
                     unoptimized
                 />
                 <div className="bg-primary-maroon-1 text-center">
-                    <p className="text-white uppercase text-heading-5 p-8">
+                    <p className="text-white uppercase text-heading-5 p-xl">
                         {text}
                     </p>
                 </div>
@@ -21,7 +21,7 @@ function TopicCard({ text, overlayText }) {
                     <p className="text-white text-heading-5 uppercase p-5">
                         {overlayText}
                     </p>
-                    <button className="bg-white rounded-full text-heading-6 py-2 lg:py-4 md:py-4 px-10 lg:px-20 md:px-20 ">
+                    <button className="bg-white rounded-full text-heading-6 py-2 lg:py-md md:py-md px-xl lg:px-3xl md:px-3xl ">
                         View
                     </button>
                 </div>

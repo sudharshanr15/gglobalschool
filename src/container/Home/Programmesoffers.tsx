@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 const Programmesoffers = () => (
-  <div className="bg-[#790000]">
+  <section className="section-container">
+      <div className="text-primary-maroon">
     <div className="div grid  grid-cols-1 md:grid-cols-2">
       <div className="w-full  pl-10 md:mt-12   mt-10 text-left">
-        <h3 className="text-3xl md:text-5xl font-bold  sm:mr-10 text-[#FAFAFA]">
+        <h3 className="text-heading-5 md:text-heading-3 font-bold  sm:mr-10 text-[#FAFAFA]">
           PROGRAMMES WE OFFER
         </h3>
         <h1 className="text-4xl md:text-8xl font-bold  sm:mr-10 text-[#F9BDA7]">
@@ -25,8 +26,8 @@ const Programmesoffers = () => (
         {/* Rest of your content */}
       </div>
 
-      <div className="w-full md:ml-9 md:p-10 mt-5  text-center">
-        <h1 className="md:text-left  md:text-6xl text-4xl font-bold  text-[#FAFAFA]">
+      <div className="w-full md:ml-9 md:p-xl mt-5  text-center">
+        <h1 className="md:text-left  md:text-heading-2 text-heading-4 font-bold  text-[#FAFAFA]">
           Early Year Program
         </h1>
 
@@ -38,14 +39,14 @@ const Programmesoffers = () => (
 
         <div className=" bg-white lg:ml-0  rounded-lg max-w-[312px] mx-auto items-center">
           <div className="text-left   text-[#2A2A2A]   ">
-            <p className="p-8   md:text-5xl text-2xl fond-bond mx-8 ">
+            <p className="p-xl   md:text-heading-3 text-heading-4 fond-bond  ">
               A child’s learning begins from early years
             </p>
           </div>
         </div>
 
-        <div className="w-full md:w-1/2  md:mt-5 p-5 text-center underline underline-offset-8 ... text-[#F05A22]">
-          <h1 className="text-4xl md:text-2xl  font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
+        <div className="w-full md:w-1/2  md:mt-5 p-large text-center underline underline-offset-8 ... text-[#F05A22]">
+          <h1 className="text-heading-4 md:text-heading-5  font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
             To know more
           </h1>
         </div>
@@ -55,8 +56,8 @@ const Programmesoffers = () => (
     {/* --- */}
 
     <div className="div  grid  grid-cols-1 md:grid-cols-2">
-      <div className="w-full  md:p-10  text-center  p-10  mx-auto">
-        <h1 className="text-4xl md:text-6xl  font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
+      <div className="w-full  md:p-xl  text-center  p-10  mx-auto">
+        <h1 className="md:text-heading-2 text-heading-4  font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
           Primary Year Program
         </h1>
 
@@ -68,14 +69,14 @@ const Programmesoffers = () => (
 
         <div className=" bg-white mx-auto lg:ml-0 md:left-0 rounded-lg max-w-[312px] items-center">
           <div className="text-left font-medium text-[#2A2A2A]   ">
-            <p className="p-8 md:text-5xl text-2xl mx-8 ">
+            <p className="p-xl md:text-heading-3 text-heading-4   ">
               Curiosity is the fuel for discovery, inquiry and learning
             </p>
           </div>
         </div>
 
         <div className="w-full md:w-1/2  md:mt-5 p-5 text-center underline underline-offset-8 ... text-[#F05A22]">
-          <h1 className="text-4xl md:text-2xl  font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
+          <h1 className="text-heading-4 md:text-heading-5   font-bold sm:mr-10 md:text-left text-[#FAFAFA]">
             To know more
           </h1>
         </div>
@@ -93,6 +94,9 @@ const Programmesoffers = () => (
       </div>
     </div>
   </div>
+
+  </section>
+
 );
 
 export default Programmesoffers;

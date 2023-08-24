@@ -20,7 +20,7 @@ function Profile() {
     };
     return (
         <section>
-            <section className="md:flex w-[90%] mx-auto my-3xl md:gap-4  ">
+            <section className=" section-container md:flex  md:gap-large   ">
                 <div className="mb-large">
                     <p className="text-heading-3 text-primary-maroon-1 mb-md">
                         IB LEARNER PROFILE
@@ -41,13 +41,13 @@ function Profile() {
                 <Image src={missionImage} alt="mission" unoptimized />
             </section>
 
-            <section className=" relative mt-3xl">
+            <section className="  section-container  relative ">
                 <Image
                     src={scrollImg}
                     onClick={() => {
                         scroll(440);
                     }}
-                    className={` absolute md:top-80 top-96 right-md`}
+                    className={` absolute md:top-80 top-96 right-md `}
                 />
                 <Image
                     src={scrollImg}
@@ -59,7 +59,7 @@ function Profile() {
 
                 <div
                     ref={ref}
-                    className="flex gap-xl overflow-x-auto scroll-smooth scrollbar-hide md:pl-2xl pl-md"
+                    className="flex gap-xl overflow-x-auto scroll-smooth scrollbar-hide"
                 >
                     <MissionCards
                         cardImage={profile1}

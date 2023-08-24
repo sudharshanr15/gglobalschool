@@ -10,8 +10,13 @@ function TopicCards({img, text, text1 }) {
           <p className="text-white uppercase text-heading-5 p-md">{text}</p>
         </div>
         <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-primary-maroon-1 opacity-0 transition duration-700 ease-in-out hover:opacity-100">
+<<<<<<< HEAD
           <p className="text-white text-heading-5 uppercase p-5">{text1}</p>
           <button className="bg-white rounded-full text-heading-6 py-4 px-20 ">
+=======
+          <p className="text-white text-heading-5 uppercase p-md">{text1}</p>
+          <button className="bg-white rounded-full text-heading-6py-md px-3xl ">
+>>>>>>> 85da353f263d0d2e96d24fe6b986ef1e4f06d606
             View
           </button>
         </div>

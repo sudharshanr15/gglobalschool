@@ -1,13 +1,13 @@
 import Image from "next/image";
 
 const Newsroom = () => (
-  <div>
+  <section className="section-container">
     <div className="div flex  flex-wrap">
-      <div className="w-full md:w-1/2 pl-10 md:mt-12  mt-10 text-left">
-        <h3 className="text-4xl md:text-5xl  font-bold sm:mr-10 text-black">
+      <div className="w-full md:w-1/2 pl-xl md:mt-12  mt-10 text-left">
+        <h3 className="text-heading-4  md:text-heading-3  font-bold sm:mr-10 text-black">
           NEWS & EVENTS
         </h3>
-        <h1 className="text-5xl md:text-7xl  font-bold sm:mr-10 text-[#F9BDA7]">
+        <h1 className="text-heading-3 md:text-heading-1  font-bold sm:mr-10 text-[#F9BDA7]">
           NEWS ROOM
         </h1>
       </div>
@@ -27,7 +27,7 @@ const Newsroom = () => (
         
 
                 {/* Text Elements */}
-                <p className="py-2 mx-8 mt-52  text-white font-bold text-xl">
+                <p className="py-2 mx-8 mt-52  text-white font-bold text-heading-6 ">
                   ANNUAL DAY CELEBRATION
                 </p>
                 <p className="py-2 mx-8 text-white">12/01/2023</p>
@@ -52,7 +52,7 @@ const Newsroom = () => (
                
 
                 {/* Text Elements */}
-                <p className="py-2 mx-8 mt-52  text-white font-bold text-xl">
+                <p className="py-2 mx-8 mt-52  text-white font-bold text-heading-6">
                   MUSIC COMPETITION
                 </p>
                 <p className="py-2 mx-8 text-white">15/03/20233</p>
@@ -70,7 +70,7 @@ const Newsroom = () => (
               >
                
                 {/* Text Elements */}
-                <p className="py-2 mx-8 mt-52 text-white font-bold text-xl">
+                <p className="py-2 mx-8 mt-52 text-white font-bold text-heading-6">
                   SPORTS DAY
                 </p>
                 <p className="py-2 mx-8 text-white">25/03/2023</p>
@@ -80,7 +80,7 @@ const Newsroom = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Newsroom;

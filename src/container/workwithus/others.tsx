@@ -3,12 +3,12 @@ import TopicCard from "../StudentCouncil/topicCards"
 
 function Others() {
   return (
-      <>
-          <div className="w-[90%] mx-auto my-20 md:mt-20">
+      <section className='section-container'>
+          <div className="mx-auto">
               <p className="uppercase text-heading-4 text-primary-maroon-1">
                   Other Topics To explore
               </p>
-              <div className="md:flex md:gap-11 mt-10">
+              <div className="md:flex md:gap-xl mt-xl">
                   <TopicCard
                       text={"STUDENT AGENCY"}
                       overlayText={"STUDENT AGENCY"}
@@ -19,7 +19,7 @@ function Others() {
                   />
               </div>
           </div>
-      </>
+      </section>
   );
 }
 

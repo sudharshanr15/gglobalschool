@@ -2,12 +2,12 @@ import React from 'react'
 
 function Moto() {
   return (
-      <section className="bg-primary-maroon-1 text-center text-white p-2xl">
+      <section className=" section-container bg-primary-maroon-1 text-center text-white">
           <div className="md:w-[90%] mx-auto">
               <p className="text-heading-3 uppercase">OUR MOTTO</p>
               <p className="md:text-heading-2 uppercase my-10 text-heading-4">
                   <span className="text-primary-yellow-1 ">
-                      “Enlightening Minds”{ " "}
+                      “Enlightening Minds”{" "}
                   </span>
                   is the motto of G Global School.
               </p>
