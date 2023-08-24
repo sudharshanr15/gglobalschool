@@ -1,4 +1,5 @@
-import {Description, Listofevents} from "@/container/events"
+import {Description, Listofevents, Slideshow} from "@/container/events"
+import {Others} from "@/container/workwithus"
 import Hero from "../../component/hero/Hero";
 
 const Page = () => {
@@ -7,6 +8,8 @@ const Page = () => {
         <Hero title={"days and events"} />
         <Description/>
         <Listofevents/>
+        <Slideshow/>
+        <Others/>
     </div>
   )
 }

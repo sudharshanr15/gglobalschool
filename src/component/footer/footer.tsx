@@ -76,7 +76,7 @@ const Footer = () => {
 
       <div className="grid gap-y-md md:flex justify-between">
         <Link href='/community' className="md:w-1/2 text-heading-6 text-white cursor-pointer">Community Wellness</Link>
-        <Link href='/#' className="md:w-1/2 text-heading-6 text-white cursor-pointer">Days and Events</Link>
+        <Link href='/events' className="md:w-1/2 text-heading-6 text-white cursor-pointer">Days and Events</Link>
       </div>
     </div>
 
