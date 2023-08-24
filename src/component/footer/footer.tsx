@@ -114,7 +114,7 @@ const Footer = () => {
               Community Wellness
             </Link>
             <Link
-              href="/#"
+              href="/events"
               className="md:w-1/2 text-heading-6 text-white cursor-pointer"
             >
               Days and Events
