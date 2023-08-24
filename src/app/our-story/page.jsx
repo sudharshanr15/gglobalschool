@@ -285,11 +285,11 @@ function page() {
                     <TopicCard
                       text={"STUDENT COUNCIL"}
                       link={""}
-                    />                
+                    />
                     <TopicCard
                       text={"STUDENT COUNCIL"}
                       link={""}
-                    />                
+                    />
                 </div>
             </section>
         </>

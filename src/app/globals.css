@@ -12,7 +12,16 @@
 
 @layer components{
     .section-container{
-        @apply p-md py-xl lg:p-3xl;
+        @apply p-md py-xl   lg:p-3xl;
+    }
+
+    .btn-slide{
+        @apply text-heading-6 text-gray-900 bg-primary-yellow-1 px-xl py-md rounded-full hover:text-white focus:text-white relative z-10 overflow-hidden transition-colors duration-300;
+    }
+
+    .btn-slide::before{
+        content: "";
+        @apply absolute top-0 left-0 w-full h-full z-[-1] bg-primary-maroon-1 rounded-full scale-x-0 hover:scale-x-100 focus:scale-x-100 transition-transform duration-300 origin-left;
     }
 }
 
