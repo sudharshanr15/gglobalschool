@@ -236,7 +236,7 @@ function Navbar(){
                             <button className="mt-8 px-11 py-5 rounded-full bg-primary-yellow-1 text-subheading md:text-heading-6 text-gray-900">Contact us</button>
                         </div>
                         {isSubMenuOpen && (
-                            <div className="absolute flex justify-center items-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
+                            <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
                                 <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu">
                                     <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
                                         <div className="animate-slide-in inline-block">
