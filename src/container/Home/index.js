@@ -1,6 +1,5 @@
 export {default as Hero} from "./Hero"
-export {default as Teams} from "./Teams"
-export {default as Newsroom} from "./Newsroom"
-export {default as Personalgrowth} from "./Personalgrowth"
-export {default as Programmesoffers} from "./Programmesoffers"
-
+export {default as Programs} from "./Programs"
+export {default as Team} from "./Team"
+export {default as Blogs} from "./Blogs"
+export {default as News} from "./News"

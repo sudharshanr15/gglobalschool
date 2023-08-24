@@ -5,9 +5,6 @@ import pypLogo from "../../assets/pyp image big.png";
 function Vision() {
   return (
       <section className="section-container ">
-          <p className="text-heading-4 uppercase p-md">
-              Curiosity is the fuel for discovery, inquiry and learning
-          </p>
           <section className=" w-full section-containe md:flex my-2xl justify-center items-center">
               <div>
                   <Image src={pypLogo} alt="logo" unoptimized />

@@ -2,47 +2,52 @@ import React from "react";
 import Image from "next/image";
 import eypLogo from "../../assets/eyp image 1.jpg";
 import eypLogo2 from "../../assets/Group 24.png";
-import TopicCard from "../../container/eyp/TopicCard";
+import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import {EarlyYears, Offers} from "@/container/eyp/";
 
 function page() {
     return (
         <>
             <Hero title={"Early Year Programme"} />
-            <div className=" section-container bg-primary-maroon-1 ">
-                <p className="text-heading-4 uppercase text-white">
-                    SHAPING YOUNG MINDS : A CHILD'S LEARNING BEGINS FROM EARLY
-                    YEARS
+            <section className="relative section-container bg-primary-maroon-1 ">
+                <div className="absolute top-0 left-0 z-0">
+                    <FormatQuoteIcon sx={{ fontSize: 150, opacity: 0.2, color: "#F05A22"}} />
+                </div>
+                <p className="text-heading-6 uppercase text-white z-10">
+                    Our goal is to promote <span className="text-primary-yellow-1">“International mindedness”</span>, manifesting a sense of morality to all the human beings in the global society.
                 </p>
-            </div>
+            </section>
 
-            {/* early year program */}
-
-            <section className="section-container w-full  flex flex-col md:flex-row   top-3 p-5 md:mt-6 gap-5 md:gap-[117px]">
-                <div className="w-full md:w-[550.281px] md:h-[420.876px]">
+            <section className="section-container w-full flex flex-col md:flex-row gap-5 md:gap-xl">
+                <div className="w-full md:w-1/2">
                     <Image
                         src={eypLogo}
-                        className="w-full h-full"
+                        className="w-full h-full object-cover"
                         alt="logo"
                         unoptimized
                     />
                 </div>
-                <div className="w-full md:w-[70%]">
-                    <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[60%]">
-                        EARLY YEAR PROGRAMME
-                    </p>
-                    <div className="text-base font-normal leading-7 tracking-normal text-left md:w-[78%]">
-                        <p className="pt-4">
+                <div className="w-full md:w-1/2">
+                    <h2 className="text-primary-maroon-1 text-heading-3 mb-large uppercase">
+                        PRIMARY YEAR PROGRAMME
+                    </h2>
+                    <h4 className="text-heading-6 p-md bg-primary-maroon-1 text-white mb-large">
+                        Curiosity is the fuel for discovery, inquiry and learning
+                    </h4>
+                    <div className="flex flex-col gap-large text-body">
+                        <p>
                             Children are natural inquirers from birth; they have
                             the capacity to learn about, interact with, and
                             interpret the world around them.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             From birth, children possess all kinds of mental
                             abilities uniquely suited to these early phases of
                             learning and development.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             They are curious and capable learners with a sense
                             of agency, rich in potential, bringing valid skills,
                             preferences, and understanding to the educational
@@ -52,88 +57,108 @@ function page() {
                 </div>
             </section>
 
-            {/* feature */}
+            <Offers />
 
-            <section className=" section-container  flex flex-col md:flex-row md:mt-7 gap-5 md:gap-[117px]">
-                <div className="w-full md:w-[50%]  ">
-                    <p className="text-primary-maroon-1 text-heading-3 w-full md:w-[50%]">
+            <section className="section-container py-0">
+                <div className="bg-primary-yellow-1 p-xl">
+                    <h2 className="text-primary-maroon-1 text-heading-3 uppercase text-center">
+                        SHARPING YOUNG MINDS
+                    </h2>
+                </div>
+            </section>
+
+            <section className="section-container w-full flex flex-col md:flex-row gap-5 md:gap-xl">
+                <div className="w-full md:w-1/2">
+                    <Image
+                        src={eypLogo}
+                        className="w-full h-full object-cover"
+                        alt="logo"
+                        unoptimized
+                    />
+                </div>
+                <div className="w-full md:w-1/2">
+                    <h2 className="text-primary-maroon-1 text-heading-3 mb-large uppercase">
+                        EARLY YEAR PROGRAMME
+                    </h2>
+                    <h4 className="text-heading-6 p-md bg-primary-maroon-1 text-white mb-large">
+                        A child’s learning begins from early years.
+                    </h4>
+                    <div className="flex flex-col gap-large text-body">
+                        <p>
+                            Children are natural inquirers from birth; they have
+                            the capacity to learn about, interact with, and
+                            interpret the world around them.
+                        </p>
+                        <p>
+                            From birth, children possess all kinds of mental
+                            abilities uniquely suited to these early phases of
+                            learning and development.
+                        </p>
+                        <p>
+                            They are curious and capable learners with a sense
+                            of agency, rich in potential, bringing valid skills,
+                            preferences, and understanding to the educational
+                            process.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section-container flex flex-col md:flex-row gap-5 md:gap-xl">
+                <div className="w-full md:w-1/2">
+                    <p className="text-primary-maroon-1 text-heading-3 mb-large uppercase">
                         FEATURES
                     </p>
-                    <div className="text-base font-normal leading-7 tracking-normal text-left">
-                        <p className="pt-2">
+                    <div className="flex flex-col gap-large text-body">
+                        <p>
                             Learning spaces at GGS are designed to support
                             active participation of children through play.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             Learning engagements and classroom activities are
                             designed by teachers to develop their fine and gross
                             motor skills in everyday teaching and learning.
                         </p>
-                        <p className="pt-4">
+                        <p>
                             Literacy and Numeracy curriculum are framed through
                             a wide range of playful and inquiry-based
                             explorations. Learners are provided with various
                             symbolic and representational learning.
                         </p>
+                        <p>
+                            Learner’s are provided with various symbolic and representational learning.
+                        </p>
                     </div>
                 </div>
-                <div className="relative left-0 md:left-3 w-full md:w-[80%]">
+                <div className="w-full md:w-1/2">
                     <Image
                         src={eypLogo2}
                         alt="logo"
-                        className="w-[95%] h-[80%] "
+                        className="w-full h-auto"
+                        unoptimized
                     />
                 </div>
             </section>
 
             {/* PROGRAMS STECTION */}
-            <section className="section-container w-auto text-left  content-center">
-                <p className="text-heading-4 uppercase mx-auto w-[90%]  text-primary-maroon-1">
-                    early years @ g global school programmes
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  mx-auto  xl:grid-cols-2 gap-3 w-[90%] md:w-[75%] mt-10 left-7  ">
-                    <div className="bg-[#790000] text-white rounded-3xl p-4  text-center ">
-                        <p className="text-heading-6">PLAY GROUND</p>
-                        <div className="bg-[#F9A51A] text-black text-center rounded-3xl p-2  text-heading-6 mx-4 my-5">
-                            <p>2.5 years to 3 years</p>
-                        </div>
-                    </div>
-
-                    <div className="bg-[#790000] text-white rounded-3xl p-4 text-center">
-                        <p className="text-heading-6">KINDER GARDER 1</p>
-                        <div className="bg-[#F9A51A]  text-black text-center rounded-3xl text-heading-6 p-2  mx-4 my-5">
-                            <p> 3 years</p>
-                        </div>
-                    </div>
-
-                    <div className="bg-[#790000] text-white rounded-3xl p-4  text-center">
-                        <p className="text-heading-6">KINDER GARDEN 2</p>
-                        <div className="bg-[#F9A51A]  text-black text-center rounded-3xl text-heading-6 p-2 mx-4 my-5">
-                            <p>4 years</p>
-                        </div>
-                    </div>
-
-                    <div className="bg-[#790000] text-white rounded-3xl p-4 text-center">
-                        <p className="text-heading-6">KINDER GARDERN 3</p>
-                        <div className="bg-[#F9A51A]   text-black text-center rounded-3xl text-heading-6 p-2 mx-4 my-5">
-                            <p>5 years</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <EarlyYears />
 
             {/* other topics to explore */}
 
-            <div>
-                <p className="text-heading-4 uppercase mx-auto w-[90%] mt-10 text-primary-maroon-1">
-                    other topics to explore
-                </p>
-            </div>
-
-            <section className="section-container md:w-[95%] flex flex-col md:flex-row justify-center   top-3  md:p-10 gap-5 md:gap-[30px]">
-                <TopicCard text={"life @ ggc"} text1={"LIFE @ GCC"} />
-                <TopicCard text={"student council"} text1={"STUDENT COUNCIL"} />
+            <section className="section-container">
+                <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
+                    OTHER TOPICS TO EXPLORE
+                </h2>
+                <div className="flex flex-col md:flex-row gap-xl">
+                    <TopicCard
+                      text={"STUDENT COUNCIL"}
+                      link={""}
+                    />
+                    <TopicCard
+                      text={"STUDENT COUNCIL"}
+                      link={""}
+                    />
+                </div>
             </section>
         </>
     );
