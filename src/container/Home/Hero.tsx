@@ -39,7 +39,7 @@ function Hero(){
             <h2 className="text-[0.8rem] font-bold md:text-heading-5 uppercase">
               G GLOBAL SCHOOL THE <span className="text-primary-maroon-1">FIRST AUTHORISED IB WORLD SCHOOL</span> IN TIRUCHENGODE.
             </h2>
-            <Link href={""} className="text-heading-6 md:text-heading-5 bg-primary-yellow-1 text-gray-900 px-8 py-md rounded-full w-fit">
+            <Link href={""} className="btn-slide w-fit">
               Enquire Now
             </Link>
           </div>

@@ -41,7 +41,7 @@ function Programs(){
                 </div>
             </div>
             <div className="text-center md:text-start">
-                <Link href={""} className="uppercase text-heading-6 text-gray-900 bg-primary-yellow-1 px-xl py-md rounded-full mt-xl inline-block">
+                <Link href={""} className="btn-slide mt-xl">
                     KNOW MORE
                 </Link>
             </div>
