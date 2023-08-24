@@ -1,5 +1,6 @@
 import { team1, team2, team3 } from "@/assets"
 import Image from "next/image"
+import { wave_fill } from "@/assets"
 
 function Team(){
     const teams = [
@@ -22,7 +23,12 @@ function Team(){
     return (
         <section className="section-container">
             <h2 className="uppercase text-heading-5 md:text-heading-3">OUR TEAM</h2>
-            <h4 className="text-heading-4 md:text-8xl opacity-10">TEAM</h4>
+            <div className="w-fit relative">
+                <h4 className="text-heading-4 md:text-8xl opacity-10">TEAM</h4>
+                <div className="absolute w-full h-full top-0 right-0">
+                    <Image src={wave_fill} className="max-w-[112px] absolute w-full top-1/2 -translate-y-1/2 right-[25%]" alt="Wave Image" />
+                </div>
+            </div>
             <div className="mt-md flex flex-col md:flex-row gap-md">
                 {teams.map((item, index) => (
                     <div className="bg-primary-maroon md:max-w-[27rem] rounded-t-3xl overflow-hidden flex-grow" key={index}>

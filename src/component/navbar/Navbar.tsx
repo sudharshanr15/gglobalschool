@@ -183,11 +183,13 @@ function Navbar(){
     }
 
     return (
-        <nav className="bg-transparent absolute top-0 left-0 w-full z-50">
-            <div className="ps-2 pt-7 md:ps-8 md:py-6 flex flex-row items-center">
-                <div className="flex-1">
-                    <div className="inline-block px-5 pt-1 pb-3 md:px-7 md:pb-4 md:pt-2 bg-white rounded-3xl">
-                        <Image className="max-w-[12rem] md:max-w-[17rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+        <nav className="bg-transparent absolute top-0 left-0 w-full z-50 h-[100px]">
+            <div className="ps-md pt-7 pd:ps-3xl pd:my-6 flex flex-row items-center">
+                <div className="flex-1 h-full">
+                    <div className="h-full max-w-[18rem]">
+                        <Link href="/">
+                            <Image className="object-contain" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                        </Link>
                     </div>
                 </div>
                 <div className="inline-flex gap-x-16 items-center">
@@ -208,7 +210,7 @@ function Navbar(){
             </div>
             {isMenuOpen && (
                 <div className="w-full bg-primary-maroon-1 fixed h-full overflow-auto top-0 left-0 menu-links z-[100]">
-                    <div className="relative">
+                    <div className="relative h-full">
                         <div className="p-5 flex flex-row justify-between items-center">
                             <div className="inline-block px-7 pb-4 pt-2 bg-white rounded-3xl">
                                 <Image className="max-w-[10rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
@@ -237,7 +239,9 @@ function Navbar(){
                             <div className="absolute flex justify-center items-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
                                 <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu">
                                     <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
-                                        <WestIcon fontSize="large" className="me-4" />
+                                        <div className="animate-slide-in inline-block">
+                                            <WestIcon fontSize="large" className="me-4" />
+                                        </div>
                                         BACK
                                     </button>
                                     <ul className="list-none">
