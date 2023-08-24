@@ -4,19 +4,48 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Image from "next/image";
-import img1 from "../../assets/life@ggs7.png";
 
 function Slide() {
-    const Content = (text) => (
-        <div className=" bg-primary-maroon-1 absolute bottom-0 m-2xl ">
-            <p className="text-white md:text-heading-2 text-heading-6 uppercase p-5 ">
-                discovery out of the wall
-            </p>
-        </div>
-    );
+    const events = [
+        "Fathers Day",
+        "International yoga day",
+        "International mud day",
+        "National doctors day",
+        "World chocolate day",
+        "Investiture ceremony",
+        "International friendship day and twins day",
+        "Independence Day",
+        "Krishna Jayanthi and photography day",
+        "Vinayak Chaturthi",
+        "Teachers day and Onam",
+        "International literacy day",
+        "Grand parents day",
+        "Dot day",
+        "GGS Book fair",
+        "Navarathri begins",
+        "Vijayadashami",
+        "Sports day",
+        "Diwali",
+        "Halloween day",
+        "GGS Art competition",
+        "Children’s day",
+        "World heritage week",
+        "Thanks giving day",
+        "Math expo",
+        "Christmas and new year celebration",
+        "Pongal celebration",
+        "Republic Day",
+        "4th GGS kiddathon",
+        "DEAR WEEK",
+        "International mother language day",
+        "GGS SANGAMAM",
+        "International women’s day",
+        "Art exhibition",
+        "Annual day  graduation",
+        "PYP Exhibition",
+    ];
     return (
-        <div className="md:w-[80%] w-[90%] mx-auto mt-2xl">
+        <div className="md:w-[80%] w-[90%] mx-auto mt-2xl ">
             <Swiper
                 style={{
                     "--swiper-pagination-color": "#790000",
@@ -36,22 +65,22 @@ function Slide() {
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
             >
-                <SwiperSlide className="relative">
-                    <Image src={img1} alt={"galary image 1"} />
-                    <Content title="discovery out of the wall" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={img1} alt={"galary image 2"} />
-                    <Content title="discovery out of the wall" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={img1} alt={"galary image 3"} />
-                    <Content title="discovery out of the wall" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src={img1} alt={"galary image 4"} />
-                    <Content title="discovery out of the wall" />
-                </SwiperSlide>
+                {events.map((val) => 
+                        <SwiperSlide className="relative">
+                            <div className="h-[80vh] w-full">
+                                <img
+                                    className="h-full w-full object-cover"
+                                    src={"/eventsimg/" + val + ".png"}
+                                    alt={"galary image 1"}
+                                />
+                            </div>
+                            <div className=" bg-primary-maroon-1 absolute bottom-0 m-2xl ">
+                                <p className="text-white md:text-heading-2 text-heading-6 uppercase p-large ">
+                                    {val}
+                                </p>
+                            </div>
+                        </SwiperSlide>
+                    )}
             </Swiper>
         </div>
     );
