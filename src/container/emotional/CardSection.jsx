@@ -4,7 +4,7 @@ import Cards from "./Cards";
 function CardSection() {
     return (
         <section className="section-container">
-            <section className=" md:flex flex-col md:flex-row gap-3xl  md:gap-3xl ">
+            <section className="flex flex-wrap justify-center gap-xl">
                 <Cards
                     text={"Self Management"}
                     desc={"managing emotions and behavior to achieve ones goal"}
@@ -19,8 +19,6 @@ function CardSection() {
                         "Recognizing ones emotions, values  strengths and challenges"
                     }
                 />
-            </section>
-            <section className=" md:flex flex-col md:flex-row justify-center items-center md:gap-3xl gap-3xl">
                 <Cards
                     text={"Relationship skills"}
                     desc={

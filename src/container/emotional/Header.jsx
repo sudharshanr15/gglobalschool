@@ -4,23 +4,23 @@ import Image from "next/image";
 function Header({ title, content, img, rev }) {
     return (
         <section
-            className={`section-container md:flex md:gap-3xl ${
-                rev ? "md:flex-row-reverse" : "md:flex-row"
-            }`}
+            className={`section-container flex gap-large md:gap-xl flex-col items-center ${rev ? "md:flex-row-reverse" : "md:flex-row"}`}
         >
-            <div className="mb-large md:w-[55%]">
-                <p className="text-heading-3 text-primary-maroon-1 mb-large">
+            <div className="mb-large w-full md:w-[50%]">
+                <h2 className="text-heading-3 text-primary-maroon-1 mb-large">
                     {title}
-                </p>
+                </h2>
                 <p className="text-body">{content}</p>
             </div>
 
-            <Image
-                src={img}
-                alt="mission"
-                unoptimized
-                className="md:max-w-[580px] w-full"
-            />
+            <div className="w-full md:w-1/2">
+                <Image
+                    src={img}
+                    alt="mission"
+                    unoptimized
+                    className="h-auto w-full object-contain max-h-[38rem]"
+                />
+            </div>
         </section>
     );
 }
