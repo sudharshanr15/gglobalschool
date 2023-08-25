@@ -40,3 +40,6 @@ export {default as wave_fill} from "./icons/wave-fill.svg"
 export {default as choose_us_1} from "./choose_us/choose_us-1.png"
 export {default as choose_us_2} from "./choose_us/choose_us-2.png"
 export {default as choose_us_3} from "./choose_us/choose_us-3.png"
+
+export {default as dietplan} from "./awakening_creativity/dietplan.png"
+export {default as health} from "./awakening_creativity/health.png"
