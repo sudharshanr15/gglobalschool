@@ -1,6 +1,6 @@
 "use client";
 
-import { blog1, blog2, blog3 } from "@/assets"
+import { blog1, blog2, blog3, wave_fill } from "@/assets"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Image from "next/image"
 
@@ -27,7 +27,12 @@ function News(){
     return (
         <section className="section-container">
             <h2 className="uppercase text-heading-5 md:text-heading-3">NEWS & EVENTS</h2>
-            <h4 className="text-heading-4 md:text-8xl opacity-10">NEWS ROOM</h4>
+            <div className="w-fit relative">
+                <h4 className="text-heading-4 md:text-8xl opacity-10">NEWS ROOM</h4>
+                <div className="absolute w-full h-full top-0 right-0">
+                    <Image src={wave_fill} className="max-w-[112px] absolute w-1/2 top-1/2 -translate-y-1/2 left-[10%]" alt="Wave Image" />
+                </div>
+            </div>
             <Splide className="mt-md gap-xl" options={{
                 autoWidth: true,
                 arrows: false,
@@ -42,6 +47,9 @@ function News(){
                                 <h3 className="uppercase text-heading-6 mb-large">{item.name}</h3>
                                 <p className="text-body">{item.date}</p>
                             </div>
+                        </div>
+                        <div className="bg-primary-yellow absolute top-0 right-0 p-md text-subheading">
+                            <span className="text-gray-900">Coming Soon</span>
                         </div>
                     </SplideSlide>
                 ))}

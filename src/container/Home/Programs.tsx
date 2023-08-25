@@ -1,12 +1,17 @@
 import Link from "next/link"
 import Image from "next/image"
-import { programmes1, programmes2 } from "@/assets"
+import { programmes1, programmes2, wave_fill } from "@/assets"
 
 function Programs(){
     return (
         <section className="section-container bg-primary-maroon-1">
             <h2 className="text-gray-100 uppercase text-heading-5 md:text-heading-3">PROGRAMMES WE OFFER</h2>
-            <h4 className="text-heading-4 md:text-8xl opacity-10 text-primary-orange-2">PROGRAMME</h4>
+            <div className="w-fit relative">
+                <h4 className="text-heading-4 md:text-8xl opacity-10 text-primary-orange-2">PROGRAMMES</h4>
+                <div className="absolute w-full h-full top-0 right-0">
+                    <Image src={wave_fill} className="max-w-[112px] absolute w-[20%] top-1/2 -translate-y-1/2 right-[5%]" alt="Wave Image" />
+                </div>
+            </div>
             <div className="flex flex-col md:flex-row gap-xl mt-large">
                 <div className="w-full">
                     <div className="w-full mb-md aspect-square">
@@ -36,7 +41,7 @@ function Programs(){
                 </div>
             </div>
             <div className="text-center md:text-start">
-                <Link href={""} className="uppercase text-heading-6 text-gray-900 bg-primary-yellow-1 px-xl py-md rounded-full mt-xl inline-block">
+                <Link href={""} className="btn-slide mt-xl">
                     KNOW MORE
                 </Link>
             </div>

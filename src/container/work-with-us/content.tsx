@@ -40,7 +40,7 @@ const Content = () => {
         <p>
           To apply, please click the below box and submit the duly filled form.
         </p>
-        <button className="bg-primary-yellow hover:bg-primary-maroon hover:text-gray-100 font-bold py-md px-xl rounded-full w-fit">APPLY NOW</button>
+        <button className="btn-slide">APPLY NOW</button>
       </div>
     </section>
   );
