@@ -49,7 +49,7 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-.hero-section{
+.hero-section, .enquire-section{
     background-image: url("/image/hero-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
