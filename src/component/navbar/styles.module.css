@@ -6,7 +6,7 @@
 }
 
 .line{
-    border: 0.25rem solid #2A2A2A;
+    border: 2px solid #2A2A2A;
     width: 100%;
     display: inline-block;
     border-radius: 5px;

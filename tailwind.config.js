@@ -81,6 +81,10 @@ module.exports = {
         "body": ["1.25rem", {
           fontWeight: 400,
           lineHeight: "150%"
+        }],
+        "caption": ["0.8125rem", {
+          fontWeight: 400,
+          lineHeight: "112%"
         }]
       },
       spacing: {

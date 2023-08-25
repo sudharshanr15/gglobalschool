@@ -54,6 +54,20 @@ function Navbar(){
                 }
             ]
         },
+        "Curriculum & Learning": {
+            name: "Curriculum & Learning",
+            href: "",
+            sub_menu: [
+                {
+                    name: "Primary programmes @ GGS",
+                    href: "/eyp",
+                },
+                {
+                    name: "Emotion & Ethical Support",
+                    href: "/emotional",
+                },
+            ]
+        },
         "Life @ GGS": {
             name: "Life @ GGS",
             href: "",
@@ -72,35 +86,6 @@ function Navbar(){
                 }
             ]
         },
-        "Curriculum & Learning": {
-            name: "Curriculum & Learning",
-            href: "",
-            sub_menu: [
-                {
-                    name: "Curriculam",
-                    href: "/eyp",
-                },
-                {
-                    name: "Emotional & Ethical Support",
-                    href: "/emotional",
-                },
-            ]
-        },
-        "Community Wellness": {
-            name: "Community Wellness",
-            href: "/community",
-            sub_menu: [],
-        },
-        "Discovery outside the wall": {
-            name: "Discovery outside the wall",
-            href: "",
-            sub_menu: [],
-        },
-        "Days & Events": {
-            name: "Days & Events",
-            href: "",
-            sub_menu: [],
-        },
         "Become one of us": {
             name: "Become one of us",
             href: "",
@@ -114,7 +99,22 @@ function Navbar(){
                     href: "/work-with-us"
                 }
             ]
-        }
+        },
+        "Discovery outside the wall": {
+            name: "Discovery outside the wall",
+            href: "",
+            sub_menu: [],
+        },
+        "Community Wellness": {
+            name: "Community Wellness",
+            href: "/community",
+            sub_menu: [],
+        },
+        "Days & Events": {
+            name: "Days & Events",
+            href: "",
+            sub_menu: [],
+        },
     }
 
     useEffect(() => {
@@ -184,7 +184,7 @@ function Navbar(){
 
     return (
         <nav className="bg-transparent absolute top-0 left-0 w-full z-50 h-[100px]">
-            <div className="ps-md pt-7 pd:ps-3xl pd:my-6 flex flex-row items-center">
+            <div className="ps-md pt-7 lg:ps-3xl pd:my-6 flex flex-row items-center gap-2xl">
                 <div className="flex-1 h-full">
                     <div className="h-full max-w-[18rem]">
                         <Link href="/">
@@ -212,13 +212,13 @@ function Navbar(){
                 <div className="w-full bg-primary-maroon-1 fixed h-full overflow-auto top-0 left-0 menu-links z-[100]">
                     <div className="relative h-full">
                         <div className="p-5 flex flex-row justify-between items-center">
-                            <div className="inline-block px-7 pb-4 pt-2 bg-white rounded-3xl">
+                            <div className="inline-block">
                                 <Image className="max-w-[10rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
                             </div>
                             <button className="inline-flex items-center justify-center bg-primary-orange-1 w-14 aspect-square rounded-full"
                                 onClick={onMenuClick}
                             >
-                                <Image src={icon_close} unoptimized alt="Close Icon" />
+                                <Image src={icon_close} className="w-[1.5rem] h-auto" unoptimized alt="Close Icon" />
                             </button>
                         </div>
                         <div className="p-5">
@@ -233,11 +233,11 @@ function Navbar(){
                                     ))
                                 }
                             </ul>
-                            <button className="mt-8 px-11 py-5 rounded-full bg-primary-yellow-1 text-subheading md:text-heading-6 text-gray-900">Contact us</button>
+                            <Link href="" className="btn-slide">Contact us</Link>
                         </div>
                         {isSubMenuOpen && (
                             <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
-                                <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu">
+                                <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu md:min-w-[32rem]">
                                     <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
                                         <div className="animate-slide-in inline-block">
                                             <WestIcon fontSize="large" className="me-4" />
@@ -247,7 +247,7 @@ function Navbar(){
                                     <ul className="list-none">
                                         {links[activeSubmenu].sub_menu.map((item, index) => (
                                             <li className="text-subheading md:text-heading-6 text-white mb-8" key={index}>
-                                                <Link href={item.href} onClick={onLink}>G {item.name}</Link>
+                                                <Link href={item.href} onClick={onLink}>{item.name}</Link>
                                             </li>
                                         ))}
                                     </ul>

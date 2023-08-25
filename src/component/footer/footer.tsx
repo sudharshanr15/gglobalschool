@@ -12,9 +12,9 @@ import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 const Footer = () => {
   return (
     <section className="section-container bg-primary-maroon grid gap-y-large">
-      <div className="grid gap-y-md md:flex gap-3xl">
-        <div className="md:w-1/3 grid gap-y-large">
-          <div className="p-large bg-white w-fit rounded-2xl">
+      <div className="flex flex-col md:flex-row items-start gap-large">
+        <div className="md:w-1/3 grid gap-y-md">
+          <div className="w-fit rounded-2xl">
             <Image src={gglobal_logo} alt="logo" />
           </div>
           <p className="text-heading-6 text-white">Address</p>
@@ -22,34 +22,36 @@ const Footer = () => {
             29A, Rajagoundampalayam, 2nd street,pallipalayam road, tiruchengodu
             Namakkal, Tamil Nadu, India 637211
           </p>
-          <div className="w-2/3 flex gap-2 bg-primary-orange-1 rounded-3xl px-5 py-2 font-bold cursor-pointer">
-            <LocationOnOutlinedIcon />
-            <div>Directions</div>
-          </div>
-          <div className="w-2/3 flex gap-2 bg-primary-red-2 rounded-3xl px-5 py-2 font-bold cursor-pointer">
-            <DirectionsBusOutlinedIcon />
-            <div>View Bus Route</div>
-          </div>
-          <div className="w-2/3 flex gap-2 bg-primary-yellow-2 rounded-3xl px-5 py-2 font-bold cursor-pointer">
-            <CallOutlinedIcon />
-            <div>+91 9231289290</div>
-          </div>
-          <div className="text-white flex gap-5">
-            <FacebookRoundedIcon className="text-4xl cursor-pointer" />
-            <YouTubeIcon className="text-4xl cursor-pointer" />
-            <InstagramIcon className="text-4xl cursor-pointer" />
+          <div className="flex flex-col w-fit gap-md">
+            <div className="flex items-center gap-2 bg-primary-orange-1 rounded-3xl px-5 py-2 font-bold cursor-pointer">
+              <LocationOnOutlinedIcon />
+              <div>Directions</div>
+            </div>
+            <div className="flex items-center gap-2 bg-primary-red-2 rounded-3xl px-5 py-2 font-bold cursor-pointer">
+              <DirectionsBusOutlinedIcon />
+              <div>View Bus Route</div>
+            </div>
+            <div className="flex items-center gap-2 bg-primary-yellow-2 rounded-3xl px-5 py-2 font-bold cursor-pointer">
+              <CallOutlinedIcon />
+              <div>+91 9231289290</div>
+            </div>
+            <div className="text-white flex gap-5">
+              <FacebookRoundedIcon className="text-4xl cursor-pointer" />
+              <YouTubeIcon className="text-4xl cursor-pointer" />
+              <InstagramIcon className="text-4xl cursor-pointer" />
+            </div>
           </div>
         </div>
 
         <div className="w-full grid gap-y-md">
-          <div className="grid gap-y-md md:flex items-start">
-            <div className="md:w-1/2 grid gap-md">
-              <p className="text-heading-6 text-white">G Global Universe</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-large">
+            <div className="flex flex-auto flex-col gap-md">
+              <p className="text-heading-6 text-white">Our G Global Universe</p>
               <Link href="/our-story" className="text-white cursor-pointer">
-                Our Story
+                GGS Story
               </Link>
               <Link href="/mission" className="text-white cursor-pointer">
-                Vision and Mission
+                Mission & Values
               </Link>
               <Link href="/why-us" className="cursor-pointer text-white">
                 Why us
@@ -61,32 +63,28 @@ const Footer = () => {
                 Student Agency
               </Link>
               <Link href="/policies" className="text-white cursor-pointer">
-                Policies
+                Pillars by which we abide
               </Link>
             </div>
-
-            <div className="md:w-1/2 grid gap-md">
-              <p className="text-heading-6 text-white">Curriculum</p>
+            <div className="flex flex-auto flex-col gap-md">
+              <p className="text-heading-6 text-white uppercase">Curriculum & Learning</p>
               <Link href="/eyp" className="text-white cursor-pointer">
-                Early year Programme
+                Primary programmes @ GGS
               </Link>
               <Link href="/emotional" className="text-white cursor-pointer">
                 Emotion & Ethical Support
               </Link>
             </div>
-          </div>
-
-          <div className="grid gap-y-md md:flex items-start">
-            <div className="md:w-1/2 grid gap-md">
+            <div className="flex flex-auto flex-col gap-md">
               <p className="text-heading-6 text-white">Life @ GGS</p>
               <Link href="/life-at-ggs" className="text-white cursor-pointer">
-                Life @ GGS
+                Studio @ GGS
               </Link>
               <Link
                 href="/student-council"
                 className="text-white cursor-pointer"
               >
-                Student Council
+                Student Leadership
               </Link>
               <Link
                 href="/awakening-creativity"
@@ -95,7 +93,7 @@ const Footer = () => {
                 Health & Well being
               </Link>
             </div>
-            <div className="md:w-1/2 grid gap-md">
+            <div className="flex flex-auto flex-col gap-md">
               <p className="text-heading-6 text-white">Become One of US</p>
               <Link href="/#" className="text-white cursor-pointer">
                 Admissions
@@ -104,32 +102,67 @@ const Footer = () => {
                 Work with us
               </Link>
             </div>
-          </div>
-
-          <div className="grid gap-y-md md:flex items-start">
-            <Link
-              href="/community"
-              className="md:w-1/2 text-heading-6 text-white cursor-pointer"
-            >
-              Community Wellness
-            </Link>
-            <Link
-              href="/events"
-              className="md:w-1/2 text-heading-6 text-white cursor-pointer"
-            >
-              Days and Events
-            </Link>
+            <div className="flex flex-auto flex-col gap-md">
+              <Link
+                href="/community"
+                className="text-heading-6 text-white cursor-pointer"
+              >
+                Discovery Outside the Wall
+              </Link>
+            </div>
+            <div className="flex flex-auto flex-col gap-md">
+              <Link
+                href="/community"
+                className="text-heading-6 text-white cursor-pointer"
+              >
+                Community Wellness
+              </Link>
+            </div>
+            <div className="flex flex-auto flex-col gap-md">
+              <Link
+                href="/events"
+                className="text-heading-6 text-white cursor-pointer"
+              >
+                Days and Events
+              </Link>
+            </div>
+            <div className="flex flex-auto flex-col gap-md">
+              <div className="flex flex-row items-center gap-md">
+                <Link
+                  href=""
+                  className="text-heading-6 text-white cursor-pointer"
+                >
+                  News room
+                </Link>
+                <span className="bg-primary-yellow p-1 text-gray-900 text-caption rounded-md">coming soon</span>
+              </div>
+            </div>
+            <div className="flex flex-auto flex-col gap-md">
+              <div className="flex flex-row items-center gap-md">
+                <Link
+                  href=""
+                  className="text-heading-6 text-white cursor-pointer"
+                >
+                  Blogs
+                </Link>
+                <span className="bg-primary-yellow p-1 text-gray-900 text-caption rounded-md">coming soon</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <hr />
-      <div className="flex gap-large text-white text-large">
-        <Link href="/terms" className="cursor-pointer">
+      <div className="flex gap-large text-white text-xl">
+        <Link href="/terms" className="">
           Terms
         </Link>
-        <Link href="/privacy" className="cursor-pointer">
+        <Link href="/privacy" className="">
           Privacy Policy
         </Link>
+      </div>
+      <div className="flex flex-col md:flex-row gap-large justify-between w-full text-white">
+        <p className="text-xl">2023 @ Copyrights Reserved</p>
+        <p className="text-xl">Crafted by Neulancers</p>
       </div>
     </section>
   );
