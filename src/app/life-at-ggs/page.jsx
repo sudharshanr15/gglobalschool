@@ -10,12 +10,13 @@ import img5 from "../../assets/life@ggs5.png";
 import img6 from "../../assets/life@ggs6.png";
 import Hero from "../../component/hero/Hero";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import {book_studio, design_thinking, performing_art, sports, visual_art} from "@/assets/images/life-at-ggs"
 // md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl
 
 function page() {
   const studios = [
     {
-      image: img1,
+      image: sports,
       name: "SPORTS",
       text: [
         "We believe that sports is vital for students’ physical and social well-being.",
@@ -24,7 +25,7 @@ function page() {
       ],
     },
     {
-      image: img2,
+      image: performing_art,
       name: "PERFORMING ARTS",
       text: [
         "We tap into the rich cultural experiences of our students’ creativity and performance through dance, music and drama.",
@@ -32,7 +33,7 @@ function page() {
       ],
     },
     {
-      image: img3,
+      image: visual_art,
       name: "VISUAL ARTS",
       text: [
         "We enrich the young minds with art and craft. We celebrate passion, creativity, knowledge and skills of students.",
@@ -41,7 +42,7 @@ function page() {
       ],
     },
     {
-      image: img5,
+      image: design_thinking,
       name: "Design THINKING & TECHNOLOGY",
       text: [
         "The Science, Technology, Engineering and Mathematics education prepares our students for the future. The hands-on experience and real - world application help them become able leaders, innovators, risk-takers and problem solvers.",
@@ -49,7 +50,7 @@ function page() {
       ],
     },
     {
-      image: img6,
+      image: book_studio,
       name: "BOOKS",
       text: [
         "Reading makes every person an independent capable learner by cultivating one’s imagination. Our library is an exciting and welcoming place that supplements the learning needs of all students. We have a repository of books to help every member of the school community to gain new knowledge, skills and dispositions.",

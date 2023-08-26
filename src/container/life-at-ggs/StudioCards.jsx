@@ -4,7 +4,7 @@ import Image from "next/image";
 function StudioCards({ className, img, name, text }) {
   return (
     <section className={className}>
-      <div className="w-full md:w-1/2 2xl:w-1/3">
+      <div className="w-full md:w-1/2">
         <Image src={img} alt="logo" className="w-[100%] h-auto" />
       </div>
       <div className="w-full md:w-1/2">
