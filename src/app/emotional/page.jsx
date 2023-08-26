@@ -4,6 +4,7 @@ import learning from "../../assets/learning.png";
 import emo1 from "../../assets/emo1.jpg";
 import emo2 from "../../assets/emo2.jpg";
 import Hero from "../../component/hero/Hero";
+import { social_emotional_learning } from "@/assets/images/emotional";
 
 function page() {
     return (
@@ -20,7 +21,7 @@ function page() {
                     <br></br>,
                     " Social and emotional learning is the process of developing self-awareness, self control, and interpersonal skills that are necessary for resilience, wellbeing, and overall life satisfaction. This can be achieved through the practice of student agency.   ",
                 ]}
-                img={learning}
+                img={social_emotional_learning}
             />
             <CardSection />
             <Header
