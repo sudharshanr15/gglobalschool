@@ -1,0 +1,5 @@
+export {default as book_studio} from "./book-studio.jpg"
+export {default as design_thinking} from "./design-thinking.jpg"
+export {default as performing_art} from "./performing-art.jpg"
+export {default as visual_art} from "./visual-art.jpg"
+export {default as sports} from "./sports.jpg"
