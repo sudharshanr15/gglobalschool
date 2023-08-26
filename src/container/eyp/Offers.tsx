@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import img from "@/assets/Rectangle 75.png";
+import {offer_1, offer_2, offer_3, offer_4, offer_5} from "@/assets/images/curriculum";
 
 type OffersType = {
   img: StaticImageData;
@@ -10,7 +10,7 @@ type OffersType = {
 function Offers() {
   const offers_1: OffersType[] = [
     {
-      img: img,
+      img: offer_1,
       title: "ESSENCE OF PYP",
       text: [
         "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development.",
@@ -18,14 +18,14 @@ function Offers() {
       ],
     },
     {
-      img: img,
+      img: offer_4,
       title: "ENCOURAGING STUDENTS TO DEVELOP SKILLS",
       text: [
         "We offer a comprehensive, concept driven, student - centric and inquiry-based approach to teaching and learning that fosters the development of thinking, communication, self management, social and research skills.",
       ],
     },
     {
-      img: img,
+      img: offer_2,
       title: "HANDS ON EXPERIENCE",
       text: [
         "The learners are engaged in challenging, relevant, critical and creative thinking activities. We also ensure student - centric learning engagements.",
@@ -35,14 +35,14 @@ function Offers() {
 
   const offers_2: OffersType[] = [
     {
-        img: img,
+        img: offer_5,
         title: "CONCEPT DRIVEN INQUIRY",
         text: [
             "The learners explore the essential elements in the unit, reflect their learning through student agency, assess their learning through self and peer assessments which supports student agency and also make connections to real world experiences."
         ]
     },
     {
-        img: img,
+        img: offer_3,
         title: "Caring and responsible citizens",
         text: [
             "The units of inquiry are designed to help foster their imaginations and meet new challenges and opportunities to help build a peaceful world."
@@ -70,11 +70,11 @@ function Offers() {
         <div className="flex gap-md justify-center flex-wrap md:flex-nowrap">
             {offers_1.map((item, index) => (
                 <div className="p-md bg-gray-100 w-full xl:max-w-[40rem]" key={index}>
-                    <div className="max-h-[14rem] overflow-hidden">
+                    <div className="aspect-video overflow-hidden">
                     <Image
                         src={item.img}
                         alt="Offer Image"
-                        className="h-full w-full object-cover"
+                        className="w-full h-auto object-contain"
                     />
                     </div>
                     <h3 className="text-primary-maroon-1 uppercase text-heading-5 my-md">
@@ -93,11 +93,11 @@ function Offers() {
         <div className="flex gap-md justify-center flex-wrap md:flex-nowrap">
             {offers_2.map((item, index) => (
                 <div className="p-md bg-gray-100 w-full xl:max-w-[40rem]" key={index}>
-                    <div className="max-h-[14rem] overflow-hidden">
+                    <div className="aspect-video overflow-hidden">
                     <Image
                         src={item.img}
                         alt="Offer Image"
-                        className="h-full w-full object-cover"
+                        className="w-full h-auto object-contain"
                     />
                     </div>
                     <h3 className="text-primary-maroon-1 uppercase text-heading-5 my-md">

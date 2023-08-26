@@ -6,6 +6,7 @@ import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import {EarlyYears, Offers} from "@/container/eyp/";
+import {eyp, features, pyp, offer_1, offer_2, offer_3, offer_4, offer_5} from "@/assets/images/curriculum";
 
 function page() {
     return (
@@ -23,7 +24,7 @@ function page() {
             <section className="section-container w-full flex flex-col md:flex-row gap-5 md:gap-xl">
                 <div className="w-full md:w-1/2">
                     <Image
-                        src={eypLogo}
+                        src={pyp}
                         className="w-full h-full object-cover"
                         alt="logo"
                         unoptimized
@@ -70,7 +71,7 @@ function page() {
             <section className="section-container w-full flex flex-col md:flex-row gap-5 md:gap-xl">
                 <div className="w-full md:w-1/2">
                     <Image
-                        src={eypLogo}
+                        src={eyp}
                         className="w-full h-full object-cover"
                         alt="logo"
                         unoptimized
@@ -132,7 +133,7 @@ function page() {
                 </div>
                 <div className="w-full md:w-1/2">
                     <Image
-                        src={eypLogo2}
+                        src={features}
                         alt="logo"
                         className="w-full h-auto"
                         unoptimized
