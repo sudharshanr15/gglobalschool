@@ -4,6 +4,7 @@ import logo1 from "../../assets/orustory1.png";
 import { Management, LeadershipTeam } from "@/container/our-story";
 import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
+import {story_1} from "@/assets/images/our-story";
 
 function page() {
     return (
@@ -19,7 +20,7 @@ function page() {
                 <div className="w-full flex flex-col md:flex-row gap-xl">
                     <div className="w-full md:w-1/2">
                         <Image
-                            src={logo1}
+                            src={story_1}
                             className="w-full h-auto"
                             alt="logo"
                             unoptimized

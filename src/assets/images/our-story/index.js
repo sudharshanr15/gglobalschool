@@ -1,0 +1,1 @@
+export {default as story_1} from "./story_1.jpg";

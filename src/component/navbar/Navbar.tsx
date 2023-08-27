@@ -92,7 +92,7 @@ function Navbar(){
             sub_menu: [
                 {
                     name: "Admissions",
-                    href: "",
+                    href: "/admission",
                 },
                 {
                     name: "Work with Us",
@@ -102,7 +102,7 @@ function Navbar(){
         },
         "Discovery outside the wall": {
             name: "Discovery outside the wall",
-            href: "",
+            href: "/discovery",
             sub_menu: [],
         },
         "Community Wellness": {
@@ -112,7 +112,7 @@ function Navbar(){
         },
         "Days & Events": {
             name: "Days & Events",
-            href: "",
+            href: "/events",
             sub_menu: [],
         },
     }
