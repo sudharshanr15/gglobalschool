@@ -1,6 +1,7 @@
 import Image from "next/image";
 import contentimage from "../../assets/workwithus.png";
 import benefitImage from "@/assets/student council benefits.png";
+import {group} from "@/assets/images/work-with-us";
 
 const Content = () => {
   return (
@@ -8,9 +9,9 @@ const Content = () => {
       <div className="">
         <Image
           className="w-full"
-          src={contentimage}
+          src={group}
           unoptimized
-          alt="why us image"
+          alt="work with us"
         />
       </div>
       <div className="flex flex-col gap-xl text-subheading-regular mt-3xl">
