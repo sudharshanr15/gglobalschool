@@ -39,25 +39,6 @@ function page() {
                 img={emo1}
                 rev={true}
             />{" "}
-            <Header
-                title={"GGS VIRTUAL SCHOOLING"}
-                content={[
-                    "Adapting to situations and preparing for the unprepared, G Global School adapted well to the transition of physical to virtual schooling during the pandemic situation. ",
-                    <br></br>,
-                    <br></br>,
-                    " Collaborative planning of the teaching community imbibing Student Agency led to the success of virtual schooling implementation.",
-                    <br></br>,
-                    <br></br>,
-                    " Amidst the restrictions of face-to-face learning, facilitators were trained to be creative and responsive to cater the learning needs of our students in an uninterrupted way.",
-                    <br></br>,
-                    <br></br>,
-                    " As every facilitator is provided with an iPad, it is possible for facilitators to create and modify their teaching material addressing the individual and personalized needs of our young Ggians.",
-                    <br></br>,
-                    <br></br>,
-                    " In addition to language, mathematics and UOI, our Zoom sessions also ensure holistic learning by providing online classes that develop the learners’ social and emotional learning, visual arts, dance, music, reading and physical education..",
-                ]}
-                img={emo2}
-            />
             <ExploreTopics />
         </div>
     );

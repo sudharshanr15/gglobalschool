@@ -101,34 +101,6 @@ function page() {
           />
         ))}
       </section>
-
-      {/* FIELD TRIPS */}
-      <section className="section-container">
-        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-md">
-            FIELD TRIPS
-        </h2>
-        <p className="py-2 text-body">
-          Field trips provide opportunities for learner’s to understand the real
-          life challenges and it’s solutions. It helps them to reflect their
-          conceptual understandings and broaden their thinking.
-        </p>
-        <p className="py-2 text-body">
-          It provides hands-on experiential learning opportunity in a real world
-          context. Field trips develop empathy, tolerance, critical thinking
-          skills and perceiving things in different ways.
-        </p>
-        <p className="py-2 text-body">
-          They are able to engage with content in a variety of ways. Each
-          experience solidifies the learning and support important academic
-          concepts.
-        </p>
-      </section>
-
-      {/* slider */}
-      <section className="pt-12">
-        <Slide />
-      </section>
-
       {/* other topics */}
       <ExploreTopics />
     </>
