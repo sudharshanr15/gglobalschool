@@ -1,11 +1,18 @@
 "use client";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useEffect } from "react";
 
-function Slide({setgallery}) {
+function Slide({setgallery, gallery_name, gallery_images}) {
+
+    useEffect(() => {
+        console.log("inside")
+        console.log(gallery_images)
+    }, [])
 
     const slides=[
         'Art Competition',
@@ -14,20 +21,23 @@ function Slide({setgallery}) {
         'Independence day',
         'International Doctors day'
     ]
-    const swipeslide =slides.map(val=> {
-        return <SwiperSlide className="relative">
+    const swipeslide =gallery_images.map((val, index)=> {
+        return <SwiperSlide className="relative" key={index}>
             <div className="h-[80vh] w-full">
-                <img
+                <Image
                     className="h-full w-full object-cover"
-                    src={"/gallery/" + val + ".png"}
-                    alt={val}
+                    src={val}
+                    alt={gallery_name}
+                    placeholder="blur"
                 />
             </div>
-            <div className=" bg-primary-maroon-1 absolute bottom-0 m-2xl ">
-                <p className="text-white md:text-heading-2 text-heading-6 uppercase p-large ">
-                    {val}
-                </p>
-            </div>
+            {(index == 0) && (
+                <div className=" bg-primary-maroon-1 absolute bottom-0 m-2xl ">
+                    <p className="text-white md:text-heading-2 text-heading-6 uppercase p-large ">
+                        {gallery_name}
+                    </p>
+                </div>
+            )}
         </SwiperSlide>
     })
 
