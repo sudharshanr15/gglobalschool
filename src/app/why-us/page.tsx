@@ -1,5 +1,6 @@
 import {Cards, Description,Others} from "@/container/why-us"
 import Hero from "../../component/hero/Hero"
+import { ExploreTopics } from "@/component"
 
 const Whyus = () => {
   return (
@@ -7,7 +8,7 @@ const Whyus = () => {
       <Hero title={"WHY US"}/>
       <Description/>
       <Cards/>
-      <Others/>
+      <ExploreTopics />
     </div>
   )
 }

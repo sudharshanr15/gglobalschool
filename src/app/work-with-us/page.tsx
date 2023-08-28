@@ -1,5 +1,6 @@
 import { DescriptionBox,Content, Others } from "@/container/work-with-us"
 import Hero from "../../component/hero/Hero"
+import { ExploreTopics } from "@/component"
 
 const Works = () => {
   return (
@@ -7,7 +8,7 @@ const Works = () => {
       <Hero title={"Work with us"}/>
       <DescriptionBox/>
       <Content/>
-      <Others/>
+      <ExploreTopics />
     </div>
   )
 }

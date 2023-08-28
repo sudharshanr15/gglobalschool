@@ -5,6 +5,7 @@ import { Management, LeadershipTeam } from "@/container/our-story";
 import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
 import {story_1} from "@/assets/images/our-story";
+import ExploreTopics from "@/component/ExploreTopics";
 
 function page() {
     return (
@@ -46,21 +47,7 @@ function page() {
             {/* PEDAGOGICAL LEADERSHIP TEAM */}
             <LeadershipTeam />
             {/* other topics */}
-            <section className="section-container">
-                <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
-                    OTHER TOPICS TO EXPLORE
-                </h2>
-                <div className="flex flex-col md:flex-row gap-xl">
-                    <TopicCard
-                      text={"STUDENT COUNCIL"}
-                      link={""}
-                    />
-                    <TopicCard
-                      text={"STUDENT COUNCIL"}
-                      link={""}
-                    />
-                </div>
-            </section>
+            <ExploreTopics />
         </>
     );
 }

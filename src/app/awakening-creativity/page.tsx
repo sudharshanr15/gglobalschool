@@ -3,6 +3,7 @@ import Health_Well from "@/container/awakening-creativity/Health_Well";
 import Others from "@/container/awakening-creativity/Others";
 import Hero from "../../component/hero/Hero"
 import { Cards, Curriculum } from "@/container/awakening-creativity";
+import ExploreTopics from "@/component/ExploreTopics";
 
 const AwakeningCreativity = () => {
 
@@ -11,7 +12,7 @@ const AwakeningCreativity = () => {
       <Hero title={"Health & WELL BEING"}/>
       <Cards />
       <Curriculum />
-      <Others />
+      <ExploreTopics />
     </>
   );
 };

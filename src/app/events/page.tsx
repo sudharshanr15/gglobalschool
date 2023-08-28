@@ -1,6 +1,7 @@
 import {Description, Listofevents, Slideshow} from "@/container/events"
 import {Others} from "@/container/work-with-us"
 import Hero from "../../component/hero/Hero";
+import ExploreTopics from "@/component/ExploreTopics";
 
 const Page = () => {
   return (
@@ -9,7 +10,7 @@ const Page = () => {
         <Description/>
         <Listofevents/>
         <Slideshow/>
-        <Others/>
+        <ExploreTopics />
     </div>
   )
 }

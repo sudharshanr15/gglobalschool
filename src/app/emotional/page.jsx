@@ -5,6 +5,7 @@ import emo1 from "../../assets/emo1.jpg";
 import emo2 from "../../assets/emo2.jpg";
 import Hero from "../../component/hero/Hero";
 import { social_emotional_learning } from "@/assets/images/emotional";
+import ExploreTopics from "@/component/ExploreTopics";
 
 function page() {
     return (
@@ -57,7 +58,7 @@ function page() {
                 ]}
                 img={emo2}
             />
-            <OtherTopics />
+            <ExploreTopics />
         </div>
     );
 }

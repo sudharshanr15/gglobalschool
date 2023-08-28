@@ -2,6 +2,7 @@ import React from "react";
 import { WhatWeOffer, Vision, Programme,OtherTopics } from "../../container/PYP";
 import Hero from "../../component/hero/Hero"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import { ExploreTopics } from "@/component";
 
 function page() {
     return (
@@ -18,7 +19,7 @@ function page() {
             <Vision />
             <WhatWeOffer />
             <Programme />
-            <OtherTopics />
+            <ExploreTopics />
         </>
     );
 }

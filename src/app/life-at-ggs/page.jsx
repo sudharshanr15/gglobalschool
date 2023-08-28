@@ -11,6 +11,8 @@ import img6 from "../../assets/life@ggs6.png";
 import Hero from "../../component/hero/Hero";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import {book_studio, design_thinking, performing_art, sports, visual_art} from "@/assets/images/life-at-ggs"
+import ExploreTopics from "@/component/ExploreTopics";
+
 // md:p-md lg:p-large xl:p-xl 2xl:p-2xl 3xl:p-3xl
 
 function page() {
@@ -128,15 +130,7 @@ function page() {
       </section>
 
       {/* other topics */}
-      <section className="section-container">
-        <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
-          OTHER TOPICS TO EXPLORE
-        </h2>
-        <div className="flex flex-col md:flex-row gap-xl">
-          <TopicCard text={"STUDENT COUNCIL"} link={""} />
-          <TopicCard text={"STUDENT COUNCIL"} link={""} />
-        </div>
-      </section>
+      <ExploreTopics />
     </>
   );
 }

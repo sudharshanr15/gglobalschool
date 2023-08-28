@@ -7,6 +7,7 @@ import OtherTopics from "../../container/policies/OtherTopics"
 
 import Enquire from "../../component/Enquire/Enquire"
 import Hero from "../../component/hero/Hero"
+import ExploreTopics from "@/component/ExploreTopics";
 
 function page() {
 
@@ -29,7 +30,7 @@ function page() {
         <PoliciesFlex headings={Headings} links={Links} />
 
       </section>
-      <OtherTopics />
+      <ExploreTopics />
       <Enquire />
     </>
   );
