@@ -9,6 +9,7 @@ const Eventcard = ({ title, setgallery, image }: any) => {
                         src={image}
                         className="w-full h-auto object-cover"
                         alt={title}
+                        placeholder="blur"
                     />
                 </div>
                 <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden opacity-0 transition duration-700 ease-in-out hover:opacity-100 text-center">
