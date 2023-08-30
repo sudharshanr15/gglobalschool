@@ -9,6 +9,9 @@ import {sports} from "@/assets/images/health-wellbeing";
 import {pyp} from "@/assets/images/curriculum";
 import {design_thinking} from "@/assets/images/life-at-ggs";
 import {story_1} from "@/assets/images/our-story";
+import {support_1} from "@/assets/images/emotional-support";
+import {agency_1} from "@/assets/images/student-agency";
+import {leadership_1} from "@/assets/images/student-leadership";
 
 function TopicCard({ name, img, href}: {
     name: string,
@@ -55,19 +58,9 @@ function ExploreTopics() {
             img: img,
         },
         {
-            name: "Why Us",
-            href: "/why-us",
-            img: img,
-        },
-        {
             name: "Student Agency",
             href: "/student-agency",
-            img: img,
-        },
-        {
-            name: "Pillars by which we abide",
-            href: "/policies",
-            img: img,
+            img: agency_1,
         },
         {
             name: "Primary programmes @ GGS",
@@ -77,7 +70,7 @@ function ExploreTopics() {
         {
             name: "Emotion & Ethical Support",
             href: "/emotional",
-            img: img,
+            img: support_1,
         },
         {
             name: "Studios @ GGS",
@@ -87,7 +80,7 @@ function ExploreTopics() {
         {
             name: "Student Leadership",
             href: "/student-council",
-            img: img,
+            img: leadership_1,
         },
         {
             name: "Health & Well being",

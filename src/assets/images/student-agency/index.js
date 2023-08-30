@@ -1,0 +1,1 @@
+export {default as agency_1} from "./agency_1.jpg"
