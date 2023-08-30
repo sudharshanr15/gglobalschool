@@ -1,6 +1,9 @@
 "use client";
 
 import { blog1, blog2, blog3, wave_fill } from "@/assets"
+import { img_6 } from "@/assets/images/gallery/annual-day";
+import { music_2 } from "@/assets/images/music";
+import { swim_2 } from "@/assets/images/health-wellbeing";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Image from "next/image"
 
@@ -9,17 +12,17 @@ import '@splidejs/splide/css';
 function Blogs(){
     const blogs = [
         {
-            "image": blog1,
+            "image": img_6,
             "name": "ANNUAL DAY CELEBRATION",
             "date": "12/01/2023",
         },
         {
-            "image": blog2,
+            "image": music_2,
             "name": "MUSIC COMPETITION",
             "date": "15/03/2023",
         },
         {
-            "image": blog2,
+            "image": swim_2,
             "name": "SPORTS DAY",
             "date": "25/03/2023",
         },

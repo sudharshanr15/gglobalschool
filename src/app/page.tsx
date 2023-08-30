@@ -2,6 +2,9 @@ import Hero from "@/container/Home/Hero";
 import {Programs, Team, Blogs, News} from "@/container/Home";
 import Link from "next/link";
 import { choose_us_1, choose_us_2, choose_us_3, wave_fill } from "@/assets"
+import { story_2 } from "@/assets/images/our-story";
+import { swim } from "@/assets/images/health-wellbeing";
+import { music_1 } from "@/assets/images/music";
 import Image from "next/image";
 
 const Home = () => {
@@ -24,14 +27,14 @@ const Home = () => {
           </div>
           <div className="w-full md:w-1/2">
             <div className="flex gap-md">
-              <div className="w-full">
-                <Image unoptimized src={choose_us_1} alt="Why Choose image" className="w-full h-full object-cover" />
+              <div className="w-full rounded-xl md:rounded-3xl overflow-hidden">
+                <Image unoptimized src={story_2} alt="Why Choose image" className="w-full h-full object-cover" />
               </div>
-              <div className="w-full">
-                <Image unoptimized src={choose_us_2} alt="Why Choose image" className="w-full h-full object-cover" />
+              <div className="w-full rounded-xl md:rounded-3xl overflow-hidden">
+                <Image unoptimized src={music_1} alt="Why Choose image" className="w-full h-full object-cover" />
               </div>
-              <div className="w-full">
-                <Image unoptimized src={choose_us_3} alt="Why Choose image" className="w-full h-full object-cover" />
+              <div className="w-full rounded-xl md:rounded-3xl overflow-hidden">
+                <Image unoptimized src={swim} alt="Why Choose image" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

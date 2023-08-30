@@ -2,13 +2,14 @@ import React from "react";
 import hero from "../../assets/offer3.jpg";
 import Image from "next/image";
 import styles from "./styles.module.css";
+import { story_3 } from "@/assets/images/our-story";
 
 function Hero({ title }) {
     return (
-        <div className={"w-full relative min-h-[576px] " + styles.hero}>
+        <div className={"w-full relative min-h-[576px] max-h-[50vh] overflow-hidden " + styles.hero}>
             <div className="inset-0 opacity-60">
                 <Image
-                    src={hero}
+                    src={story_3}
                     alt="hero"
                     unoptimized
                     className="object-cover md:max-h-[576px] min-h-[576px]"
