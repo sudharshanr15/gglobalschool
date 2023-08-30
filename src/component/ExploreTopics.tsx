@@ -26,7 +26,7 @@ function TopicCard({ name, img, href}: {
                 />
             </div>
             <div className="bg-primary-maroon-1 text-center">
-                <p className="text-white uppercase text-heading-5 p-xl">
+                <p className="text-white uppercase text-heading-5 p-large">
                     {name}
                 </p>
             </div>

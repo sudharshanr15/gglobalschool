@@ -8,7 +8,7 @@ import * as management from "@/assets/images/management";
 function Management() {
     return (
         <section className="section-container">
-            <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+            <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
                 MANAGEMENT
             </h2>
             <div className="mb-xl">
@@ -44,18 +44,18 @@ function Management() {
                         </div>
                     </div>
                     <div className="relative w-full md:w-1/2">
-                        <div className="rounded-3xl overflow-hidden max-h-[500px]">
+                        <div className="rounded-3xl overflow-hidden max-h-[500px] min-h-[450px]">
                             <Image
                                 src={management.img_4}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
-                                <p className="text-white uppercase pt-10 p-2">
+                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                                <p className="text-white uppercase pt-large">
                                     Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
                                 </p>
-                                <p className="text-white uppercase pt-large">
+                                <p className="text-white uppercase pt-md">
                                     CHAIRMAN DIRECTOR, G GLOBAL SCHOOL
                                 </p>
                             </div>
@@ -83,11 +83,11 @@ function Management() {
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
-                                <p className="text-white uppercase pt-10 p-2">
+                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                                <p className="text-white uppercase pt-large">
                                     Ms. MALLIKA GUNASEKARAN
                                 </p>
-                                <p className="text-white uppercase pt-large">
+                                <p className="text-white uppercase pt-md">
                                     DIRECTOR, G GLOBAL SCHOOL
                                 </p>
                             </div>
@@ -128,11 +128,11 @@ function Management() {
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
-                                <p className="text-white uppercase pt-large p-md  ">
+                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                                <p className="text-white uppercase pt-large">
                                     DR. G. VETRICHELVAN
                                 </p>
-                                <p className="text-white uppercase pt-md p-md ">
+                                <p className="text-white uppercase pt-md">
                                     MANAGING DIRECTOR, G GLOBAL SCHOOL
                                 </p>
                             </div>
@@ -174,11 +174,11 @@ function Management() {
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
-                                <p className="text-white uppercase pt-large p-md  ">
+                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                                <p className="text-white uppercase pt-large">
                                     DR. S. ROSHNI VETRICHELVAN
                                 </p>
-                                <p className="text-white uppercase pt-md p-md ">
+                                <p className="text-white uppercase pt-md">
                                     EXECUTIVE DIRECTOR / HEAD OF SCHOOL, G GLOBAL
                                     SCHOOL
                                 </p>

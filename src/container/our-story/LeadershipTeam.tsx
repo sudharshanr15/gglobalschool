@@ -38,7 +38,7 @@ function LeadershipTeam() {
     ]
     return (
         <section className="section-container">
-            <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
+            <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
                 PEDAGOGICAL LEADERSHIP TEAM
             </h2>
             <p className="text-body mb-xl">
