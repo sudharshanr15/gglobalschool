@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Slide from "./slide";
 import Image from "next/image";
 import close from "../../assets/close.png";
+import { Dispatch, SetStateAction } from "react";
 import * as annual_day from "@/assets/images/gallery/annual-day";
 import * as art_competiton from "@/assets/images/gallery/art-competition";
 import * as art_expo from "@/assets/images/gallery/art-expo";
@@ -19,7 +20,7 @@ import * as sports_day from "@/assets/images/gallery/sports-day";
 import * as yoga_day from "@/assets/images/gallery/yoga-day";
 
 const Listofevents = () => {
-    const gallery_images = {
+    const gallery_images: any = {
         "Annual Day": [...Object.values(annual_day)],
         "Art Competition": [...Object.values(art_competiton)],
         "Art Expo": [...Object.values(art_expo)],
@@ -40,7 +41,7 @@ const Listofevents = () => {
     useEffect(() => {
         console.log(gallery_images["Annual Day"][1]);
     }, []);
-    const [gallery, setGallery] = useState(false);
+    const [gallery, setGallery]: [any, Dispatch<SetStateAction<any>>] = useState(false);
     const events = [
         "Fathers Day",
         "International yoga day",
