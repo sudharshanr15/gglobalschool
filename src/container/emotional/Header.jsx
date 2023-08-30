@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function Header({ title, content, img, rev }) {
+function Header({ title, content, img, rev=false }) {
     return (
         <section
             className={`section-container flex gap-large md:gap-xl flex-col items-center ${rev ? "md:flex-row-reverse" : "md:flex-row"}`}
