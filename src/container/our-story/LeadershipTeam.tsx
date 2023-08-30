@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import logo5 from "../../assets/orustory5.png";
+import * as management from "@/assets/images/management";
 
 type TeamType = {
     name: string,
@@ -13,25 +14,25 @@ function LeadershipTeam() {
         {
             name: "MS. SANGEETHA PRATTI",
             role: "IB IN-SCHOOL EDUCATION ADVISOR",
-            image: logo5,
+            image: management.img_1,
             text: "An eminent leader, who guides the GGS pedagogical and teaching community through her timely feedbacks and suggestions. Her constant support will enhance the implementation of IB at GGS.",
         },
         {
             name: "MS. SATHYAVARTHINI",
             role: "DEPUTY HEAD",
-            image: logo5,
+            image: management.img_2,
             text: "A vibrant leader, who guides the GGS Team with IB philosophy and practices. Her knowledge with nine years of teaching experience supports the teaching and learning at GGS through her active collaboration.",
         },
         {
             name: "MS. SUGUNA",
             role: "PYP COORDINATOR",
-            image: logo5,
+            image: management.img_3,
             text: "A passionate leader, who drives the team with sheer positivity and enthusiasm. Her journey at GGS began in the year 2018. Her positive mindset guides the GGS team both academically and non-academically.",
         },
         {
             name: "MS. NITHYA",
             role: "HR ADMIN/HEAD",
-            image: logo5,
+            image: management.img_8,
             text: "A smart leader, who has 25 years of administrative experience. Her expertise will support the cordial functioning of the non-academic team for the welfare of the GGS community.",
         },
     ]
@@ -50,12 +51,14 @@ function LeadershipTeam() {
             <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-xl">
                 {team.map((item, index) => (
                     <div className="w-full p-md" key={index}>
-                        <Image
-                            src={item.image}
-                            alt="logo"
-                            className="w-full md:h-auto "
-                            unoptimized
-                        />
+                        <div className="aspect-video rounded-xl md:rounded-3xl overflow-hidden">
+                            <Image
+                                src={item.image}
+                                alt="logo"
+                                className="h-full w-full object-contain"
+                                unoptimized
+                            />
+                        </div>
                         <p className="text-heading-4 mt-md uppercase">{item.name}</p>
                         <p className="pt-large text-heading-6 font-normal">
                             {item.role}
