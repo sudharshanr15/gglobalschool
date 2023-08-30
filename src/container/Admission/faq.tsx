@@ -22,7 +22,7 @@ const Faq = () => {
 
   return (
     <section className="section-container">
-        <div className="text-primary-maroon text-heading-5">FAQ</div>
+        <h2 className="text-heading-3 md:text-heading-2 text-primary-maroon">FAQ</h2>
         {content}
     </section>
   )

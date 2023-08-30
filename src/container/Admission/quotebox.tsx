@@ -1,11 +1,15 @@
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const Quotebox = () => {
   return (
-    <section className="section-container lg:bg-primary-maroon">
-    <div className="uppercase text-heading-6 lg:text-heading-5  bg-primary-maroon rounded-xl p-large text-gray-100 text-center">
-        “Knowing yourself is the beginning of all wisdom” - Aristotle.
+    <section className="relative section-container bg-primary-maroon-1 ">
+    <div className="absolute top-0 left-0 z-0">
+        <FormatQuoteIcon sx={{ fontSize: 150, opacity: 0.2, color: "#F05A22"}} />
     </div>
-    </section>
+    <p className="text-heading-6 uppercase text-white z-10">
+      “Knowing yourself is the beginning of all wisdom” - Aristotle.
+    </p>
+</section>
   )
 }
 
