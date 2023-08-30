@@ -98,11 +98,11 @@ function ExploreTopics() {
     const [num2, setNum2] = useState(-1);
 
     useEffect(() => {
-        let check_num1 = Math.round(Math.random() * links.length)
+        let check_num1 = Math.round(Math.random() * (links.length - 1))
         setNum1(check_num1)
-        let check_num2 = Math.round(Math.random() * links.length)
+        let check_num2 = Math.round(Math.random() * (links.length - 1))
         while(check_num1 == check_num2){
-            check_num2 = Math.round(Math.random() * links.length)
+            check_num2 = Math.round(Math.random() * (links.length - 1))
         }
         setNum2(check_num2)
     }, [])
