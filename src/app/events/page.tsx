@@ -7,7 +7,6 @@ const Page = () => {
   return (
     <div>
         <Hero title={"days and events"} />
-        <Description/>
         <Listofevents/>
         <Slideshow/>
         <ExploreTopics />

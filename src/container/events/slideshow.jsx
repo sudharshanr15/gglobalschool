@@ -33,7 +33,7 @@ const Slideshow = () => {
 
   return (
     <section className="section-container">
-      <p className="text-primary-maroon text-heading-5 mb-md lg:mb-xl">VIEW EVENTS GALLERY</p>
+      <h2 className="text-primary-maroon text-heading-5 mb-md lg:mb-xl">VIEW EVENTS GALLERY</h2>
       <Swiper
                 style={{
                     "--swiper-pagination-color": "#790000",
@@ -44,7 +44,7 @@ const Slideshow = () => {
                 slidesPerView={1}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 1000,
+                    delay: 2500,
                     disableOnInteraction: true,
                 }}
                 pagination={{
