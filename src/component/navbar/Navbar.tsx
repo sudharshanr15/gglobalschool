@@ -215,28 +215,31 @@ function Navbar(){
                     <div className="w-full bg-primary-maroon-1 fixed h-full overflow-auto top-0 left-0 menu-links z-[100]">
                         <div className="relative h-full">
                             <div className="p-5 flex flex-row justify-between items-center">
-                                <div className="inline-block">
-                                    <Image className="max-w-[10rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                                <a href="/" className="inline-block">
+                                    <Image className="max-w-[13rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                                </a>
+                                <div className="flex gap-xl items-center">
+                                    <button onClick={() => setFormOpen(true)} className="btn-slide hidden md:inline-block">Contact us</button>
+                                    <button className="flex items-center justify-center bg-primary-orange-1 w-14 h-14 aspect-square rounded-full"
+                                        onClick={onMenuClick}
+                                    >
+                                        <Image src={icon_close} className="w-[1.5rem] h-auto" unoptimized alt="Close Icon" />
+                                    </button>
                                 </div>
-                                <button className="inline-flex items-center justify-center bg-primary-orange-1 w-14 aspect-square rounded-full"
-                                    onClick={onMenuClick}
-                                >
-                                    <Image src={icon_close} className="w-[1.5rem] h-auto" unoptimized alt="Close Icon" />
-                                </button>
                             </div>
                             <div className="p-5">
                                 <ul className="list-none flex flex-col items-start">
                                 {
                                         Object.values(links).map((item, index) => (
-                                            <li className="text-subheading md:text-heading-6 text-white mb-2" key={index}>
+                                            <li className="text-subheading md:text-heading-6 text-white mb-2 hover:bg-primary-orange-1 transition-colors rounded-lg" key={index}>
                                                 {
-                                                    (item.sub_menu.length > 0) ? (<button className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" data-name={item.name} onClick={onNavLinkClick}>{item.name}</button>) : (<Link className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" href={item.href || ""} onClick={onLink}>{item.name}</Link>)
+                                                    (item.sub_menu.length > 0) ? (<button className="p-md" data-name={item.name} onClick={onNavLinkClick}>{item.name}</button>) : (<Link className="p-md inline-block" href={item.href || ""} onClick={onLink}>{item.name}</Link>)
                                                 }
                                             </li>
                                         ))
                                     }
                                 </ul>
-                                <Link href="" className="btn-slide">Contact us</Link>
+                                <button className="btn-slide mt-4 md:hidden" onClick={() => setFormOpen(true)}>Contact us</button>
                             </div>
                             {isSubMenuOpen && (
                                 <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
@@ -249,7 +252,7 @@ function Navbar(){
                                         </button>
                                         <ul className="list-none">
                                             {links[activeSubmenu].sub_menu.map((item, index) => (
-                                                <li className="text-subheading md:text-heading-6 text-white mb-8" key={index}>
+                                                <li className="text-subheading md:text-heading-6 text-white mb-2 px-4 py-2 hover:bg-primary-yellow-1 hover:text-black w-fit rounded-lg transition-colors" key={index}>
                                                     <Link href={item.href} onClick={onLink}>{item.name}</Link>
                                                 </li>
                                             ))}
