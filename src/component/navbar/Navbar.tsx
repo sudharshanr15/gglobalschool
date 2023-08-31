@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import WestIcon from '@mui/icons-material/West';
 import { gglobal_logo, icon_close } from "@/assets/index"
+import Form from "../../component/Admission-Form/Form";
 
 import styles from "./styles.module.css"
 
@@ -26,6 +27,7 @@ function Navbar(){
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
     const [isMenuHover, setIsMenuHover] = useState(false)
     const [activeSubmenu, setActiveSubmenu] = useState("")
+    const [isFormOpen, setFormOpen] = useState(false);
 
     const links: NavbarLinkType = {
         "Our G Global Universe": {
@@ -183,81 +185,86 @@ function Navbar(){
     }
 
     return (
-        <nav className="bg-transparent absolute top-0 left-0 w-full z-50 h-[100px]">
-            <div className="ps-md pt-7 lg:ps-3xl pd:my-6 flex flex-row items-center gap-2xl">
-                <div className="flex-1 h-full">
-                    <div className="h-full max-w-[18rem]">
-                        <Link href="/">
-                            <Image className="object-contain" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
-                        </Link>
+        <>
+            <nav className="bg-transparent absolute top-0 left-0 w-full z-50 h-[100px]">
+                <div className="ps-md pt-7 lg:ps-3xl pd:my-6 flex flex-row items-center gap-2xl">
+                    <div className="flex-1 h-full">
+                        <div className="h-full max-w-[18rem]">
+                            <Link href="/">
+                                <Image className="object-contain" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="inline-flex gap-x-16 items-center">
+                        <button className="text-subheading text-white hidden md:block" onClick={() => setFormOpen(true)}>Admissions</button>
+                        <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-5 py-3 md:px-7 md:py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
+                            onClick={onMenuClick}
+                            onMouseEnter={onMenuHover}
+                            onMouseLeave={onMenuHover}
+                        >
+                            <div className={`w-[1.76rem] md:w-[4rem] ${styles.menu_icon} gap-y-1 md:gap-y-2`}>
+                                <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_1}`}></span>
+                                <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_2}`}></span>
+                                <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_3}`}></span>
+                            </div>
+                            <h6 className="text-heading-6 hidden md:block">Menu</h6>
+                        </button>
                     </div>
                 </div>
-                <div className="inline-flex gap-x-16 items-center">
-                    <Link href="" className="text-subheading text-white hidden md:block">Admissions</Link>
-                    <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-5 py-3 md:px-7 md:py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
-                        onClick={onMenuClick}
-                        onMouseEnter={onMenuHover}
-                        onMouseLeave={onMenuHover}
-                    >
-                        <div className={`w-[1.76rem] md:w-[4rem] ${styles.menu_icon} gap-y-1 md:gap-y-2`}>
-                            <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_1}`}></span>
-                            <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_2}`}></span>
-                            <span className={`border-[0.18rem] md:border-spacing-1 ${styles.line} ${styles.line_3}`}></span>
-                        </div>
-                        <h6 className="text-heading-6 hidden md:block">Menu</h6>
-                    </button>
-                </div>
-            </div>
-            {isMenuOpen && (
-                <div className="w-full bg-primary-maroon-1 fixed h-full overflow-auto top-0 left-0 menu-links z-[100]">
-                    <div className="relative h-full">
-                        <div className="p-5 flex flex-row justify-between items-center">
-                            <div className="inline-block">
-                                <Image className="max-w-[10rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
-                            </div>
-                            <button className="inline-flex items-center justify-center bg-primary-orange-1 w-14 aspect-square rounded-full"
-                                onClick={onMenuClick}
-                            >
-                                <Image src={icon_close} className="w-[1.5rem] h-auto" unoptimized alt="Close Icon" />
-                            </button>
-                        </div>
-                        <div className="p-5">
-                            <ul className="list-none flex flex-col items-start">
-                               {
-                                    Object.values(links).map((item, index) => (
-                                        <li className="text-subheading md:text-heading-6 text-white mb-2" key={index}>
-                                            {
-                                                (item.sub_menu.length > 0) ? (<button className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" data-name={item.name} onClick={onNavLinkClick}>{item.name}</button>) : (<Link className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" href={item.href || ""} onClick={onLink}>{item.name}</Link>)
-                                            }
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                            <Link href="" className="btn-slide">Contact us</Link>
-                        </div>
-                        {isSubMenuOpen && (
-                            <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
-                                <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu md:min-w-[32rem]">
-                                    <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
-                                        <div className="animate-slide-in inline-block">
-                                            <WestIcon fontSize="large" className="me-4" />
-                                        </div>
-                                        BACK
-                                    </button>
-                                    <ul className="list-none">
-                                        {links[activeSubmenu].sub_menu.map((item, index) => (
-                                            <li className="text-subheading md:text-heading-6 text-white mb-8" key={index}>
-                                                <Link href={item.href} onClick={onLink}>{item.name}</Link>
-                                            </li>
-                                        ))}
-                                    </ul>
+                {isMenuOpen && (
+                    <div className="w-full bg-primary-maroon-1 fixed h-full overflow-auto top-0 left-0 menu-links z-[100]">
+                        <div className="relative h-full">
+                            <div className="p-5 flex flex-row justify-between items-center">
+                                <div className="inline-block">
+                                    <Image className="max-w-[10rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
                                 </div>
+                                <button className="inline-flex items-center justify-center bg-primary-orange-1 w-14 aspect-square rounded-full"
+                                    onClick={onMenuClick}
+                                >
+                                    <Image src={icon_close} className="w-[1.5rem] h-auto" unoptimized alt="Close Icon" />
+                                </button>
                             </div>
-                        )}
+                            <div className="p-5">
+                                <ul className="list-none flex flex-col items-start">
+                                {
+                                        Object.values(links).map((item, index) => (
+                                            <li className="text-subheading md:text-heading-6 text-white mb-2" key={index}>
+                                                {
+                                                    (item.sub_menu.length > 0) ? (<button className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" data-name={item.name} onClick={onNavLinkClick}>{item.name}</button>) : (<Link className="p-md hover:bg-primary-orange-1 inline-block rounded-lg" href={item.href || ""} onClick={onLink}>{item.name}</Link>)
+                                                }
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                                <Link href="" className="btn-slide">Contact us</Link>
+                            </div>
+                            {isSubMenuOpen && (
+                                <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
+                                    <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu md:min-w-[32rem]">
+                                        <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
+                                            <div className="animate-slide-in inline-block">
+                                                <WestIcon fontSize="large" className="me-4" />
+                                            </div>
+                                            BACK
+                                        </button>
+                                        <ul className="list-none">
+                                            {links[activeSubmenu].sub_menu.map((item, index) => (
+                                                <li className="text-subheading md:text-heading-6 text-white mb-8" key={index}>
+                                                    <Link href={item.href} onClick={onLink}>{item.name}</Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
-                </div>
+                )}
+            </nav>
+            {isFormOpen && (
+                <Form onClose={setFormOpen} />
             )}
-        </nav>
+        </>
     )
 }
 

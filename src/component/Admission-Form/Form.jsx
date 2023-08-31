@@ -5,10 +5,27 @@ import Link from "next/link";
 export default function Form({ onClose }) {
     const [isThankYouOpen, setThankYouOpen] = useState(false);
 
+    useEffect(() => {
+        disableBackgroundScroll(true)
+    }, [])
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
         setThankYouOpen(true);
     };
+
+    function onFormClose(){
+        disableBackgroundScroll(false)
+        onClose(false)
+    }
+
+    function disableBackgroundScroll(disable=true){
+        if(disable){
+            document.querySelector("body").style.overflow = "hidden"
+        }else{
+            document.querySelector("body").style.overflow = "auto"
+        }
+    }
 
     function FormContainer() {
         return (
@@ -17,7 +34,7 @@ export default function Form({ onClose }) {
 
                 <div
                     className="fixed inset-0 bg-gray-900 opacity-70 z-10"
-                    onClick={() => onClose(false)}
+                    onClick={onFormClose}
                 ></div>
 
                 {/* The form */}
@@ -31,7 +48,7 @@ export default function Form({ onClose }) {
                         </h2>
 
                         <button
-                            onClick={() => onClose(false)}
+                            onClick={onFormClose}
                             className="flex items-center justify-center"
                         >
                             <CancelIcon
@@ -108,7 +125,7 @@ export default function Form({ onClose }) {
                               Thank you for your interest g global school
                           </h1>
                           <button
-                              onClick={() => setThankYouOpen(false)}
+                              onClick={onFormClose}
                               className="items-center justify-center hidden md:flex"
                           >
                               <CancelIcon
