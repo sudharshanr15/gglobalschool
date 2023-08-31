@@ -36,7 +36,6 @@ function page() {
 
       </section>
       <ExploreTopics />
-      <Enquire />
     </>
   );
 }

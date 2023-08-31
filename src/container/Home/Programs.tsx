@@ -5,7 +5,7 @@ import { programmes1, programmes2, wave_fill } from "@/assets"
 function Programs(){
     return (
         <section className="section-container bg-primary-maroon-1">
-            <h2 className="text-gray-100 uppercase text-heading-5 md:text-heading-3">PROGRAMMES WE OFFER</h2>
+            <h2 className="text-gray-100 uppercase text-heading-5 md:text-heading-3">PRIMARY YEARS PROGRAMMES @ GGS</h2>
             <div className="w-fit relative">
                 <h4 className="text-heading-4 md:text-8xl opacity-10 text-primary-orange-2">PROGRAMMES</h4>
                 <div className="absolute w-full h-full top-0 right-0">
@@ -15,7 +15,7 @@ function Programs(){
             <div className="flex flex-col md:flex-row gap-xl mt-large">
                 <div className="w-full">
                     <div className="w-full mb-md aspect-square">
-                        <Image src={programmes1} alt="Programmes Image" className="w-full h-full object-cover" />
+                        <Image src={programmes1} alt="Programmes Image" className="w-full h-full object-cover object-top" />
                     </div>
                     <div className="w-full">
                         <div className="flex flex-col items-center md:items-start gap-md">
@@ -28,7 +28,7 @@ function Programs(){
                 </div>
                 <div className="w-full">
                     <div className="w-full mb-md aspect-square">
-                        <Image src={programmes2} alt="Programmes Image" className="w-full h-full object-cover" />
+                        <Image src={programmes2} alt="Programmes Image" className="w-full h-full object-cover object-top" />
                     </div>
                     <div className="w-full">
                         <div className="flex flex-col items-center md:items-start gap-md">

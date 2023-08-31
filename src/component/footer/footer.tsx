@@ -96,7 +96,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-auto flex-col gap-md">
               <p className="text-heading-6 text-white">Become One of US</p>
-              <Link href="/#" className="text-white cursor-pointer">
+              <Link href="/admission" className="text-white cursor-pointer">
                 Admissions
               </Link>
               <Link href="/work-with-us" className="text-white cursor-pointer">
@@ -128,7 +128,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex flex-auto flex-col gap-md">
-              <div className="flex flex-row items-center gap-md">
+              <div className="flex flex-row flex-wrap items-center gap-x-md">
                 <Link
                   href=""
                   className="text-heading-6 text-white cursor-pointer"
@@ -139,7 +139,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-auto flex-col gap-md">
-              <div className="flex flex-row items-center gap-md">
+            <div className="flex flex-row flex-wrap items-center gap-x-md">
                 <Link
                   href=""
                   className="text-heading-6 text-white cursor-pointer"
