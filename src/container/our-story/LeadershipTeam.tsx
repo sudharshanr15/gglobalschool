@@ -50,7 +50,7 @@ function LeadershipTeam() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-xl">
                 {team.map((item, index) => (
-                    <div className="w-full p-md" key={index}>
+                    <div className="w-full" key={index}>
                         <div className="aspect-video rounded-xl md:rounded-3xl overflow-hidden">
                             <Image
                                 src={item.image}
@@ -59,7 +59,7 @@ function LeadershipTeam() {
                                 unoptimized
                             />
                         </div>
-                        <p className="text-heading-4 mt-md uppercase">{item.name}</p>
+                        <p className="text-heading-5 md:text-heading-4 mt-md uppercase">{item.name}</p>
                         <p className="pt-large text-heading-6 font-normal">
                             {item.role}
                         </p>

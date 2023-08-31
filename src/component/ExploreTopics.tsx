@@ -115,7 +115,7 @@ function ExploreTopics() {
             </h2>
             <div className="flex flex-col md:flex-row gap-xl">
                 {[num1, num2].map((item: number, index: number) => (
-                    <TopicCard {...links[item]} />
+                    <TopicCard {...links[item]} key={index} />
                 ))}
             </div>
         </section>

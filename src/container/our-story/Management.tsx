@@ -43,15 +43,15 @@ function Management() {
                             </p>
                         </div>
                     </div>
-                    <div className="relative w-full md:w-1/2">
-                        <div className="rounded-3xl overflow-hidden max-h-[500px] min-h-[450px]">
+                    <div className="w-full md:w-1/2">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
                             <Image
                                 src={management.img_4}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
                                 </p>
@@ -59,6 +59,14 @@ function Management() {
                                     CHAIRMAN DIRECTOR, G GLOBAL SCHOOL
                                 </p>
                             </div>
+                        </div>
+                        <div className="lg:hidden">
+                            <p className="text-heading-6 lg:text-heading-4 mt-md uppercase">
+                                Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
+                            </p>
+                            <p className="pt-md text-body">
+                                CHAIRMAN DIRECTOR, G GLOBAL SCHOOL
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -75,15 +83,15 @@ function Management() {
                             </p>
                         </div>
                     </div>
-                    <div className="relative w-full md:w-1/2">
-                        <div className="rounded-3xl overflow-hidden max-h-[500px]">
+                    <div className="w-full md:w-1/2">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
                             <Image
                                 src={img}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     Ms. MALLIKA GUNASEKARAN
                                 </p>
@@ -91,6 +99,14 @@ function Management() {
                                     DIRECTOR, G GLOBAL SCHOOL
                                 </p>
                             </div>
+                        </div>
+                        <div className="lg:hidden">
+                            <p className="text-heading-6 lg:text-heading-4 mt-md uppercase">
+                                Ms. MALLIKA GUNASEKARAN
+                            </p>
+                            <p className="pt-md text-body">
+                                DIRECTOR, G GLOBAL SCHOOL
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -120,15 +136,15 @@ function Management() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 relative">
-                        <div className="rounded-3xl overflow-hidden max-h-[500px]">
+                    <div className="w-full md:w-1/2">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
                             <Image
                                 src={management.img_6}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     DR. G. VETRICHELVAN
                                 </p>
@@ -136,6 +152,14 @@ function Management() {
                                     MANAGING DIRECTOR, G GLOBAL SCHOOL
                                 </p>
                             </div>
+                        </div>
+                        <div className="lg:hidden">
+                            <p className="text-heading-6 lg:text-heading-4 mt-md uppercase">
+                                DR. G. VETRICHELVAN
+                            </p>
+                            <p className="pt-md text-body">
+                                MANAGING DIRECTOR, G GLOBAL SCHOOL
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -166,23 +190,30 @@ function Management() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/2 relative">
-                        <div className="rounded-3xl overflow-hidden max-h-[500px]">
+                    <div className="w-full md:w-1/2">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
                             <Image
                                 src={management.img_7}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     DR. S. ROSHNI VETRICHELVAN
                                 </p>
                                 <p className="text-white uppercase pt-md">
-                                    EXECUTIVE DIRECTOR / HEAD OF SCHOOL, G GLOBAL
-                                    SCHOOL
+                                    EXECUTIVE DIRECTOR / HEAD OF SCHOOL, G GLOBAL SCHOOL
                                 </p>
                             </div>
+                        </div>
+                        <div className="lg:hidden">
+                            <p className="text-heading-6 lg:text-heading-4 mt-md uppercase">
+                                DR. S. ROSHNI VETRICHELVAN
+                            </p>
+                            <p className="pt-md text-body">
+                                EXECUTIVE DIRECTOR / HEAD OF SCHOOL, G GLOBAL SCHOOL
+                            </p>
                         </div>
                     </div>
                 </div>

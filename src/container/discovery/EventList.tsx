@@ -19,7 +19,7 @@ const Listofevents = () => {
                         <p
                             key={index}
                             onClick={() => setGallery(item)}
-                            className={`text-primary-maroon-1 text-heading-5 lg:text-heading-3 font-bold decoration-8 underline-offset-[1rem] decoration-primary-yellow-1 ${
+                            className={`text-primary-maroon-1 bold md:text-heading-6 xl:text-heading-5 font-bold decoration-4 lg:decoration-8 underline-offset-8 lg:underline-offset-[1rem] decoration-primary-yellow-1 ${
                                 item == gallery ? "underline" : ""
                             }`}
                         >
