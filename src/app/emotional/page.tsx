@@ -6,6 +6,7 @@ import emo2 from "../../assets/emo2.jpg";
 import Hero from "../../component/hero/Hero";
 import { social_emotional_learning } from "@/assets/images/emotional";
 import ExploreTopics from "@/component/ExploreTopics";
+import { reading } from "@/assets/images/emotional";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ function page() {
                     <br></br>,
                     "Our facilitators recognize learners’ capabilities through listening, respecting and responding to their ideas. They make thoughtful considerations and decisions with an emphasis on relationships.",
                 ]}
-                img={emo1}
+                img={reading}
                 rev={true}
             />{" "}
             <ExploreTopics />
