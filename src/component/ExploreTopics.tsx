@@ -12,6 +12,7 @@ import {story_1} from "@/assets/images/our-story";
 import {support_1} from "@/assets/images/emotional-support";
 import {agency_1} from "@/assets/images/student-agency";
 import {leadership_1} from "@/assets/images/student-leadership";
+import { principled } from "@/assets/images/curriculum";
 
 function TopicCard({ name, img, href}: {
     name: string,
@@ -55,7 +56,7 @@ function ExploreTopics() {
         {
             name: "Mission & Values",
             href: "/mission",
-            img: img,
+            img: principled,
         },
         {
             name: "Student Agency",

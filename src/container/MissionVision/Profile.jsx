@@ -12,6 +12,15 @@ import profile6 from "../../assets/profile6.png";
 import profile7 from "../../assets/profile7.jpg";
 import profile8 from "../../assets/profile8.png";
 import profile9 from "../../assets/profile9.jpg";
+import { img_4 } from "@/assets/images/individual-pursuit";
+import { img_4 as risk_taker } from "@/assets/images/adventure-challenges";
+import { img_2 as open_minded } from "@/assets/images/games";
+import { support_1 as balanced } from "@/assets/images/emotional-support";
+import { pyp as knowledgeable } from "@/assets/images/curriculum";
+import { thinker } from "@/assets/images/curriculum";
+import { inquirers as inquirer } from "@/assets/images/curriculum";
+import { principled } from "@/assets/images/curriculum";
+import { communicators } from "@/assets/images/curriculum";
 
 function Profile() {
     return (
@@ -38,7 +47,7 @@ function Profile() {
                     className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-xl"
                 >
                     <MissionCards
-                        cardImage={profile1}
+                        cardImage={thinker}
                         title={"THINKER"}
                         desc={
                             "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
@@ -46,15 +55,15 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile2}
-                        title={"KNOWLEDABLE"}
+                        cardImage={knowledgeable}
+                        title={"KNOWLEDGEABLE"}
                         desc={
                             "We strive to develop a deep understanding of a wide range of subjects and explore the connections between them. We embrace both local and global perspectives and are knowledgeable about issues of significance"
                         }
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile3}
+                        cardImage={communicators}
                         title={"COMMUNICATORS"}
                         desc={
                             "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
@@ -62,7 +71,7 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile4}
+                        cardImage={inquirer}
                         title={"INQUIRER"}
                         desc={
                             "We nurture a love for learning and develop the skills to acquire knowledge independently. We are curious, ask questions, and actively engage in the learning process."
@@ -70,7 +79,7 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile5}
+                        cardImage={principled}
                         title={"PRINCIPLED"}
                         desc={
                             "We act with integrity and honesty, upholding ethical principles and respecting the rights and dignity of others. We take responsibility for our actions and contribute to a just and harmonious community."
@@ -78,7 +87,7 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile6}
+                        cardImage={open_minded}
                         title={"OPEN MINDED"}
                         desc={
                             "We embrace and appreciate our own culture and the diversity of other cultures, perspectives, and ideas. We seek to understand different viewpoints and are willing to consider new possibilities."
@@ -86,7 +95,7 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile7}
+                        cardImage={risk_taker}
                         title={"RISK TAKERS"}
                         desc={
                             "We approach challenges with confidence and enthusiasm. We are willing to try new things, explore unfamiliar territories, and take calculated risks to extend our learning and personal growth."
@@ -94,7 +103,7 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile8}
+                        cardImage={balanced}
                         title={"BALANCED"}
                         desc={
                             "We strive to achieve a balance between our intellectual, physical, and emotional well-being. We recognize the importance of maintaining a healthy lifestyle and fostering positive relationships."
@@ -102,7 +111,7 @@ function Profile() {
                         iswide={false}
                     />
                     <MissionCards
-                        cardImage={profile9}
+                        cardImage={img_4}
                         title={"REFLECTIVE"}
                         desc={
                             "We thoughtfully consider our own strengths and weaknesses, set goals for personal growth, and evaluate our progress. We learn from our experiences and use them to shape our future actions."

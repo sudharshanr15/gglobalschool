@@ -6,3 +6,7 @@ export {default as offer_3} from "./offer_3.jpg";
 export {default as offer_4} from "./offer_4.jpg";
 export {default as offer_5} from "./offer_5.jpg";
 export {default as features} from "./features.png";
+export {default as thinker} from "./thinker.jpg";
+export {default as inquirers} from "./inquirers.jpg";
+export {default as principled} from "./principled.jpg";
+export {default as communicators} from "./communicators.jpg";
