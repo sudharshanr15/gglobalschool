@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-auto flex-col gap-md">
               <Link
-                href="/community"
+                href="/discovery"
                 className="text-heading-6 text-white cursor-pointer"
               >
                 Discovery Outside the Wall
