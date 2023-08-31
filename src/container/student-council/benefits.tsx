@@ -1,18 +1,19 @@
 import Image from "next/image"
-import benefitImage from '@/assets/student council benefits.png' 
+import benefitImage from '@/assets/student council benefits.png'
+import {img_3} from "@/assets/images/movement-composition"
 
 const Benefits = () => {
   return (
-    <section className="section-container flex flex-col md:flex-row gap-5 md:gap-28">
+    <section className="section-container flex flex-col md:flex-row items-center gap-5 md:gap-28">
       <div className="w-full md:w-1/2">
         <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-xl">
           BENEFITS
         </h2>
-        <div className="flex flex-col gap-large text-subheading-regular">
+        <div className="flex flex-col gap-large text-body">
           <p>
             At GGS, the Student Council and the leadership programme helps develop
             strong leadership skills by giving learners a dedicated space to share their
-            opinions in the running of the school. 
+            opinions in the running of the school.
           </p>
           <p>
             The main <span className="font-bold">goal of the Student Council
@@ -28,7 +29,7 @@ const Benefits = () => {
           <p>
             Members of the student council are <span className="font-bold">chosen through the Investiture
             ceremony every year.</span> The school head boy and school head girl lead
-            followed by the four house captains and vice captains. 
+            followed by the four house captains and vice captains.
           </p>
           <p>
             The four houses at GGS are <span className="font-bold">Flamma, Terra, Aqua, Aura.</span> The school formally entrusts
@@ -39,7 +40,7 @@ const Benefits = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2">
-          <Image src={benefitImage} className="w-full h-auto" alt="studentcouncil"/>
+          <Image src={img_3} className="w-full h-auto" alt="studentcouncil"/>
       </div>
     </section>
   )

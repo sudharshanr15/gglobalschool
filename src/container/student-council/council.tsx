@@ -1,5 +1,6 @@
 import Image from "next/image"
 import studentcouncil from '../../assets/council.jpg'
+import { agency_1 } from "@/assets/images/student-agency"
 
 const Council = () => {
   return (
@@ -8,7 +9,7 @@ const Council = () => {
         <h2 className="text-heading-4 md:text-heading-3 uppercase text-primary-maroon-1 mb-xl">
           STUDENT COUNCIL
         </h2>
-        <div className="flex flex-col gap-large text-subheading-regular">
+        <div className="flex flex-col gap-large text-body">
           <p>
             As a IB school we believe in student agency and given opportunities to
             students to foster skills like leadership, decision making, communication, team
@@ -28,7 +29,7 @@ const Council = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2">
-        <Image src={studentcouncil} unoptimized className="w-full" alt="studentcouncil"/>
+        <Image src={agency_1} unoptimized className="w-full" alt="studentcouncil"/>
       </div>
     </section>
   )

@@ -1,13 +1,13 @@
 import Image from "next/image"
 import contentimage from '../../assets/student council images.png'
 import benefitImage from '@/assets/student council benefits.png'
+import { img_4 } from "@/assets/images/movement-composition"
 
 const Content = () => {
   return (
     <section className="section-container w-full flex flex-col gap-large">
       <div className="pb-md">
-        <Image className="w-full hidden md:block lg:block" src={contentimage} alt="council image" />
-        <Image src={benefitImage} className="md:hidden lg:hidden lg:ml-2xl lg:mr-3xl h-full" alt="studentcouncil" />
+        <Image className="w-full max-h-[800px] h-full object-cover object-bottom" src={img_4} alt="council image" />
       </div>
       <div className="flex flex-col text-body gap-large">
         <p>
