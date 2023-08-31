@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import DirectionsBusOutlinedIcon from "@mui/icons-material/DirectionsBusOutlined";
@@ -36,9 +37,9 @@ const Footer = () => {
               <div>+91 9231289290</div>
             </div>
             <div className="text-white flex gap-5">
-              <FacebookRoundedIcon className="text-4xl cursor-pointer" />
-              <YouTubeIcon className="text-4xl cursor-pointer" />
-              <InstagramIcon className="text-4xl cursor-pointer" />
+              <a href="https://www.facebook.com/gglobalschool" target="_blank"><FacebookRoundedIcon className="text-4xl cursor-pointer" /></a>
+              <a href="http://instagram.com/ggsibworldschool"><InstagramIcon className="text-4xl cursor-pointer" /></a>
+              <a href="mailto:inquiry@gglobalschool.com"><EmailIcon className="text-4xl cursor-pointer" /></a>
             </div>
           </div>
         </div>
