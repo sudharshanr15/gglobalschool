@@ -1,27 +1,32 @@
 import Image from "next/image"
 import img from '@/assets/Rectangle 75.png'
+import * as individual from "@/assets/images/individual-pursuit"
+import * as movement from "@/assets/images/movement-composition"
+import * as games from "@/assets/images/games"
+import * as adventure from "@/assets/images/adventure-challenges"
+import * as health_fitness from "@/assets/images/health-fitness"
 
 function Curriculum(){
     const curriculum_list = [
         {
             name: "INDIVIDUAL PURSUIT",
-            images: img
+            images: [...Object.values(individual)]
         },
         {
             name: "MOVEMENT COMPOSITION",
-            images: img
+            images: [...Object.values(movement)]
         },
         {
             name: "GAMES",
-            images: img
+            images: [...Object.values(games)]
         },
         {
             name: "ADVENTURE CHALLENGES",
-            images: img
+            images: [...Object.values(adventure)]
         },
         {
             name: "HEALTH RELATED FITNESS",
-            images: img
+            images: [...Object.values(health_fitness)]
         },
     ]
 
@@ -35,10 +40,10 @@ function Curriculum(){
                     curriculum_list.map((item: any, index: number) => (
                         <div key={index}>
                             <h3 className="text-primary-maroon text-heading-5 uppercase mb-large">{item.name}</h3>
-                            <div className="grid gap-md grid-cols-2 md:grid-cols-4">
-                                {Array(4).fill(0).map((temp, index) => (
+                            <div className="grid gap-md grid-cols-2 lg:grid-cols-4">
+                                {item.images.map((img: any, index: number) => (
                                     <div className="w-full" key={index}>
-                                        <Image src={item.images} alt="Image" />
+                                        <Image src={img} alt="Image" />
                                     </div>
                                 ))}
                             </div>
