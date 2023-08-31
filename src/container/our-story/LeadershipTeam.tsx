@@ -14,25 +14,25 @@ function LeadershipTeam() {
         {
             name: "MS. SANGEETHA PRATTI",
             role: "IB IN-SCHOOL EDUCATION ADVISOR",
-            image: management.img_1,
+            image: management.img_2,
             text: "An eminent leader, who guides the GGS pedagogical and teaching community through her timely feedbacks and suggestions. Her constant support will enhance the implementation of IB at GGS.",
         },
         {
             name: "MS. SATHYAVARTHINI",
             role: "DEPUTY HEAD",
-            image: management.img_2,
+            image: management.img_1,
             text: "A vibrant leader, who guides the GGS Team with IB philosophy and practices. Her knowledge with nine years of teaching experience supports the teaching and learning at GGS through her active collaboration.",
         },
         {
             name: "MS. SUGUNA",
             role: "PYP COORDINATOR",
-            image: management.img_3,
+            image: management.img_8,
             text: "A passionate leader, who drives the team with sheer positivity and enthusiasm. Her journey at GGS began in the year 2018. Her positive mindset guides the GGS team both academically and non-academically.",
         },
         {
             name: "MS. NITHYA",
             role: "HR ADMIN/HEAD",
-            image: management.img_8,
+            image: management.img_3,
             text: "A smart leader, who has 25 years of administrative experience. Her expertise will support the cordial functioning of the non-academic team for the welfare of the GGS community.",
         },
     ]

@@ -44,14 +44,14 @@ function Management() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px] aspect-video">
                             <Image
                                 src={management.img_4}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col justify-end p-large md:px-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent bottom-0 left-0 right-0 h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.
                                 </p>
@@ -84,14 +84,14 @@ function Management() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px] aspect-video">
                             <Image
-                                src={img}
+                                src={management.img_5}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col justify-end p-large md:px-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent bottom-0 left-0 right-0 h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     Ms. MALLIKA GUNASEKARAN
                                 </p>
@@ -124,27 +124,19 @@ function Management() {
                                 educational profession.
                             </p>
                             <p>
-                                He is the
-                                <span className="font-bold">
-                                    Chairman of Vetri Vikaas Educational
-                                    institutions - Rasipuram and Mallur.
-                                </span>
-                                He is also the Director of Vidyaa Vikas
-                                Educational institutions - Karamadai and Tanjore
-                                and is now implementing global ideas and provide
-                                holistic education through G Global School.
+                                He is the <span className="font-bold"> Chairman of Vetri Vikaas Educational institutions - Rasipuram and Mallur.</span> He is also the Director of Vidyaa Vikas Educational institutions - Karamadai and Tanjore and is now implementing global ideas and provide holistic education through G Global School.
                             </p>
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px] aspect-video">
                             <Image
                                 src={management.img_6}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col justify-end p-large md:px-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent bottom-0 left-0 right-0 h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     DR. G. VETRICHELVAN
                                 </p>
@@ -191,14 +183,14 @@ function Management() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="relative rounded-3xl overflow-hidden max-h-[500px]">
+                        <div className="relative rounded-3xl overflow-hidden max-h-[500px] aspect-video">
                             <Image
                                 src={management.img_7}
                                 alt="logo"
                                 className="w-auto mx-auto h-full object-contain"
                                 unoptimized
                             />
-                            <div className="absolute hidden lg:flex flex-col p-large md:p-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent justify-center bottom-0 left-0 right-0 top-[40%] h-[60%] w-full md:w-full text-heading-6">
+                            <div className="absolute hidden lg:flex flex-col justify-end p-large md:px-xl md:rounded-[40px] rounded-[20px] bg-gradient-to-t from-zinc-900 to-transparent bottom-0 left-0 right-0 h-[60%] w-full md:w-full text-heading-6">
                                 <p className="text-white uppercase pt-large">
                                     DR. S. ROSHNI VETRICHELVAN
                                 </p>
