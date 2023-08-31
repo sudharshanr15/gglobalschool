@@ -14,14 +14,10 @@ import profile8 from "../../assets/profile8.png";
 import profile9 from "../../assets/profile9.jpg";
 
 function Profile() {
-    const ref = useRef(null);
-    const scroll = (scrollOffset) => {
-        ref.current.scrollLeft += scrollOffset;
-    };
     return (
         <section>
-            <section className=" section-container md:flex  md:gap-large   ">
-                <div className="mb-large">
+            <section className=" section-container ">
+                <div className="mb-xl">
                     <p className="text-heading-3 text-primary-maroon-1 mb-md">
                         IB LEARNER PROFILE
                     </p>
@@ -38,28 +34,8 @@ function Profile() {
                         positively to the world around them.
                     </p>
                 </div>
-                <Image src={missionImage} alt="mission" unoptimized />
-            </section>
-
-            <section className="  section-container  relative ">
-                <Image
-                    src={scrollImg}
-                    onClick={() => {
-                        scroll(440);
-                    }}
-                    className={` absolute md:top-80 top-96 right-md `}
-                />
-                <Image
-                    src={scrollImg}
-                    onClick={() => {
-                        scroll(-440);
-                    }}
-                    className={` absolute left-md md:top-80 top-96  rotate-180`}
-                />
-
                 <div
-                    ref={ref}
-                    className="flex gap-xl overflow-x-auto scroll-smooth scrollbar-hide"
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-xl"
                 >
                     <MissionCards
                         cardImage={profile1}
@@ -135,6 +111,7 @@ function Profile() {
                     />
                 </div>
             </section>
+
         </section>
     );
 }
