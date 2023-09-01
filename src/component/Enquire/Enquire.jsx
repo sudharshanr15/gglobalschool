@@ -14,7 +14,7 @@ function Enquire() {
                     JOIN G GLOBAL
                 </h2>
                 <h3 className="text-center text-heading-4 md:text-heading-3 text-white mt-md">
-                    TO SHAPE YOUR KIDS FUTURE
+                    TO SHAPE YOUR CHILD'S FUTURE
                 </h3>
                 <div className="flex justify-center items-center mt-md">
                     <button className="btn-slide" onClick={() => setFormOpen(true)}>

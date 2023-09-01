@@ -84,7 +84,7 @@ function page() {
           OUR FACILITIES
         </h2>
         <p className="text-body">
-          Good infrastructure and facilities encourage kids to feel warm and
+          Good infrastructure and facilities encourage children's to feel warm and
           welcoming in the school. They also provide various Opportunities to
           explore and learn new skills.
         </p>
