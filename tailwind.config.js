@@ -84,7 +84,7 @@ module.exports = {
         }],
         "caption": ["0.8125rem", {
           fontWeight: 400,
-          lineHeight: "112%"
+          lineHeight: "150%"
         }]
       },
       spacing: {

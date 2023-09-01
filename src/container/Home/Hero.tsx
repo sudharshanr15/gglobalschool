@@ -39,8 +39,8 @@ function Hero(){
                 <Image src={arrow_underline} alt="Underline" className="w-full h-auto" />
                 <h1>MINDS</h1>
               </div>
-              <h2 className="text-caption sm:text-heading-6 font-bold md:text-heading-5 uppercase">
-                G GLOBAL SCHOOL THE <span className="text-primary-maroon-1">FIRST AUTHORISED IB WORLD SCHOOL</span> IN TIRUCHENGODE.
+              <h2 className="text-caption sm:text-heading-6 font-bold md:text-heading-5 uppercase bg-primary-maroon-1 p-md rounded-2xl">
+                G GLOBAL SCHOOL THE <span className="text-primary-yellow-1">FIRST AUTHORISED IB WORLD SCHOOL</span> IN TIRUCHENGODE.
               </h2>
               <button className="btn-slide w-fit" onClick={() => setFormOpen(true)}>
                 Enquire Now
