@@ -64,12 +64,12 @@ function ExploreTopics() {
             img: agency_1,
         },
         {
-            name: "Primary programmes @ GGS",
+            name: "Primary year programmes @ GGS",
             href: "/eyp",
             img: pyp,
         },
         {
-            name: "Emotion & Ethical Support",
+            name: "Emotional & Ethical Support",
             href: "/emotional",
             img: support_1,
         },

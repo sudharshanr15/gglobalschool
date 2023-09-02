@@ -61,11 +61,11 @@ function Navbar(){
             href: "",
             sub_menu: [
                 {
-                    name: "Primary programmes @ GGS",
+                    name: "Primary year programmes @ GGS",
                     href: "/eyp",
                 },
                 {
-                    name: "Emotion & Ethical Support",
+                    name: "Emotional & Ethical Support",
                     href: "/emotional",
                 },
             ]

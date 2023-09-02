@@ -32,7 +32,7 @@ function WhatWeOffer() {
                     cardImage={offer1}
                     title={"Essence of PYP"}
                     desc={[
-                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. ",
+                        "Early learning in the PYP is a holistic learning experience that integrates socio - emotional, physical and cognitive development. ",
                         <br></br>,
                         <br></br>,
                         "In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration.",
@@ -72,7 +72,7 @@ function WhatWeOffer() {
                     cardImage={offer5}
                     title={"Essence of PYP"}
                     desc={
-                        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
+                        "Early learning in the PYP is a holistic learning experience that integrates socio - emotional, physical and cognitive development. In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration."
                     }
                     iswide={true}
                 />

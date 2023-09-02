@@ -13,7 +13,7 @@ function Offers() {
       img: offer_1,
       title: "ESSENCE OF PYP",
       text: [
-        "Early learning in the PYP is a holistic learning experience that integrates socio -emotional, physical and cognitive development.",
+        "Early learning in the PYP is a holistic learning experience that integrates socio - emotional, physical and cognitive development.",
         "In the PYP classroom, it takes place in dynamic environments that promote play, discovery and exploration.",
       ],
     },
