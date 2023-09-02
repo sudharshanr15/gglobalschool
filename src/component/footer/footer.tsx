@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <p className="text-heading-6 text-white">Address</p>
           <p className="text-white">
-            29A, Rajagoundampalayam, 2nd street,pallipalayam road, tiruchengodu
+            29A, Rajagoundampalayam, 2nd street,pallipalayam road, Tiruchengodu,
             Namakkal, Tamil Nadu, India 637211
           </p>
           <div className="flex flex-col w-fit gap-md">
