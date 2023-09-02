@@ -242,8 +242,8 @@ function Navbar(){
                                 <button className="btn-slide mt-4 md:hidden" onClick={() => setFormOpen(true)}>Contact us</button>
                             </div>
                             {isSubMenuOpen && (
-                                <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40">
-                                    <div className="justify-center items-center bg-primary-orange-1 p-xl nav-submenu md:min-w-[32rem]">
+                                <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40 z-50">
+                                    <div className="justify-center items-center bg-primary-orange-1 p-large md:p-xl nav-submenu md:min-w-[32rem]">
                                         <button onClick={onSubMenuClose} className="uppercase text-heading-6 md:text-heading-5 text-white mb-8 block">
                                             <div className="animate-slide-in inline-block">
                                                 <WestIcon fontSize="large" className="me-4" />

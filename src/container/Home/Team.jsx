@@ -10,13 +10,13 @@ function Team(){
             "image": team1
         },
         {
-            "name": "Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.",
-            "pos": "CHAIRMAN DIRECTOR, G GLOBAL SCHOOL",
+            "name": "DR. G. VETRICHELVAN",
+            "pos": "MANAGING DIRECTOR, G GLOBAL SCHOOL",
             "image": team2
         },
         {
-            "name": "Dr. S. GUNASEKARAN M.Ed., M. Phil., Phd.",
-            "pos": "CHAIRMAN DIRECTOR, G GLOBAL SCHOOL",
+            "name": "DR. S. ROSHNI VETRICHELVAN",
+            "pos": "HEAD OF SCHOOL, G GLOBAL SCHOOL",
             "image": team3
         },
     ]
@@ -31,8 +31,10 @@ function Team(){
             </div>
             <div className="mt-md flex flex-col md:flex-row gap-md">
                 {teams.map((item, index) => (
-                    <div className="bg-primary-maroon md:max-w-[27rem] rounded-t-3xl overflow-hidden flex-grow" key={index}>
-                        <Image src={item.image} alt="Management Team" className="w-full" unoptimized />
+                    <div className="bg-primary-maroon md:max-w-[27rem] rounded-t-3xl overflow-hidden flex-1" key={index}>
+                        <div className="aspect-video overflow-hidden">
+                            <Image src={item.image} alt="Management Team" className="w-full" unoptimized />
+                        </div>
                         <div className="p-large text-gray-100">
                             <h3 className="text-heading-6 uppercase">{item.name}</h3>
                             <p className="text-body uppercase">{item.pos}</p>
