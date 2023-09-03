@@ -64,7 +64,7 @@ function ExploreTopics() {
             img: agency_1,
         },
         {
-            name: "Primary year programmes @ GGS",
+            name: "Primary years programme",
             href: "/eyp",
             img: pyp,
         },

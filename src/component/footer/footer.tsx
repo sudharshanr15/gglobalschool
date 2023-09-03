@@ -70,7 +70,7 @@ const Footer = () => {
             <div className="flex flex-auto flex-col gap-md">
               <p className="text-heading-6 text-white uppercase">Curriculum & Learning</p>
               <Link href="/eyp" className="text-white cursor-pointer">
-                Primary year programmes @ GGS
+                Primary years programme
               </Link>
               <Link href="/emotional" className="text-white cursor-pointer">
                 Emotional & Ethical Support

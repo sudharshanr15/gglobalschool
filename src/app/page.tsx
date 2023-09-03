@@ -21,7 +21,7 @@ const Home = () => {
               </div>
             </div>
             <p className="text-body mb-md md:mb-2xl">At G Global School, we offer more than just education - we provide a <span className="text-primary-maroon">gateway to a world of boundless possibilities</span> and personal growth.</p>
-            <Link href={""} className="text-heading-6 md:text-heading-5 bg-primary-yellow-1 text-gray-900 px-8 py-md rounded-full w-fit block">
+            <Link href="/why-us" className="text-heading-6 md:text-heading-5 bg-primary-yellow-1 text-gray-900 px-8 py-md rounded-full w-fit block">
               Know more
             </Link>
           </div>

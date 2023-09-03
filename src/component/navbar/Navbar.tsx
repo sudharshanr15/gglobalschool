@@ -61,7 +61,7 @@ function Navbar(){
             href: "",
             sub_menu: [
                 {
-                    name: "Primary year programmes @ GGS",
+                    name: "Primary years programme",
                     href: "/eyp",
                 },
                 {

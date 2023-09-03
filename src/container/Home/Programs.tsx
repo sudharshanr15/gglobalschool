@@ -5,7 +5,7 @@ import { programmes1, programmes2, wave_fill } from "@/assets"
 function Programs(){
     return (
         <section className="section-container bg-primary-maroon-1">
-            <h2 className="text-gray-100 uppercase text-heading-5 md:text-heading-3">PRIMARY YEARS PROGRAMMES @ GGS</h2>
+            <h2 className="text-gray-100 uppercase text-heading-5 md:text-heading-3">PRIMARY YEARS PROGRAMME</h2>
             <div className="w-fit relative">
                 <h4 className="text-heading-4 md:text-8xl opacity-10 text-primary-orange-2">PROGRAMMES</h4>
                 <div className="absolute w-full h-full top-0 right-0">
@@ -41,7 +41,7 @@ function Programs(){
                 </div>
             </div>
             <div className="text-center md:text-start">
-                <Link href={""} className="btn-slide mt-xl">
+                <Link href="/eyp" className="btn-slide mt-xl">
                     KNOW MORE
                 </Link>
             </div>
