@@ -191,7 +191,7 @@ function Navbar(){
                     <div className="flex-1 h-full">
                         <div className="h-full max-w-[18rem]">
                             <Link href="/">
-                                <Image className="object-contain" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                                <Image className="object-contain" src={gglobal_logo} unoptimized alt="G Global School Logo" />
                             </Link>
                         </div>
                     </div>
@@ -216,7 +216,7 @@ function Navbar(){
                         <div className="relative h-full">
                             <div className="p-5 flex flex-row justify-between items-center">
                                 <a href="/" className="inline-block">
-                                    <Image className="max-w-[13rem]" src={gglobal_logo} unoptimized alt="Gglobal School Logo" />
+                                    <Image className="max-w-[13rem]" src={gglobal_logo} unoptimized alt="G Global School Logo" />
                                 </a>
                                 <div className="flex gap-xl items-center">
                                     <button onClick={() => setFormOpen(true)} className="btn-slide hidden md:inline-block">Contact us</button>
