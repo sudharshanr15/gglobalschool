@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { programmes1, programmes2, wave_fill } from "@/assets"
+import { wave_fill } from "@/assets"
+import * as image from "@/assets/images/home-pyp"
 
 function Programs(){
     return (
@@ -15,7 +16,7 @@ function Programs(){
             <div className="flex flex-col md:flex-row gap-xl mt-large">
                 <div className="w-full">
                     <div className="w-full mb-md aspect-square">
-                        <Image src={programmes1} alt="Programmes Image" className="w-full h-full object-cover object-top" />
+                        <Image src={image.img_1} alt="Programmes Image" className="w-full h-full object-cover object-top" />
                     </div>
                     <div className="w-full">
                         <div className="flex flex-col items-center md:items-start gap-md">
@@ -28,7 +29,7 @@ function Programs(){
                 </div>
                 <div className="w-full">
                     <div className="w-full mb-md aspect-square">
-                        <Image src={programmes2} alt="Programmes Image" className="w-full h-full object-cover object-top" />
+                        <Image src={image.img_2} alt="Programmes Image" className="w-full h-full object-cover object-top" />
                     </div>
                     <div className="w-full">
                         <div className="flex flex-col items-center md:items-start gap-md">

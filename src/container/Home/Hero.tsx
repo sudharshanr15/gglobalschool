@@ -1,6 +1,6 @@
 'use client';
 
-import { arrow_down, hero1, hero2, hero3 } from "@/assets"
+import * as hero from "@/assets/images/hero-images"
 import Link from "next/link"
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ import Form from "../../component/Admission-Form/Form";
 import { arrow_underline } from "@/assets";
 
 function Hero(){
-  const hero_images = [hero1, hero2, hero3]
+  const hero_images = Object.values(hero)
   const [currentImage, setCurrentImage] = useState(0);
   const [isFormOpen, setFormOpen] = useState(false);
 
