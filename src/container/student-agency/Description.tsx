@@ -7,7 +7,7 @@ const Description = () => {
             <FormatQuoteIcon sx={{ fontSize: 150, opacity: 0.2, color: "#F05A22"}} />
         </div>
         <p className="text-heading-6 uppercase text-white z-10">
-          G Global School nurtures sparkling imaginations, fertile minds, and willingness to take on risks with students’ agency.
+          G Global School nurtures sparkling imaginations, fertile minds, and willingness to take on risks with student agency.
         </p>
     </section>
 

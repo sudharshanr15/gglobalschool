@@ -56,15 +56,6 @@ function Offers() {
         WHAT WE OFFER
       </h2>
       <div className="flex flex-col gap-md text-body mb-large">
-        <p>
-          Learning spaces at GGS are designed to support active participation of
-          the children through play.
-        </p>
-        <p>
-          Learning engagements and classroom activities are designed by teachers
-          to develop their fine and gross motor skills in every day teaching and
-          learning.
-        </p>
       </div>
       <div className="flex flex-col gap-xl">
         <div className="flex gap-md justify-center flex-wrap md:flex-nowrap">

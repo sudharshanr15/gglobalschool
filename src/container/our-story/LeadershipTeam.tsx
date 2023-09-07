@@ -20,16 +20,9 @@ function LeadershipTeam() {
     ]
     return (
         <section className="section-container">
-            <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
-                PEDAGOGICAL LEADERSHIP TEAM
+            <h2 className="text-heading-3 md:text-heading-4 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
+                IB IN-SCHOOL EDUCATION ADVISOR
             </h2>
-            <p className="text-body mb-xl">
-                Our PLT includes our head of school, deputy head of school Ms.
-                Sathyavarthini and our coordinator Ms. Suguna. Our PLT takes the
-                responsibility of framing our curriculum and ensures the
-                interdisciplinary learning of the students which are broad and
-                balanced, conceptual and connected.
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-xl">
                 {team.map((item, index) => (
                     <div className="w-full" key={index}>
@@ -42,9 +35,6 @@ function LeadershipTeam() {
                             />
                         </div>
                         <p className="text-heading-5 md:text-heading-4 mt-md uppercase">{item.name}</p>
-                        <p className="pt-large text-heading-6 font-normal">
-                            {item.role}
-                        </p>
                         <p className="pt-md text-body">
                             {item.text}
                         </p>

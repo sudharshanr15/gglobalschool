@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 function page() {
     return (
         <>
-            <Hero title={"CURRICULAM AND LEARNING"} />
+            <Hero title={"CURRICULUM AND LEARNING"} />
             <section className="relative section-container bg-primary-maroon-1 ">
                 <div className="absolute top-0 left-0 z-0">
                     <FormatQuoteIcon sx={{ fontSize: 150, opacity: 0.2, color: "#F05A22"}} />
@@ -46,21 +46,15 @@ function page() {
                     </h4>
                     <div className="flex flex-col gap-large text-body">
                         <p>
-                            Children are natural inquirers from birth; they have
-                            the capacity to learn about, interact with, and
-                            interpret the world around them.
+                            The PYP curriculum framework is designed for learners aged 6 - 10. The curriculum is 
+                            trans disciplinary and is ideal for students to become active lifelong learners.
                         </p>
                         <p>
-                            From birth, children possess all kinds of mental
-                            abilities uniquely suited to these early phases of
-                            learning and development.
+                            Collaboration, responsibility and taking action are the focus of PYP. Our students 
+                            are guided by expert teachers who effectively help in moulding the knowledge 
+                            and skills in a happy and enthusiastic environment
                         </p>
-                        <p>
-                            They are curious and capable learners with a sense
-                            of agency, rich in potential, bringing valid skills,
-                            preferences, and understanding to the educational
-                            process.
-                        </p>
+                        
                     </div>
                 </div>
             </section>
@@ -70,7 +64,7 @@ function page() {
             <section className="section-container py-0">
                 <div className="bg-primary-yellow-1 p-xl">
                     <h2 className="text-primary-maroon-1 text-heading-3 uppercase text-center">
-                        SHARPING YOUNG MINDS
+                        SHAPING YOUNG MINDS
                     </h2>
                 </div>
             </section>

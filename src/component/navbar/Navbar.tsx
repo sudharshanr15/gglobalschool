@@ -88,20 +88,6 @@ function Navbar(){
                 }
             ]
         },
-        "Become one of us": {
-            name: "Become one of us",
-            href: "",
-            sub_menu: [
-                {
-                    name: "Admissions",
-                    href: "/admission",
-                },
-                {
-                    name: "Work with Us",
-                    href: "/work-with-us"
-                }
-            ]
-        },
         "Discovery outside the wall": {
             name: "Discovery outside the wall",
             href: "/discovery",
@@ -116,6 +102,20 @@ function Navbar(){
             name: "Days & Events",
             href: "/events",
             sub_menu: [],
+        },
+        "Become one of us": {
+            name: "Become one of us",
+            href: "",
+            sub_menu: [
+                {
+                    name: "Admissions",
+                    href: "/admission",
+                },
+                {
+                    name: "Work with Us",
+                    href: "/work-with-us"
+                }
+            ]
         },
     }
 

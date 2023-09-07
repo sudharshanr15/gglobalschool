@@ -20,8 +20,7 @@ function Description() {
         Our policies have been developed and collaboratively framed through
         discussions with learning community - teachers, parents and students.
         Admission policy, Assessment policy, Language policy, Inclusive
-        education policy, Library and resource centre policy, Virtual learning
-        policy and Academic integrity policy are the seven policies which we
+        education policy, Library and resource centre policy and Academic integrity policy are the six policies which we
         abide in our G Global School.
       </p>
     </section>

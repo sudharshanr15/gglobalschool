@@ -28,13 +28,13 @@ function Profile() {
             <section className=" section-container ">
                 <div className="mb-xl">
                     <p className="text-heading-3 text-primary-maroon-1 mb-md">
-                        IB LEARNER PROFILE
+                        IB LEARNER PROFILE ATTRIBUTES
                     </p>
                     <p className="text-body">
                         At G Global School we are dedicated to creating a
                         learning environment that supports the development of
                         the whole child, aligning with the IB Learner Profile
-                        attributes.
+                        Attributes.
                         <br />
                         <br />
                         Our vision and mission guide us in empowering our
@@ -48,7 +48,7 @@ function Profile() {
                 >
                     <MissionCards
                         cardImage={thinker}
-                        title={"THINKER"}
+                        title={"THINKERS"}
                         desc={
                             "We approach complex problems critically and creatively. We apply our thinking skills to analyze and evaluate information, make informed decisions, and solve real-life challenges."
                         }
@@ -72,7 +72,7 @@ function Profile() {
                     />
                     <MissionCards
                         cardImage={inquirer}
-                        title={"INQUIRER"}
+                        title={"INQUIRERS"}
                         desc={
                             "We nurture a love for learning and develop the skills to acquire knowledge independently. We are curious, ask questions, and actively engage in the learning process."
                         }
@@ -88,7 +88,7 @@ function Profile() {
                     />
                     <MissionCards
                         cardImage={open_minded}
-                        title={"OPEN MINDED"}
+                        title={"OPEN-MINDED"}
                         desc={
                             "We embrace and appreciate our own culture and the diversity of other cultures, perspectives, and ideas. We seek to understand different viewpoints and are willing to consider new possibilities."
                         }
@@ -96,7 +96,7 @@ function Profile() {
                     />
                     <MissionCards
                         cardImage={risk_taker}
-                        title={"RISK TAKERS"}
+                        title={"RISK-TAKERS"}
                         desc={
                             "We approach challenges with confidence and enthusiasm. We are willing to try new things, explore unfamiliar territories, and take calculated risks to extend our learning and personal growth."
                         }

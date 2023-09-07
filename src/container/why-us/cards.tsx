@@ -5,12 +5,12 @@ function Cards() {
     const cards = [
         {
             image: ib1,
-            title: "Encourage students to inquire.",
+            title: "Encourage students to inquire",
             text: "The PYP fosters natural curiosity and learning in creative, supportive and collaborative environments."
         },
         {
             image: ib2,
-            title: "Understanding a complex and interdependent world.",
+            title: "Understanding a complex and interdependent world",
             text: "PYP students create meaning for themselves and build understanding through exploring."
         },
         {

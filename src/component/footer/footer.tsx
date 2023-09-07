@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-2 bg-primary-yellow-2 rounded-3xl px-5 py-2 font-bold cursor-pointer">
               <CallOutlinedIcon />
-              <div>+91 9231289290</div>
+              <div>+91 7550327999</div>
             </div>
             <div className="text-white flex gap-5">
               <a href="https://www.facebook.com/gglobalschool" target="_blank"><FacebookRoundedIcon className="text-4xl cursor-pointer" /></a>

@@ -39,8 +39,9 @@ function page() {
                         <div className="flex flex-col gap-large text-body">
                             <p>
                                 We, the passionate educators with more than <span className="font-bold"> 44 years of experience.</span>
-                            </p>
-                            <p>We proudly introduced our new venture, the G Global School, a fresh breath of experience to <span className="font-bold">present IB education, in the year 2017</span> in our very own town <span className="font-bold">Tiruchengode</span>, a prime location for educational institutions in Tamil Nadu.
+                                proudly introduced our new venture, the G Global School, a fresh breath of experience to <span className="font-bold">present
+                                IB education, in the year 2017</span> in our very own town <span className="font-bold">Tiruchengode</span>, a prime location
+                                for educational institutions in Tamil Nadu.
                             </p>
                         </div>
                     </div>

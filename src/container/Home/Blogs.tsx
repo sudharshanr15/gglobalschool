@@ -29,7 +29,7 @@ function Blogs(){
     ]
     return (
         <section className="section-container">
-            <h2 className="uppercase text-heading-5 md:text-heading-3">WHAT HAPPENING IN THE SCHOOL</h2>
+            <h2 className="uppercase text-heading-5 md:text-heading-3">WHAT'S HAPPENING IN SCHOOL</h2>
             <div className="w-fit relative">
                 <h4 className="text-heading-4 md:text-8xl opacity-10">BLOGS</h4>
                 <div className="absolute w-full h-full top-0 right-0">

@@ -5,15 +5,15 @@ function EarlyYears() {
             text: "2.5 TO 3 YEARS",
         },
         {
-            title: "KINDER GARDEN 1",
+            title: "KINDER GARTEN 1",
             text: "3 YEARS",
         },
         {
-            title: "KINDER GARDEN 2",
+            title: "KINDER GARTEN 2",
             text: "4 YEARS",
         },
         {
-            title: "KINDER GARDEN 3",
+            title: "KINDER GARTEN 3",
             text: "5 YEARS",
         },
     ]
@@ -32,11 +32,11 @@ function EarlyYears() {
             text: "8 YEARS",
         },
         {
-            title: "YEAR 5",
+            title: "YEAR 4",
             text: "9 YEARS",
         },
         {
-            title: "YEAR 6",
+            title: "YEAR 5",
             text: "10 YEARS",
         },
     ]
@@ -44,7 +44,7 @@ function EarlyYears() {
         <>
             <section className="section-container">
                 <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
-                    early years @ g global school programmes
+                    early year @ g global school programme
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
@@ -62,7 +62,7 @@ function EarlyYears() {
             </section>
             <section className="section-container">
                 <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
-                    primary years @ g global school programmes
+                    primary year @ g global school programme
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-xl">
