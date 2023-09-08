@@ -39,7 +39,7 @@ function page() {
                 </div>
                 <div className="w-full md:w-1/2">
                     <h2 className="text-primary-maroon-1 text-heading-3 mb-large uppercase">
-                        PRIMARY YEAR PROGRAMME
+                        PRIMARY YEARS PROGRAMME
                     </h2>
                     <h4 className="text-heading-6 p-md bg-primary-maroon-1 text-white mb-large">
                         Curiosity is the fuel for discovery, inquiry and learning
@@ -80,7 +80,7 @@ function page() {
                 </div>
                 <div className="w-full md:w-1/2">
                     <h2 className="text-primary-maroon-1 text-heading-3 mb-large uppercase">
-                        EARLY YEAR PROGRAMME
+                        EARLY YEARS PROGRAMME
                     </h2>
                     <h4 className="text-heading-6 p-md bg-primary-maroon-1 text-white mb-large">
                         A child’s learning begins from early years.

@@ -44,7 +44,7 @@ function EarlyYears() {
         <>
             <section className="section-container">
                 <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
-                    early year @ g global school programme
+                    early years programme @ g global school 
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">
@@ -62,7 +62,7 @@ function EarlyYears() {
             </section>
             <section className="section-container">
                 <h2 className="text-heading-4 md:text-heading-3 uppercase lg:w-[90%] text-primary-maroon-1 mb-large">
-                    primary year @ g global school programme
+                    primary years programme @ g global school
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-xl">

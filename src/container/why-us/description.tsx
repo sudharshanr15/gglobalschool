@@ -11,7 +11,7 @@ const Description = () => {
       <p className="text-heading-6 uppercase text-white z-10">
         Early and primary year education is the foremost and basic right of every child. It sets a strong foundation for learning
         and early development of skills. GGS ensures this through inquiry based learning and conceptual understanding. We also have a 
-        remarkable set of educators team. to implement this in our curriculum
+        remarkable set of educators team to implement this in our curriculum
       </p>
     </section>
   );

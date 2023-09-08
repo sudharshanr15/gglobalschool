@@ -22,7 +22,7 @@ function CardSection() {
                 <Cards
                     text={"Relationship skills"}
                     desc={
-                        "Farming positive relationships, working in teams, dealing effectively with conflicts"
+                        "Framing positive relationships, working in teams, dealing effectively with conflicts"
                     }
                 />{" "}
                 <Cards
