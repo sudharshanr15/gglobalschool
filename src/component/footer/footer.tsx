@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import DirectionsBusOutlinedIcon from "@mui/icons-material/DirectionsBusOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
+import spotifyIcon from "@/assets/icons/spotify.png"
 
 const Footer = () => {
   return (
@@ -151,6 +152,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex flex-wrap items-center gap-x-md lg:px-12  lg:justify-end">
+          <Link href=""  className="bg-white py-2 px-4 font-semibold rounded-md flex gap-2 items-center">
+            <span>
+              Listen stories on
+            </span>
+            <span className="">
+              <Image src={spotifyIcon} alt="Spotify Logo"></Image>
+            </span>
+          </Link>
       </div>
       <hr />
       <div className="flex gap-large text-white text-xl">

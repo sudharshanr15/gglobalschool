@@ -12,7 +12,7 @@
 
 @layer components{
     .section-container{
-        @apply p-md py-xl   lg:p-3xl;
+        @apply px-md py-1 lg:py-8 lg:px-20;
     }
 
     .btn-slide{

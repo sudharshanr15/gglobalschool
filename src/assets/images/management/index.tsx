@@ -1,8 +1,10 @@
 export {default as img_1} from "./image1.jpeg"
-export {default as img_2} from "./image2.jpeg"
+export {default as img_2} from "./image2.png"
 export {default as img_3} from "./image3.jpeg"
 export {default as img_4} from "./image4.jpeg"
 export {default as img_5} from "./image5.jpeg"
 export {default as img_6} from "./image6.jpeg"
 export {default as img_7} from "./image7.jpeg"
 export {default as img_8} from "./image8.jpeg"
+export {default as mallikaXL} from "./mallikaXL.png"
+export {default as gunaXL} from './gunaXL.png'

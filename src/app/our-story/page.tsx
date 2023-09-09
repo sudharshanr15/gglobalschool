@@ -7,6 +7,7 @@ import Hero from "../../component/hero/Hero";
 import {story_1} from "@/assets/images/our-story";
 import ExploreTopics from "@/component/ExploreTopics";
 import type { Metadata } from 'next'
+import quotationMark from '@/assets/icons/quotation-mark.png'
 
 export const metadata: Metadata = {
   title: 'Our Story',
@@ -16,10 +17,13 @@ function page() {
     return (
         <>
             <Hero title={"GGS Story"} />
-            <section className="section-container">
-                <p className="text-heading-6">
-                    G Global School nurtures <span className="text-primary-maroon">sparkling imaginations, fertile minds, and willingness</span> to take on risks with student's agency.
-                </p>
+            <section className="section-container ">
+                <div className="relative">
+                    <p className="text-heading-6">
+                        G Global School nurtures <span className="text-primary-maroon">sparkling imaginations, fertile minds, and willingness</span> to take on risks with student's agency.
+                    </p>
+                    <Image className="absolute top-3 lg:top-0 lg:left-[-2%] object-contain" src={quotationMark} alt=""></Image>
+                </div>
             </section>
             {/* about GGS */}
             <section className="section-container">
