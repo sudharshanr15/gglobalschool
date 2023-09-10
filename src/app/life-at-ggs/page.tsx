@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 function page() {
   const studios = [
     {
-      image: sports,
+      images: [sports, performing_art],
       name: "SPORTS",
       text: [
         "We believe that sports is vital for students’ physical and social well-being.",
@@ -32,7 +32,7 @@ function page() {
       ],
     },
     {
-      image: performing_art,
+      images: [performing_art, visual_art],
       name: "PERFORMING ARTS",
       text: [
         "We tap into the rich cultural experiences of our students’ creativity and performance through dance, music and drama.",
@@ -40,7 +40,7 @@ function page() {
       ],
     },
     {
-      image: visual_art,
+      images: [visual_art, design_thinking],
       name: "VISUAL ARTS",
       text: [
         "We enrich the young minds with art and craft. We celebrate passion, creativity, knowledge and skills of students.",
@@ -49,7 +49,7 @@ function page() {
       ],
     },
     {
-      image: design_thinking,
+      images: [design_thinking, book_studio],
       name: "Design THINKING & TECHNOLOGY",
       text: [
         "The Science, Technology, Engineering and Mathematics education prepares our students for the future. The hands-on experience and real - world application help them become able leaders, innovators, risk-takers and problem solvers.",
@@ -57,13 +57,14 @@ function page() {
       ],
     },
     {
-      image: book_studio,
+      images: [book_studio, sports],
       name: "BOOKS",
       text: [
         "Reading makes every person an independent capable learner by cultivating one’s imagination. Our library is an exciting and welcoming place that supplements the learning needs of all students. We have a repository of books to help every member of the school community to gain new knowledge, skills and dispositions.",
       ],
     },
   ];
+
   return (
     <>
       <Hero title={"LIFE @ GGS"} />
@@ -99,7 +100,7 @@ function page() {
                 ? "bg-primary-yellow-2 md:flex-row-reverse"
                 : "md:flex-row"
             }`}
-            img={item.image}
+            img={item.images}
             name={item.name}
             text={item.text}
             key={index}
