@@ -25,9 +25,8 @@ const Footer = () => {
             Namakkal, Tamil Nadu, India 637211
           </p>
           <div className="flex flex-col w-fit gap-md">
-            <div className="flex items-center gap-2 bg-primary-orange-1 rounded-3xl px-5 py-2 font-bold cursor-pointer">
-              <LocationOnOutlinedIcon />
-              <div>Directions</div>
+            <div className="">
+              <Link className="flex items-center gap-2 bg-primary-orange-1 rounded-3xl px-5 py-2 font-bold cursor-pointer" href='https://goo.gl/maps/bXvVWDMoaBnwo7qq5' target="__blank"><LocationOnOutlinedIcon /><div>Directions</div></Link>
             </div>
             <div className="flex items-center gap-2 bg-primary-red-2 rounded-3xl px-5 py-2 font-bold cursor-pointer">
               <DirectionsBusOutlinedIcon />

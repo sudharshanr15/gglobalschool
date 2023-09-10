@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import {group} from "@/assets/images/work-with-us";
 import {sports} from "@/assets/images/health-wellbeing";
 import {pyp} from "@/assets/images/curriculum";
-import {design_thinking} from "@/assets/images/life-at-ggs";
+import {design_thinking1} from "@/assets/images/life-at-ggs";
 import {story_1} from "@/assets/images/our-story";
 import {support_1} from "@/assets/images/emotional-support";
 import {agency_1} from "@/assets/images/student-agency";
@@ -76,7 +76,7 @@ function ExploreTopics() {
         {
             name: "Studios @ GGS",
             href: "/life-at-ggs",
-            img: design_thinking,
+            img: design_thinking1,
         },
         {
             name: "Student Leadership",

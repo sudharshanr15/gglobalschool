@@ -1,8 +1,4 @@
 import Image, {StaticImageData} from "next/image";
-import Logo2 from "../../assets/orustory2.png";
-import logo3 from "../../assets/orustory3.png";
-import logo4 from "../../assets/orustory4.png";
-import img from '@/assets/Rectangle 75.png'
 import * as management from "@/assets/images/management";
 
 type TeamType = {
@@ -58,7 +54,7 @@ const managementMembers:TeamType[] = [
 
 function Management() {
     return (
-        <section className="section-container my-6">
+        <section className="section-container mt-6">
             <div>
                 <h2 className="text-heading-4 md:text-heading-3 uppercase text-primary-maroon-1 mb-large text-center">MANAGEMENT</h2>
             </div>

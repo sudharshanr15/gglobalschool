@@ -1,16 +1,8 @@
 import React from "react";
-import TopicCard from "@/component/topicsCard/TopicCard";
 import StudioCards from "../../container/life-at-ggs/StudioCards";
-import Slide from "../../container/life-at-ggs/Slide";
-import img1 from "../../assets/life@ggs1.png";
-import img2 from "../../assets/life@ggs2.png";
-import img3 from "../../assets/life@ggs3.png";
-import img4 from "../../assets/life@ggs4.png";
-import img5 from "../../assets/life@ggs5.png";
-import img6 from "../../assets/life@ggs6.png";
 import Hero from "../../component/hero/Hero";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import {book_studio, design_thinking, performing_art, sports, visual_art} from "@/assets/images/life-at-ggs"
+import * as cardImages from "@/assets/images/life-at-ggs"
 import ExploreTopics from "@/component/ExploreTopics";
 import type { Metadata } from 'next'
 
@@ -23,7 +15,7 @@ export const metadata: Metadata = {
 function page() {
   const studios = [
     {
-      images: [sports, performing_art],
+      images: [cardImages.sports],
       name: "SPORTS",
       text: [
         "We believe that sports is vital for students’ physical and social well-being.",
@@ -32,7 +24,7 @@ function page() {
       ],
     },
     {
-      images: [performing_art, visual_art],
+      images: [cardImages.performing_art1, cardImages.performing_art2, cardImages.performing_art3],
       name: "PERFORMING ARTS",
       text: [
         "We tap into the rich cultural experiences of our students’ creativity and performance through dance, music and drama.",
@@ -40,7 +32,7 @@ function page() {
       ],
     },
     {
-      images: [visual_art, design_thinking],
+      images: [cardImages.visual_art, cardImages.visual1,cardImages.visual2],
       name: "VISUAL ARTS",
       text: [
         "We enrich the young minds with art and craft. We celebrate passion, creativity, knowledge and skills of students.",
@@ -49,7 +41,7 @@ function page() {
       ],
     },
     {
-      images: [design_thinking, book_studio],
+      images: [cardImages.design_thinking1, cardImages.design_thinking2, cardImages.design_thinking3],
       name: "Design THINKING & TECHNOLOGY",
       text: [
         "The Science, Technology, Engineering and Mathematics education prepares our students for the future. The hands-on experience and real - world application help them become able leaders, innovators, risk-takers and problem solvers.",
@@ -57,7 +49,7 @@ function page() {
       ],
     },
     {
-      images: [book_studio, sports],
+      images: [cardImages.book_studio1, cardImages.book_studio2],
       name: "BOOKS",
       text: [
         "Reading makes every person an independent capable learner by cultivating one’s imagination. Our library is an exciting and welcoming place that supplements the learning needs of all students. We have a repository of books to help every member of the school community to gain new knowledge, skills and dispositions.",

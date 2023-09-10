@@ -1,0 +1,1 @@
+export {default as support_1} from "./support_1.jpg"

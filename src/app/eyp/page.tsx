@@ -1,8 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import eypLogo from "../../assets/eyp image 1.jpg";
-import eypLogo2 from "../../assets/Group 24.png";
-import TopicCard from "@/component/topicsCard/TopicCard";
 import Hero from "../../component/hero/Hero";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import {EarlyYears, Offers} from "@/container/eyp/";

@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import { dietplan, sports } from "@/assets/images/health-wellbeing";
+import { dietplan, health } from "@/assets/images/health-wellbeing";
 
 type CardType = {
     title: string,
@@ -21,7 +21,7 @@ function Cards() {
         },
         {
             title: "HEALTH & WELL BEING",
-            img: sports,
+            img: health,
             text: [
             "During COVID situation offline schooling is as challenging as virtual one. Our school handles this situation well by following all guidelines provided by the government.",
             "Regular checks are done inside the school campus for students, teachers and all the staffs and helpers working inside the school campus.",
