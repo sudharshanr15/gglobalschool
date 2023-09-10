@@ -16,7 +16,9 @@
     }
 
     .btn-slide{
-        @apply inline-block w-fit text-heading-6 text-gray-900 bg-primary-yellow-1 px-xl py-md rounded-full hover:text-white focus:text-white relative z-10 overflow-hidden transition-colors duration-300;
+        @apply text-white bg-primary-maroon-1 py-2 px-4 rounded-lg relative z-10 overflow-hidden transition-colors duration-300;
+        /* @apply inline-block w-fit text-heading-6 text-gray-900 bg-primary-yellow-1 px-xl py-md rounded-full hover:text-white focus:text-white relative z-10 overflow-hidden transition-colors duration-300; */
+        /* @apply inline-block w-fit text-heading-6 text-gray-900 bg-primary-yellow-1 px-xl py-md rounded-full hover:text-white focus:text-white relative z-10 overflow-hidden transition-colors duration-300; */
     }
 
     .btn-slide::before{

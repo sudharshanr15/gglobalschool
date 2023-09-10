@@ -2,6 +2,7 @@ import Image from "next/image";
 import contentimage from "../../assets/workwithus.png";
 import benefitImage from "@/assets/student council benefits.png";
 import {group} from "@/assets/images/work-with-us";
+import Link from 'next/link'
 
 const Content = () => {
   return (
@@ -41,7 +42,7 @@ const Content = () => {
         <p>
           To apply, please click the below box and submit the duly filled form.
         </p>
-        <button className="btn-slide">APPLY NOW</button>
+        <Link href="https://forms.gle/mni9KFx53Gks7bBu8" className="btn-slide text-center">APPLY NOW</Link>
       </div>
     </section>
   );

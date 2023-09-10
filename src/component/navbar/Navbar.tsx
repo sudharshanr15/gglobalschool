@@ -4,8 +4,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import WestIcon from '@mui/icons-material/West';
-import { gglobal_logo, icon_close } from "@/assets/index"
+import {icon_close } from "@/assets/index"
 import Form from "../../component/Admission-Form/Form";
+import gglobal_logo from "@/assets/logo/gglogo.svg";
+import ibLogo from '@/assets/logo/ib-logo.png'
 
 import styles from "./styles.module.css"
 
@@ -187,16 +189,25 @@ function Navbar(){
     return (
         <>
             <nav className="bg-transparent absolute top-0 left-0 w-full z-50 h-[100px]">
-                <div className="ps-md pt-7 lg:ps-3xl pd:my-6 flex flex-row items-center gap-2xl">
+                <div className="ps-md mt-3 lg:ps-3xl pd:my-6 flex flex-row items-center gap-2xl">
                     <div className="flex-1 h-full">
-                        <div className="h-full max-w-[18rem]">
-                            <Link href="/">
-                                <Image className="object-contain" src={gglobal_logo} unoptimized alt="G Global School Logo" />
-                            </Link>
+                        <div className="h-18 lg:h-36 overflow-hidden">
+                            <div className="h-full flex items-center gap-2 lg:gap-4">
+                                <div className="h-full">
+                                    <Link href="/" >
+                                        <Image className="h-full object-contain" src={gglobal_logo} unoptimized alt="G Global School Logo" />
+                                    </Link>
+                                </div>
+                                <div className="h-20 lg:h-3/6">
+                                    <Image className="h-full object-contain w-full" src={ibLogo} alt='IB Logo'></Image>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="inline-flex gap-x-16 items-center">
-                        <button className="text-subheading text-white hidden md:block" onClick={() => setFormOpen(true)}>Admissions</button>
+                       {/* below comment code for open admission form ui section */}
+                        <Link href='https://forms.gle/sTdV1tgyNgaFExiP8' target="__blank" className="text-subheading text-white hidden md:block">Admissions</Link>
+                        {/* <button className="text-subheading text-white hidden md:block" onClick={() => setFormOpen(true)}>Admissions</button> */}
                         <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-5 py-3 md:px-7 md:py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
                             onClick={onMenuClick}
                             onMouseEnter={onMenuHover}
@@ -219,7 +230,7 @@ function Navbar(){
                                     <Image className="max-w-[13rem]" src={gglobal_logo} unoptimized alt="G Global School Logo" />
                                 </a>
                                 <div className="flex gap-xl items-center">
-                                    <button onClick={() => setFormOpen(true)} className="btn-slide hidden md:inline-block">Contact us</button>
+                                    <button onClick={() => setFormOpen(true)} className="btn-slide hidden md:inline-block text-subheading ">Contact us</button>
                                     <button className="flex items-center justify-center bg-primary-orange-1 w-14 h-14 aspect-square rounded-full"
                                         onClick={onMenuClick}
                                     >
@@ -239,7 +250,7 @@ function Navbar(){
                                         ))
                                     }
                                 </ul>
-                                <button className="btn-slide mt-4 md:hidden" onClick={() => setFormOpen(true)}>Contact us</button>
+                                <button className="btn-slide mt-4 md:hidden text-subheading" onClick={() => setFormOpen(true)}>Contact us</button>
                             </div>
                             {isSubMenuOpen && (
                                 <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40 z-50">

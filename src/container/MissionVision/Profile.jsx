@@ -1,17 +1,5 @@
 import React, { useRef, useState } from "react";
-import missionImage from "../../assets/mv.png";
-import Image from "next/image";
 import MissionCards from "./MissionCard";
-import scrollImg from "../../assets/scroll.png";
-import profile1 from "../../assets/profile1.jpg";
-import profile2 from "../../assets/profile2.jpg";
-import profile3 from "../../assets/profile3.jpg";
-import profile4 from "../../assets/profile4.jpg";
-import profile5 from "../../assets/profile5.png";
-import profile6 from "../../assets/profile6.png";
-import profile7 from "../../assets/profile7.jpg";
-import profile8 from "../../assets/profile8.png";
-import profile9 from "../../assets/profile9.jpg";
 import { img_4 } from "@/assets/images/individual-pursuit";
 import { img_4 as risk_taker } from "@/assets/images/adventure-challenges";
 import { img_2 as open_minded } from "@/assets/images/games";
@@ -21,6 +9,7 @@ import { thinker } from "@/assets/images/curriculum";
 import { inquirers as inquirer } from "@/assets/images/curriculum";
 import { principled } from "@/assets/images/curriculum";
 import { communicators } from "@/assets/images/curriculum";
+import {story_1 as caring} from "@/assets/images/our-story";
 
 function Profile() {
     return (
@@ -113,6 +102,14 @@ function Profile() {
                     <MissionCards
                         cardImage={img_4}
                         title={"REFLECTIVE"}
+                        desc={
+                            "We thoughtfully consider our own strengths and weaknesses, set goals for personal growth, and evaluate our progress. We learn from our experiences and use them to shape our future actions."
+                        }
+                        iswide={false}
+                    />
+                    <MissionCards
+                        cardImage={caring}
+                        title={"CARING"}
                         desc={
                             "We thoughtfully consider our own strengths and weaknesses, set goals for personal growth, and evaluate our progress. We learn from our experiences and use them to shape our future actions."
                         }

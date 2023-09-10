@@ -16,7 +16,7 @@ const Footer = () => {
     <section className="section-container bg-primary-maroon grid gap-y-large">
       <div className="flex flex-col md:flex-row items-start gap-large">
         <div className="md:w-1/3 grid gap-y-md">
-          <div className="w-fit rounded-2xl">
+          <div className="w-fit rounded-2xl mt-4 lg:mt-0">
             <Image src={gglobal_logo} alt="logo" />
           </div>
           <p className="text-heading-6 text-white">Address</p>
@@ -39,7 +39,8 @@ const Footer = () => {
             </div>
             <div className="text-white flex gap-5">
               <a href="https://www.facebook.com/gglobalschool" target="_blank"><FacebookRoundedIcon className="text-4xl cursor-pointer" /></a>
-              <a href="http://instagram.com/ggsibworldschool"><InstagramIcon className="text-4xl cursor-pointer" /></a>
+              <a href="http://instagram.com/ggsibworldschool" target="_blank"><InstagramIcon className="text-4xl cursor-pointer" /></a>
+              <a href="https://www.youtube.com/channel/UC48SqWZUMYj7uP4Zahfm46g" target="_blank"><YouTubeIcon className="text-4xl cursor-pointer" /></a>
               <a href="mailto:inquiry@gglobalschool.com"><EmailIcon className="text-4xl cursor-pointer" /></a>
             </div>
           </div>
@@ -154,9 +155,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-wrap items-center gap-x-md lg:px-12  lg:justify-end">
-          <Link href=""  className="bg-white py-2 px-4 font-semibold rounded-md flex gap-2 items-center">
+          <Link href="https://anchor.fm/g-global-school" target="_blank"  className="bg-white py-2 px-4 font-semibold rounded-md flex gap-2 items-center">
             <span>
-              Listen stories on
+              Listen on broadcast
             </span>
             <span className="">
               <Image src={spotifyIcon} alt="Spotify Logo"></Image>

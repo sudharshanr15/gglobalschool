@@ -12,7 +12,7 @@ function page() {
     return (
         <div>
             <Hero title="DISCOVERY OUTSIDE THE WALL" />
-            <section className="section-container ">
+            <section className="section-container my-6">
                 <EventList />
             </section>
         </div>

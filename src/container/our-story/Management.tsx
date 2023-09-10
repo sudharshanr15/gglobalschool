@@ -47,10 +47,11 @@ const managementMembers:TeamType[] = [
         name: "DR. S. ROSHNI VETRICHELVAN",
         role: "EXECUTIVE DIRECTOR/ HEAD OF SCHOOL",
         image:management.img_7,
-        text: "A compassionate and empowered lady who handles every situation with sheer positivity.<br/><br/> She started her educational career as a\
-        Primary Years academic Consultant in Vetri Vikaas Public School, Rasipuram.<br></br> She designed and created books for kindergarten imbibing\
-        her Montessori learning. Her curiosity provoked her to gather extensive knowledge about IB PYP which lands her as the Head of School\
-        in GGS providing facilities to the school community through her caring attribute.",
+        text: "A compassionate and empowered lady who strives to cultivate a holistic learning community through her impeccable multi-skilled approach.\
+        <br/><br/>She has a specialised experience of over 10 years in curriculum planning in IB, Reggio and Montessori.<br></br>\
+        Her expertise and curiosity makes her constantly learn the education systems across the world and implement progressive education\
+        practices in the school.<br/><br/>She encourages her team and provides various facilities and resources to plan and design the successful\
+        implementation of the curriculum in the learning community"
 
     }
 ]
@@ -66,7 +67,7 @@ function Management() {
                     managementMembers.map((memeber)=>(
                         <div className={`my-8 lg:flex lg:gap-12 lg:my-20 ${memeber.isreverseCard && 'lg:flex-row-reverse'}`}>
                             <div className="border-4 border-primary-maroon-1 rounded-xl overflow-hidden lg:basis-6/12">
-                                <div className="max-h-[240px] lg:max-h-[400px] overflow-hidden flex justify-center">
+                                <div className="max-h-[240px] lg:max-h-[500px] overflow-hidden flex justify-center">
                                     <Image className=" object-cover " src={memeber.image} alt={memeber.role}></Image>
                                 </div>
                                 <div className="">

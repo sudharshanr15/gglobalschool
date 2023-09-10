@@ -8,10 +8,11 @@ import { music_1 } from "@/assets/images/music";
 import Image from "next/image";
 
 const Home = () => {
+  
   return (
     <>
       <Hero />
-      <section className="section-container">
+      <section className="section-container my-4">
         <div className="flex flex-col md:flex-row gap-xl">
           <div className="w-full md:w-1/2">
             <div className="w-fit mb-md">

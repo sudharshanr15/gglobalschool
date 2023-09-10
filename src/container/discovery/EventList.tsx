@@ -1,35 +1,51 @@
 "use client";
 import { useState, useEffect } from "react";
 import { EventCard, Slide } from "@/container/discovery";
-import * as student_gallery from "@/assets/images/gallery/student"
-import * as teacher_gallery from "@/assets/images/gallery/teacher"
+import * as fieldVist from '@/assets/images/gallery/field-trip'
+import * as gustTalk from '@/assets/images/gallery/gust-talk'
+import * as annualDay from '@/assets/images/gallery/annual-day'
+import * as teachers from "@/assets/images/gallery/teacher"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode } from 'swiper/modules';
+
+const Gallery:any={
+        "Student Gallery":{
+            'Field Vist' : [...Object.values(fieldVist)],
+            'Gust Talk' : [...Object.values(gustTalk)],
+            'Annual Day' : [...Object.values(annualDay)],
+        },
+        "Teacher Gallery":{
+            'Teachers' : [...Object.values(teachers)],
+        }
+    }
 
 const Listofevents = () => {
-    const [gallery, setGallery] = useState("Student Gallery");
+
+    const [activeGallery, setActiveGallery] = useState("Student Gallery");
+    const [activeCategory, setActiveCategory] = useState(Object.keys(Gallery[activeGallery])[0])
     const [slider, setSlider] = useState(false);
-    const gallery_images: any = {
-        "Student Gallery": [...Object.values(student_gallery)],
-        "Teacher Gallery": [...Object.values(teacher_gallery)],
-    };
+
     return (
         <>
-            <div className="flex justify-center">
-                <div className="flex flex-wrap md:flex-nowrap gap-large xl:gap-2xl">
-                    {Object.keys(gallery_images).map((item, index) => (
-                        <p
-                            key={index}
-                            onClick={() => setGallery(item)}
-                            className={`cursor-pointer	 text-primary-maroon-1 bold md:text-heading-6 xl:text-heading-5 font-bold decoration-4 lg:decoration-8 underline-offset-8 lg:underline-offset-[1rem] decoration-primary-yellow-1 ${
-                                item == gallery ? "underline" : ""
-                            }`}
-                        >
-                            {item}
-                        </p>
+            <div className="">
+                <div className="flex justify-around w-100 border-green flex-wrap md:flex-nowrap xl:gap-2xl">
+                    {Object.keys(Gallery).map((item) => (
+                        <div>
+                            <p
+                                onClick={() =>{setActiveGallery(item); setActiveCategory(Object.keys(Gallery[item])[0])}}
+                                className={`cursor-pointer	 text-primary-maroon-1 bold md:text-heading-6 xl:text-heading-5 font-bold`}>
+                                {item}
+                            </p>
+                            {(item == activeGallery) && (
+                                <div className="w-8/12 rounded-full mx-auto border-2 border-primary-yellow-1 lg:h-[6px] bg-primary-yellow-1"></div>
+                            )}
+                        </div>
                     ))}
                 </div>
             </div>
+
             <div className="mt-xl md:mt-2xl">
-                {gallery.toLowerCase() == "student gallery" ? (
+                {activeGallery.toLowerCase() == "student gallery" ? (
                     <p className="font-body">
                         Field trips provide opportunities for learner’s to
                         understand the real life challenges and it’s solutions. It
@@ -66,21 +82,53 @@ const Listofevents = () => {
                     </p>
                 )}
             </div>
-            <div className="mt-xl md:mt-2xl grid gap-md xl:gap-xl grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-                {gallery_images[gallery].map((val: any, index: number) => {
-                    return (
-                        <EventCard
-                            setSlider={setSlider}
-                            key={index}
-                            image={val}
-                        />
-                    );
-                })}
+            <div className="mt-8">
+                <div className="lg:hidden">
+                    <Swiper  className=" " breakpoints={{1080:{slidesPerView:4}}} slidesPerView={1.6} freeMode={true} spaceBetween={20} modules={[FreeMode]}>
+                        {
+                        Object.entries(Gallery[activeGallery]).map(([key,value])=>(
+                            <SwiperSlide 
+                                className={`py-2 px-4 text-center border-primary-maroon-1 border rounded-lg font-semibold text-primary-maroon-1 ${(key===activeCategory)&&'bg-primary-maroon-1 text-white'} `}
+                                onClick={()=>setActiveCategory(key)}
+                            >
+                                {key}
+                            </SwiperSlide>    
+                        )) 
+                        }
+                    </Swiper>
+                </div>
+                <ul className="hidden lg:flex gap-x-12 gap-y-4 flex-wrap">
+                    {
+                        Object.entries(Gallery[activeGallery]).map(([key,value])=>(
+                            <li 
+                                className={`cursor-pointer py-2 px-8 text-center border-primary-maroon-1 border rounded-lg font-semibold text-primary-maroon-1 ${(key===activeCategory)&&'bg-primary-maroon-1 text-white'} `}
+                                onClick={()=>setActiveCategory(key)}
+                            >
+                                {key}
+                            </li>    
+                        )) 
+                    }
+                </ul>
+            </div>
+            <div className="my-4">
+                <div className="flex flex-wrap gap-y-4 lg:gap-x-4 ">
+                        {Gallery[activeGallery][activeCategory].map((val: any, index: number) => {
+                            return (
+                                <div className="lg:basis-[32%]">
+                                    <EventCard
+                                        setSlider={setSlider}
+                                        key={index}
+                                        image={val}
+                                        />
+                                </div>
+                            );
+                        })}
+                </div>
             </div>
             {slider && (
                 <Slide
-                    gallery_name={gallery}
-                    gallery_images={gallery_images[gallery]}
+                    gallery_name={activeGallery}
+                    gallery_images={Gallery[activeGallery][activeCategory]}
                     setSlider={setSlider}
                 />
             )}

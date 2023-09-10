@@ -1,0 +1,5 @@
+export {default as img_1} from './IMG_6194.jpeg'
+export {default as img_2} from './IMG_6196.jpeg'
+export {default as img_3} from './IMG_6250.jpeg'
+export {default as img_4} from './IMG_6251.jpeg'
+export {default as img_5} from './IMG_6252.jpeg'

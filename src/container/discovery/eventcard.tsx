@@ -4,7 +4,7 @@ const Eventcard = ({ title, setSlider, image }: any) => {
     return (
         <div className="w-full h-fit bg-gray-100">
             <div className="relative">
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden rounded-md">
                     <Image
                         src={image}
                         className="w-full h-auto object-cover"
