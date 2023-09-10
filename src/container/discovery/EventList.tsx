@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { EventCard, Slide } from "@/container/discovery";
 import * as fieldVist from '@/assets/images/gallery/field-trip'
 import * as gustTalk from '@/assets/images/gallery/gust-talk'
-import * as annualDay from '@/assets/images/gallery/annual-day'
 import * as teachers from "@/assets/images/gallery/teacher"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
@@ -11,11 +10,10 @@ import { FreeMode } from 'swiper/modules';
 const Gallery:any={
         "Student Gallery":{
             'Field Vist' : [...Object.values(fieldVist)],
-            'Gust Talk' : [...Object.values(gustTalk)],
-            'Annual Day' : [...Object.values(annualDay)],
+            'Guest Talk' : [...Object.values(gustTalk)]
         },
         "Teacher Gallery":{
-            'Teachers' : [...Object.values(teachers)],
+            'Workshops & PD sessions' : [...Object.values(teachers)],
         }
     }
 

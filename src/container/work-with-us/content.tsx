@@ -1,7 +1,5 @@
 import Image from "next/image";
-import contentimage from "../../assets/workwithus.png";
-import benefitImage from "@/assets/student council benefits.png";
-import {group} from "@/assets/images/work-with-us";
+import {group2} from "@/assets/images/work-with-us";
 import Link from 'next/link'
 
 const Content = () => {
@@ -10,7 +8,7 @@ const Content = () => {
       <div className="">
         <Image
           className="w-full"
-          src={group}
+          src={group2}
           unoptimized
           alt="work with us"
         />

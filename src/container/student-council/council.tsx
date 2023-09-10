@@ -22,7 +22,7 @@ const Council = () => {
             head boy and the leaders of the four houses.
           </p>
           <p>
-            Student council actively involves in all the school issues and always takenresponsibilities of the younger ones.
+            Student council actively involves in all the school issues and always takes responsibility of the younger ones.
             They are teaching new skills to their
             younger ones around the school campus.
           </p>

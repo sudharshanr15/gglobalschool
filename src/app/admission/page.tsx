@@ -16,7 +16,7 @@ const Admission = () => {
             <Quotebox />
             <Enquiry />
             <Admissionpolicy />
-            <Faq />
+            {/* <Faq /> */}
             <ExploreTopics />
         </div>
     );
