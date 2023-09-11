@@ -1,5 +1,6 @@
 "use client";
-import { gglobal_logo } from "@/assets/index";
+import gglobal_logo from "@/assets/logo/gglogo.svg";
+import ibLogo from "@/assets/logo/ib-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
@@ -16,8 +17,25 @@ const Footer = () => {
     <section className="section-container bg-primary-maroon grid gap-y-large">
       <div className="flex flex-col md:flex-row items-start gap-large">
         <div className="md:w-1/3 grid gap-y-md">
-          <div className="w-fit rounded-2xl mt-4 lg:mt-0">
-            <Image src={gglobal_logo} alt="logo" />
+          {/* <div className="border">
+            <div className="flex h-18 lg:h-36">
+              <Image className="basis-6/12" src={gglobal_logo} alt="logo" />
+              <Image className="basis-6/12" src={iblogo} alt="ib logo"></Image>
+            </div>
+          </div> */}
+          <div className="flex-1 h-full mt-4 lg:mt-0">
+              <div className="h-17 lg:h-28 overflow-hidden">
+                  <div className="h-full flex items-center gap-2 lg:gap-4">
+                      <div className="h-full">
+                          <Link href="/" >
+                              <Image className="h-full object-contain" src={gglobal_logo} unoptimized alt="G Global School Logo" />
+                          </Link>
+                      </div>
+                      <div className="h-20 lg:h-3/6">
+                          <Image className="h-full object-contain w-full" src={ibLogo} alt='IB Logo'></Image>
+                      </div>
+                  </div>
+              </div>
           </div>
           <p className="text-heading-6 text-white">Address</p>
           <p className="text-white">
@@ -44,7 +62,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className="w-full grid gap-y-md">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-large">
             <div className="flex flex-auto flex-col gap-md">
