@@ -26,7 +26,11 @@ const managementMembers:TeamType[] = [
         name: 'Ms. MALLIKA GUNASEKARAN',
         role: 'DIRECTOR',
         image: management.mallikaXL,
-        text: "A caring and courteous lady who strives to bring the best for the welfare of the organization through her solicitous caliber.",
+        text: "A caring and courteous lady who strives to bring the best for the welfare of the organization through her solicitous caliber\
+        Her contribution towards good health and well-being in the GGS community has sustained the personal, social and emotional balance among\
+        learners, facilitators and staff. Also her significant role in and as one of the Directors of Vidyaa Vikas Educational Institution paved\
+        way for a compassionate and an empathetic learning environment. Her insight to up-bring an inclusive learning community is achieved through\
+        internationally-mindedness.",
         imageXl:management.mallikaXL
 
     },
