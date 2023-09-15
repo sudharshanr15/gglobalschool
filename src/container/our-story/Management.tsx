@@ -16,7 +16,7 @@ const managementMembers:TeamType[] = [
         role: 'CHAIRMAN DIRECTOR',
         image: management.gunaXL,
         text: "A noble laureate who pursued his professional life in educational field. He began his career as a teacher in government school\
-        and with his consistent perseverance he became the Principal. Later he served as the Head of Department in various govern schools.\
+        and with his consistent perseverance he became the Principal. Later he served as the Head of Department in various government schools.\
         His knowledge and commitment towards educating young minds made him the Secretary and <b class=\"font-semibold\"> Managing Trustee of Vidyaa Vikas Educational\
         institution and the Founder of Vetri Vikaas Educational institution. </b> <br/><br/>His dream of providing International Education in his hometown\
         was fulfilled by establishing G Global School.",
@@ -39,7 +39,7 @@ const managementMembers:TeamType[] = [
         role: 'MANAGING DIRECTOR',
         image: management.img_6,
         text: "A versatile administrator with a deep knowledge in technology, implements the same in his educational profession.<br/><br/> He is the <b class=\"font-semibold\"}> Chairman\
-        of Vetri Vikaas Educational institutions - Rasipuram and Mallur.</b> He is also the Director of Vidyaa Vikas Educational institutions - Karamadai\
+        of Vetri Vikaas Educational institutions - Rasipuram.</b> He is also the Director of Vidyaa Vikas Educational institutions - Karamadai\
         and Tanjore and is now implementing global ideas and provide holistic education through G Global School.",
         isreverseCard:true
     },
