@@ -16,8 +16,14 @@ export const metadata: Metadata = {
 }
 function page() {
 
-  const Headings = ["Admission Policy","Language Policy", "Assessment Policy","Inclusive Education Policy","Library and resource centre policy " ,"Academic Integrity Policy"]
-  const Links = ["link1","link2","link4","link5","link6","link7"]
+  const Headings = ["Admission Policy","Language Policy", "Assessment Policy","Inclusive Education Policy","Academic Integrity Policy"]
+  const Links = [
+    "https://drive.google.com/file/d/1jQcfIlCm-1HvKUmoX0x6vAM0Xpoh-HyG/view?usp=drive_link",
+    "https://drive.google.com/file/d/1VivqCAqS16PP8hJju4-rPP3Xizgz7B6-/view?usp=drive_link",
+    "https://drive.google.com/file/d/19XB61l8zJTppU6NotQ6nAXwIk4-_AqCL/view?usp=drive_link",
+    "https://drive.google.com/file/d/14uE4QMOo7GyhlJCc047wMS4dAECq_thQ/view?usp=drive_link",
+    "https://drive.google.com/file/d/1f0jipdAUxho-i5xNIZNHfMTqqApJzqBR/view?usp=drive_link",
+  ]
 
   return (
     <>
