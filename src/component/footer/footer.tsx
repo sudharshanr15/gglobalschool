@@ -59,7 +59,6 @@ const Footer = () => {
               <a href="https://www.facebook.com/gglobalschool" target="_blank"><FacebookRoundedIcon className="text-4xl cursor-pointer" /></a>
               <a href="http://instagram.com/ggsibworldschool" target="_blank"><InstagramIcon className="text-4xl cursor-pointer" /></a>
               <a href="https://www.youtube.com/channel/UC48SqWZUMYj7uP4Zahfm46g" target="_blank"><YouTubeIcon className="text-4xl cursor-pointer" /></a>
-              <a href="https://api.whatsapp.com/send/?phone=7550317999&text=Hi,%20I%20am%20(name)%20I%20would%20like%20to%20know%20more%20about%20G%20GLOBAL%20SCHOOL" target="_blank"><WhatsApp className="text-4xl cursor-pointer" /></a>
               <a href="mailto:inquiry@gglobalschool.com"><EmailIcon className="text-4xl cursor-pointer" /></a>
             </div>
           </div>

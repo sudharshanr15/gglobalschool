@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/component/navbar/Navbar'
 import Footer from '@/component/footer/footer'
 import Enquire from '@/component/Enquire/Enquire'
+import WhatsappContact from '@/component/WhatsappContact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         <Enquire />
         <Footer/>
+        <WhatsappContact />
       </body>
     </html>
   )
