@@ -38,6 +38,24 @@
     }
 }
 
+@keyframes tooltip-fade-in{
+    0.5%, 51%, 100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    2%, 50%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.tooltip-fade-in{
+    visibility: hidden;
+    animation: tooltip-fade-in 40s infinite;
+    animation-delay: 1s;
+}
+
 .animate-slide-in{
     animation: slide-in 1.5s infinite;
 }
