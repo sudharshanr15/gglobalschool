@@ -39,20 +39,32 @@
 }
 
 @keyframes tooltip-fade-in{
-    0.5%, 51%, 100%{
+    0%, 17%{
         opacity: 0;
         visibility: hidden;
     }
 
-    2%, 50%{
+    1%, 16%{
         opacity: 1;
         visibility: visible;
     }
 }
 
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    50%{
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
 .tooltip-fade-in{
     visibility: hidden;
-    animation: tooltip-fade-in 40s infinite;
+    animation: tooltip-fade-in 60s infinite, bounce 1s infinite;
     animation-delay: 1s;
 }
 
