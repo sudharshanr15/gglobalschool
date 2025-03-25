@@ -206,7 +206,7 @@ function Navbar(){
                     </div>
                     <div className="inline-flex gap-x-16 items-center">
                        {/* below comment code for open admission form ui section */}
-                        <Link href='https://gglobal.brainstem.in/admission/index.php/enquiryForm' target="__blank" className="text-subheading text-white hidden md:block">Admissions</Link>
+                        <Link href='https://forms.gle/sTdV1tgyNgaFExiP8' target="__blank" className="text-subheading text-white hidden md:block">Admissions</Link>
                         {/* <button className="text-subheading text-white hidden md:block" onClick={() => setFormOpen(true)}>Admissions</button> */}
                         <button className={`flex flex-row items-center bg-primary-yellow-1 hover:bg-primary-maroon-1 hover:text-white text-gray-900 px-5 py-3 md:px-7 md:py-6 rounded-l-full ${isMenuHover ? styles.open : ''}`}
                             onClick={onMenuClick}

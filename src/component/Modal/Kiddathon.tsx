@@ -27,7 +27,7 @@ function Kiddathon(){
 
   return (
     <ModalWrapper onModalClose={onModalClose}>
-        <a href="https://gglobal.brainstem.in/admission/index.php/enquiryForm" target='_blank' className="flex flex-col items-center bg-[#E94B37]">
+        <a href="https://forms.gle/sTdV1tgyNgaFExiP8" target='_blank' className="flex flex-col items-center bg-[#E94B37]">
             <div className="max-h-screen">
                 <Image className='object-contain max-h-[90vh] w-auto' src={admission_open_img} alt='Kiddathon Banner' />
             </div>
