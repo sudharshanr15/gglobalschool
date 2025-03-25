@@ -5,13 +5,13 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import WestIcon from '@mui/icons-material/West';
 import {icon_close } from "@/assets/index"
-import Form from "../../component/Admission-Form/Form";
 import gglobal_logo from "@/assets/logo/gglogo.svg";
 import ibLogo from '@/assets/logo/ib-logo.png'
 
 import styles from "./styles.module.css"
 
 import { gsap } from "gsap"
+import EnquireLink from "../Enquire/EnquireLink";
 
 type NavbarLinkType = {
     [k: string]: {
@@ -29,7 +29,6 @@ function Navbar(){
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
     const [isMenuHover, setIsMenuHover] = useState(false)
     const [activeSubmenu, setActiveSubmenu] = useState("")
-    const [isFormOpen, setFormOpen] = useState(false);
 
     const links: NavbarLinkType = {
         "Our G Global Universe": {
@@ -230,7 +229,9 @@ function Navbar(){
                                     <Image className="max-w-[13rem]" src={gglobal_logo} unoptimized alt="G Global School Logo" />
                                 </a>
                                 <div className="flex gap-xl items-center">
-                                    <button onClick={() => setFormOpen(true)} className="btn-slide hidden md:inline-block text-subheading ">Contact us</button>
+                                    <button className="btn-slide hidden md:inline-block text-subheading ">
+                                        <EnquireLink>Contact us</EnquireLink>
+                                    </button>
                                     <button className="flex items-center justify-center bg-primary-orange-1 w-14 h-14 aspect-square rounded-full"
                                         onClick={onMenuClick}
                                     >
@@ -250,7 +251,9 @@ function Navbar(){
                                         ))
                                     }
                                 </ul>
-                                <button className="btn-slide mt-4 md:hidden text-subheading" onClick={() => setFormOpen(true)}>Contact us</button>
+                                <button className="btn-slide mt-4 md:hidden text-subheading">
+                                    <EnquireLink>Contact us</EnquireLink>
+                                </button>
                             </div>
                             {isSubMenuOpen && (
                                 <div className="absolute flex justify-center p-5 top-0 w-full h-full bg-gray-900 bg-opacity-40 z-50">
@@ -275,9 +278,6 @@ function Navbar(){
                     </div>
                 )}
             </nav>
-            {isFormOpen && (
-                <Form onClose={setFormOpen} />
-            )}
         </>
     )
 }

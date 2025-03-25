@@ -9,13 +9,12 @@ import 'swiper/css/effect-fade';
 import arrowDown from '@/assets/icons/arrow-down.svg'
 import {Autoplay, EffectFade} from "swiper/modules";
 import { useState, useEffect, useRef } from "react";
-import Form from "../../component/Admission-Form/Form";
 
 import { arrow_underline } from "@/assets";
+import EnquireLink from "@/component/Enquire/EnquireLink";
 
 function Hero(){
   const heroImages = Object.values(hero)
-  const [isFormOpen, setFormOpen] = useState(false);
 
   const switchRef = useRef(null);
   const [hasContentMoved, setHasContentMoved] = useState(false);
@@ -64,7 +63,9 @@ function Hero(){
                 </div>
               </div>
               <div className="mt-6">
-                <button className="font-semibold text-xl py-2 px-8  rounded-full bg-primary-yellow-1 lg:py-3 lg:px-10 lg:font-bold" onClick={() => setFormOpen(true)}>Enquire Now</button>
+                <button className="font-semibold text-xl py-2 px-8  rounded-full bg-primary-yellow-1 lg:py-3 lg:px-10 lg:font-bold">
+                  <EnquireLink>Enquire Now</EnquireLink>
+                </button>
               </div>
             </div>
             <div className="mt-8 lg:basis-[48%] overflow-hidden lg:mt-0 ">
@@ -101,9 +102,6 @@ function Hero(){
       </section>
       {/* This line sets the switch of a UI element to on state and turning off a switch */}
       <div className="h-1 w-full mt-3"  ref={switchRef}></div>
-      {isFormOpen && (
-          <Form onClose={setFormOpen} />
-      )}
     </>
   )
 }

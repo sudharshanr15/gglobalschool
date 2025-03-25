@@ -18,10 +18,9 @@
 
 "use client";
 
-import { useState } from "react";
-import Form from "../../component/Admission-Form/Form";
+import EnquireLink from "@/component/Enquire/EnquireLink";
+
 const Enquiry = () => {
-  const [isFormOpen, setFormOpen] = useState(false);
 
   return (
     <section className="section-container">
@@ -40,18 +39,11 @@ const Enquiry = () => {
           admission should be added.
         </p>
         <button
-          onClick={() => setFormOpen(true)}
           className="btn-slide mt-4"
         >
-          Enquiry Today
+          <EnquireLink>Enquiry Today</EnquireLink>
         </button>
       </div>
-
-
-      {isFormOpen && (
-        <Form onClose={setFormOpen} />
-      )}
-
     </section>
   );
 };
