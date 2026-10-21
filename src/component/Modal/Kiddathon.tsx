@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from "react";
 import ModalWrapper from "./ModalWrapper";
 // import admission_open_img from "@/assets/images/modal/admission_open.jpg";
-import admission_open_img from "@/assets/images/modal/VAO-social-media.jpg";
+// import admission_open_img from "@/assets/images/modal/VAO-social-media.jpg";
+import admission_open_img from "@/assets/images/modal/inquiry@gglobalschool.com-2.webp";
 import Image from "next/image";
 
 function Kiddathon() {
